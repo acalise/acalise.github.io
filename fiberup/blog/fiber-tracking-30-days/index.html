@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>I Tracked My Fiber Intake for 30 Days — Here's What Changed</title>
+  <meta name="description" content="A software engineer's honest 30-day fiber tracking challenge. Week-by-week results from going from 10g to 30g+ of daily fiber, including what worked, what didn't, and what surprised me.">
+  <meta name="keywords" content="fiber tracking results, tracking fiber intake, fiber challenge, 30 day fiber challenge, fiber intake experiment, fiber tracking app results">
+  <link rel="canonical" href="https://acalise.github.io/fiberup/blog/fiber-tracking-30-days/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://acalise.github.io/fiberup/blog/fiber-tracking-30-days/">
+  <meta property="og:title" content="I Tracked My Fiber Intake for 30 Days — Here's What Changed">
+  <meta property="og:description" content="A software engineer's honest 30-day fiber tracking challenge. Week-by-week results from going from 10g to 30g+ of daily fiber.">
+  <meta property="og:image" content="https://acalise.github.io/fiberup/icon.png">
+  <meta property="og:site_name" content="FiberUp">
+  <meta property="article:published_time" content="2026-03-27">
+  <meta property="article:author" content="Anthony Calise">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="I Tracked My Fiber Intake for 30 Days — Here's What Changed">
+  <meta name="twitter:description" content="A software engineer's honest 30-day fiber tracking challenge. Week-by-week results.">
+  <meta name="twitter:image" content="https://acalise.github.io/fiberup/icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../../icon.png">
+  <link rel="apple-touch-icon" href="../../icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "I Tracked My Fiber Intake for 30 Days — Here's What Changed",
+    "description": "A software engineer's honest 30-day fiber tracking challenge. Week-by-week results from going from 10g to 30g+ of daily fiber.",
+    "author": {
+      "@type": "Person",
+      "name": "Anthony Calise",
+      "url": "https://acalise.github.io"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "FiberUp",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://acalise.github.io/fiberup/icon.png"
+      }
+    },
+    "datePublished": "2026-03-27",
+    "dateModified": "2026-03-27",
+    "image": "https://acalise.github.io/fiberup/icon.png",
+    "mainEntityOfPage": "https://acalise.github.io/fiberup/blog/fiber-tracking-30-days/"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What happens when you track fiber for 30 days?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In a 30-day fiber tracking challenge, most people discover they're eating far less fiber than recommended (10-15g vs. the 25-38g target). By tracking consistently and making gradual changes — adding legumes, whole grains, fruits, and vegetables — you can expect improved digestion, more consistent energy levels, and a wider variety of plant foods in your diet within a month."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to see results from eating more fiber?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most people notice digestive changes within 1-2 weeks of increasing fiber intake. Initial days may include bloating as your gut adjusts, but by weeks 2-3, digestion typically becomes more regular. Energy improvements and reduced cravings often appear by weeks 3-4. The key is increasing fiber gradually — adding 5g per week — rather than all at once."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much fiber should you eat per day?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The FDA recommends 25g of fiber per day for women and 38g for men based on a 2,000-calorie diet. Most Americans only consume about 10-15g daily. High-fiber foods like lentils (15.6g per cup), black beans (15g per cup), avocado (10g per fruit), and chia seeds (10g per ounce) can help close the gap."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best app for tracking fiber intake?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FiberUp is a free, dedicated fiber tracking app for iPhone with a USDA-verified food database, barcode scanner, daily progress ring, and plant count tracking. It requires no account and no subscription, making it easy to start a fiber tracking challenge immediately."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1110;
+      --bg2: #161b18;
+      --card: #1a201c;
+      --border: rgba(90,155,104,0.15);
+      --accent: #5A9B68;
+      --accent2: #3D7A4E;
+      --accent-light: #6EB882;
+      --accent-glow: rgba(90,155,104,0.18);
+      --text: #f0f4f1;
+      --muted: #7a9080;
+      --muted2: #4a5e52;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px;
+      background: rgba(15,17,16,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    .nav-brand img {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 9px 18px;
+      border-radius: 100px;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); text-decoration: none; }
+
+    /* ARTICLE */
+    .article-wrapper {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 100px 24px 80px;
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .article-meta .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-glow);
+      border: 1px solid var(--border);
+      color: var(--accent-light);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 100px;
+    }
+
+    .article-meta .date {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .article-wrapper h1 {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .article-intro {
+      font-size: 1.1rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 40px;
+      max-width: 640px;
+    }
+
+    .article-wrapper h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin: 48px 0 16px;
+      line-height: 1.2;
+    }
+
+    .article-wrapper h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 32px 0 12px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #d0d8d2;
+      margin-bottom: 16px;
+    }
+
+    .article-wrapper ul, .article-wrapper ol {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    .article-wrapper li {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #d0d8d2;
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--text);
+    }
+
+    /* HIGHLIGHT CARDS */
+    .week-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin: 24px 0;
+    }
+
+    .week-card .week-label {
+      display: inline-block;
+      background: var(--accent-glow);
+      border: 1px solid var(--accent);
+      color: var(--accent-light);
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 12px;
+    }
+
+    .week-card h3 {
+      margin-top: 0;
+    }
+
+    .week-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    @media (max-width: 500px) {
+      .week-stats {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .week-stat {
+      background: var(--bg2);
+      border-radius: 10px;
+      padding: 14px;
+      text-align: center;
+    }
+
+    .week-stat .number {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--accent-light);
+      letter-spacing: -0.03em;
+    }
+
+    .week-stat .label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 2px;
+    }
+
+    /* MEAL LOG */
+    .meal-log {
+      background: var(--bg2);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
+
+    .meal-log .meal-title {
+      font-weight: 700;
+      color: var(--text);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .meal-log ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .meal-log li {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 0;
+      color: #d0d8d2;
+      font-size: 0.88rem;
+      margin-bottom: 2px;
+    }
+
+    .meal-log li span {
+      color: var(--accent-light);
+      font-weight: 600;
+      flex-shrink: 0;
+      margin-left: 12px;
+    }
+
+    /* TIP CARDS */
+    .tip-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 16px 0;
+    }
+
+    .tip-card h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .tip-card p {
+      font-size: 0.92rem;
+      margin-bottom: 0;
+    }
+
+    /* CTA BANNER */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      margin: 48px 0;
+    }
+
+    .cta-banner h3 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 0 0 8px;
+    }
+
+    .cta-banner p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 20px;
+    }
+
+    .cta-banner .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      color: var(--accent2);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 14px 28px;
+      border-radius: 100px;
+      transition: transform 0.15s;
+    }
+
+    .cta-banner .btn:hover { transform: translateY(-2px); text-decoration: none; }
+
+    /* FAQ */
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+
+    .faq-item h3 {
+      font-size: 1.05rem;
+      margin: 0 0 8px;
+      color: var(--text);
+    }
+
+    .faq-item p {
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer a {
+      color: var(--muted);
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/fiberup/" class="nav-brand">
+      <img src="../../icon.png" alt="FiberUp app icon">
+      <span>FiberUp</span>
+    </a>
+    <a href="https://apps.apple.com/us/app/fiberup/id6760719879" class="nav-cta" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Free on App Store
+    </a>
+  </nav>
+
+  <article class="article-wrapper">
+    <div class="article-meta">
+      <span class="badge">Personal Journey</span>
+      <span class="date">March 27, 2026</span>
+    </div>
+
+    <h1>I Tracked My Fiber Intake for 30 Days &mdash; Here's What Changed</h1>
+
+    <p class="article-intro">I went from eating roughly 10g of fiber a day to consistently hitting 30g+. It took four weeks, some uncomfortable bloating, and a lot of lentils. Here's the full breakdown of what happened, week by week.</p>
+
+    <p>I'm a software engineer. I built <a href="https://apps.apple.com/us/app/fiberup/id6760719879">FiberUp</a> because I wanted a simple way to track my daily fiber intake without dealing with a full-blown calorie counter. But when I actually started using it on myself &mdash; logging everything I ate for 30 straight days &mdash; the results were more surprising than I expected.</p>
+
+    <p>This isn't a clinical study. It's one person's experience. But the patterns I noticed line up with what the research says about fiber, and I think anyone considering a fiber challenge will find it useful to see what the first month actually looks like.</p>
+
+    <h2>The Starting Point: How Bad Was It?</h2>
+
+    <p><strong>On Day 1, I ate 9.4 grams of fiber.</strong> That's it. Less than half of the FDA's 25g minimum recommendation, and about a quarter of the 38g target for men.</p>
+
+    <p>I didn't think my diet was that bad. I ate salads a few times a week. I chose whole wheat bread when I remembered to. But when I actually logged every meal for a full day, the numbers were brutal.</p>
+
+    <p>Here's what Day 1 looked like:</p>
+
+    <div class="meal-log">
+      <div class="meal-title">Day 1 Food Log</div>
+      <ul>
+        <li>Breakfast: Two eggs, white toast, coffee <span>1.2g</span></li>
+        <li>Lunch: Turkey sandwich on sourdough, chips <span>2.8g</span></li>
+        <li>Snack: Protein bar <span>2.0g</span></li>
+        <li>Dinner: Chicken stir-fry with white rice, broccoli <span>3.4g</span></li>
+      </ul>
+    </div>
+
+    <p>Total: 9.4g. The problem was obvious once I saw it written down. White bread, white rice, not enough vegetables, and no legumes or whole grains in sight. I was eating food that looked reasonably healthy but had almost no fiber in it.</p>
+
+    <p>That was the wake-up call. I decided to commit to 30 days of tracking everything and see if I could actually change my habits.</p>
+
+    <h2>Week 1: The Reality Check</h2>
+
+    <div class="week-card">
+      <div class="week-label">Days 1-7</div>
+      <h3>Learning what fiber actually looks like</h3>
+      <div class="week-stats">
+        <div class="week-stat">
+          <div class="number">11.2g</div>
+          <div class="label">Avg Daily Fiber</div>
+        </div>
+        <div class="week-stat">
+          <div class="number">9.4g</div>
+          <div class="label">Lowest Day</div>
+        </div>
+        <div class="week-stat">
+          <div class="number">14.8g</div>
+          <div class="label">Highest Day</div>
+        </div>
+      </div>
+    </div>
+
+    <p>The first week was mostly about observation. I didn't try to overhaul my diet overnight &mdash; I just logged what I normally ate and looked at the numbers. The average across seven days was 11.2g. Not a single day hit even 15g.</p>
+
+    <p>The biggest lesson from Week 1 was how invisible fiber is. I had no intuition for which foods had it and which didn't. A banana? Only 3.1g. A cup of white rice? 0.6g. Meanwhile, a can of black beans I'd been ignoring in my pantry had 15g per serving.</p>
+
+    <p>I started making small swaps. Whole wheat bread instead of white (that alone added about 4g per sandwich). A handful of almonds instead of my usual protein bar (3.5g vs 2g). An apple with peanut butter as a snack instead of crackers.</p>
+
+    <p>By Day 5, I made my first intentional high-fiber meal: a black bean and sweet potato bowl with brown rice. It came out to 18.2g for a single meal. I'd been struggling to hit that number across an entire day.</p>
+
+    <div class="meal-log">
+      <div class="meal-title">Day 5 Dinner &mdash; Black Bean Sweet Potato Bowl</div>
+      <ul>
+        <li>Black beans, 1/2 cup <span>7.5g</span></li>
+        <li>Sweet potato, 1 medium <span>3.8g</span></li>
+        <li>Brown rice, 1 cup <span>3.5g</span></li>
+        <li>Avocado, 1/2 <span>5.0g</span></li>
+        <li>Salsa and cilantro <span>0.4g</span></li>
+      </ul>
+    </div>
+
+    <p>That single meal was a turning point. It showed me that hitting my fiber target wasn't about suffering through mountains of raw vegetables. It was about knowing which foods to reach for.</p>
+
+    <h2>Week 2: Making Real Changes (and Dealing with Bloating)</h2>
+
+    <div class="week-card">
+      <div class="week-label">Days 8-14</div>
+      <h3>Adding legumes, learning the hard way about pacing</h3>
+      <div class="week-stats">
+        <div class="week-stat">
+          <div class="number">19.6g</div>
+          <div class="label">Avg Daily Fiber</div>
+        </div>
+        <div class="week-stat">
+          <div class="number">14.2g</div>
+          <div class="label">Lowest Day</div>
+        </div>
+        <div class="week-stat">
+          <div class="number">28.1g</div>
+          <div class="label">Highest Day</div>
+        </div>
+      </div>
+    </div>
+
+    <p>Week 2 is where I got ambitious. I started meal-prepping lentil soup, adding chia seeds to my morning oatmeal, and snacking on edamame. My fiber numbers jumped &mdash; and so did the bloating.</p>
+
+    <p><strong>I need to be honest about this part.</strong> Around Day 9, I went too hard. I had oatmeal with chia seeds and berries for breakfast (11g), a big lentil soup for lunch (14g), and a fiber-heavy dinner. Total for the day was 28.1g &mdash; my first time exceeding 25g. But my stomach was not happy.</p>
+
+    <p>I had noticeable bloating and gas for about two days. This is completely normal when you increase fiber intake quickly &mdash; your gut bacteria need time to adjust to the higher load. But it's also the reason most people give up on eating more fiber. It's uncomfortable, and it's easy to think "this isn't working" when it's actually just the adjustment period.</p>
+
+    <p>I scaled back slightly for the rest of the week, aiming for 18-20g rather than jumping straight to 25+. That turned out to be the right call. The bloating subsided by Day 12, and my body started handling the higher fiber without complaints.</p>
+
+    <p>The foods I leaned on most during Week 2:</p>
+
+    <ul>
+      <li><strong>Lentils</strong> &mdash; 15.6g per cooked cup. The single best fiber source I found. I made a big batch of lentil soup on Sunday and ate it for lunches all week.</li>
+      <li><strong>Chia seeds</strong> &mdash; 10g per ounce. Two tablespoons stirred into oatmeal or yogurt added about 7g without changing the taste much.</li>
+      <li><strong>Oats</strong> &mdash; 4g per serving. Switching from eggs and toast to oatmeal for breakfast was an easy 4g upgrade.</li>
+      <li><strong>Raspberries</strong> &mdash; 8g per cup. The highest-fiber common fruit I found, and they're great on oatmeal.</li>
+      <li><strong>Edamame</strong> &mdash; 8g per cup. Good snack, easy to prepare, keeps me full.</li>
+    </ul>
+
+    <p>I also discovered that drinking more water was non-negotiable. Fiber absorbs water, and if you're not hydrating enough alongside the increase, you'll feel it. I went from maybe 4 glasses a day to 8, and it made a noticeable difference in how I felt.</p>
+
+    <h2>Week 3: Hitting the Groove</h2>
+
+    <div class="week-card">
+      <div class="week-label">Days 15-21</div>
+      <h3>Consistency, no more bloating, and real changes</h3>
+      <div class="week-stats">
+        <div class="week-stat">
+          <div class="number">27.4g</div>
+          <div class="label">Avg Daily Fiber</div>
+        </div>
+        <div class="week-stat">
+          <div class="number">22.8g</div>
+          <div class="label">Lowest Day</div>
+        </div>
+        <div class="week-stat">
+          <div class="number">33.6g</div>
+          <div class="label">Highest Day</div>
+        </div>
+      </div>
+    </div>
+
+    <p>This is the week where everything clicked. I hit 25g+ on five out of seven days without really thinking about it. The high-fiber foods I'd been experimenting with in Week 2 had become default choices.</p>
+
+    <p>My breakfast was now oatmeal with chia seeds, banana, and raspberries almost every morning (roughly 14g before I left the house). That single habit change meant I only needed another 11-15g across lunch and dinner, which was easy to hit with even moderate fiber awareness.</p>
+
+    <p>Here's a typical Day 18:</p>
+
+    <div class="meal-log">
+      <div class="meal-title">Day 18 &mdash; Full Day</div>
+      <ul>
+        <li>Oatmeal with chia seeds, banana, raspberries <span>14.2g</span></li>
+        <li>Hummus and veggie wrap (whole wheat tortilla) <span>8.4g</span></li>
+        <li>Apple with almond butter <span>5.8g</span></li>
+        <li>Salmon, roasted broccoli, quinoa <span>8.6g</span></li>
+      </ul>
+    </div>
+
+    <p>Total: 37g. And I wasn't stuffing myself or eating anything weird. It was all normal food &mdash; just higher-fiber versions of what I was already eating.</p>
+
+    <p><strong>The digestive changes were unmistakable by this point.</strong> Without getting too graphic, things were more regular and more predictable than they'd been in years. No more of that end-of-day heaviness I used to feel after dinner. I also noticed I was snacking less between meals because the higher-fiber foods kept me full longer. The oatmeal-chia-berry breakfast held me until 12:30 or 1pm without any hunger, when my old egg-and-toast breakfast had me reaching for snacks by 10:30.</p>
+
+    <p>I also started paying attention to my plant count &mdash; the number of unique plant species I ate in a week. Research from the American Gut Project suggests that eating 30+ different plants per week is linked to better gut microbiome diversity. In Week 1, I was eating maybe 8-10 different plants. By Week 3, I was hitting 18-20 without trying very hard, just because I was naturally reaching for a wider variety of fruits, vegetables, legumes, and grains.</p>
+
+    <h2>Week 4: The Results</h2>
+
+    <div class="week-card">
+      <div class="week-label">Days 22-30</div>
+      <h3>The new normal</h3>
+      <div class="week-stats">
+        <div class="week-stat">
+          <div class="number">30.2g</div>
+          <div class="label">Avg Daily Fiber</div>
+        </div>
+        <div class="week-stat">
+          <div class="number">24.1g</div>
+          <div class="label">Lowest Day</div>
+        </div>
+        <div class="week-stat">
+          <div class="number">38.4g</div>
+          <div class="label">Highest Day</div>
+        </div>
+      </div>
+    </div>
+
+    <p>By the final week, hitting 25g felt automatic. My average was 30.2g &mdash; triple where I started. The lowest day of the entire week was 24.1g, which was a busy day where I ate out for lunch and didn't have many high-fiber options. Even then, I was still eating more fiber than my best day in Week 1.</p>
+
+    <p>Here's what I noticed after a full month:</p>
+
+    <h3>Digestion</h3>
+    <p>The most obvious change. Everything was more regular, more comfortable, and more predictable. The bloating from Week 2 was completely gone. My gut had adjusted to the higher fiber load, and it felt better than it had at any point I could remember.</p>
+
+    <h3>Energy</h3>
+    <p>I didn't expect this one, but my energy levels were noticeably more stable. I stopped getting that 2:30pm crash where I'd want to nap at my desk. I think this is partly the fiber (slower glucose absorption means less spiking and crashing) and partly the overall diet improvement &mdash; more whole grains and legumes means more sustained energy.</p>
+
+    <h3>Eating Variety</h3>
+    <p>This was the sneakiest benefit. Chasing fiber naturally pushed me toward a wider variety of foods. I was eating lentils, chickpeas, black beans, edamame, chia seeds, quinoa, barley, and a dozen different fruits and vegetables that I rarely or never ate before. My grocery cart looked completely different than it did a month earlier.</p>
+
+    <h3>What Didn't Change</h3>
+    <p>I want to be honest about this too. I didn't lose weight (wasn't trying to). I didn't have some dramatic skin transformation. I didn't feel like a completely different person. The changes were real but they were practical, not magical. Better digestion, steadier energy, more diverse diet. That's what 30 days of tracking fiber actually got me.</p>
+
+    <h2>The Numbers: 30 Days at a Glance</h2>
+
+    <div class="week-card">
+      <div class="week-stats">
+        <div class="week-stat">
+          <div class="number">9.4g</div>
+          <div class="label">Day 1</div>
+        </div>
+        <div class="week-stat">
+          <div class="number">30.2g</div>
+          <div class="label">Day 30 Avg</div>
+        </div>
+        <div class="week-stat">
+          <div class="number">3x</div>
+          <div class="label">Increase</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Tips From My 30 Days</h2>
+
+    <p>If you're thinking about doing your own fiber challenge, here's what I'd tell you based on what actually worked for me:</p>
+
+    <div class="tip-card">
+      <h4>1. Start by just tracking, not changing</h4>
+      <p>Don't try to overhaul your diet on Day 1. Spend the first 3-5 days logging what you normally eat. You need to see your actual baseline before you can make smart changes. I guarantee it's lower than you think.</p>
+    </div>
+
+    <div class="tip-card">
+      <h4>2. Increase gradually &mdash; 5g per week</h4>
+      <p>I learned this the hard way in Week 2. Going from 11g to 28g in a few days gave me real bloating. A better pace is adding about 5g per week. Your gut bacteria need time to build up the populations that handle higher fiber loads.</p>
+    </div>
+
+    <div class="tip-card">
+      <h4>3. Win at breakfast</h4>
+      <p>The single highest-impact change I made was switching to oatmeal with chia seeds and fruit for breakfast. That one meal puts you at 12-14g before you've even thought about the rest of your day. If you start strong, hitting 25g+ is easy.</p>
+    </div>
+
+    <div class="tip-card">
+      <h4>4. Keep canned beans in your pantry</h4>
+      <p>Canned black beans, chickpeas, and lentils are the cheat code for fiber. They're cheap, they last forever, and half a cup adds 7-8g of fiber to any meal. Throw them in salads, wraps, rice bowls, soups &mdash; anywhere. No cooking required, just rinse and add.</p>
+    </div>
+
+    <div class="tip-card">
+      <h4>5. Drink more water than you think you need</h4>
+      <p>Fiber absorbs water as it moves through your digestive system. If you increase fiber without increasing water, you'll feel sluggish and backed up. I went from about 4 glasses a day to 8, and it made a huge difference in comfort.</p>
+    </div>
+
+    <div class="tip-card">
+      <h4>6. Don't stress about perfect days</h4>
+      <p>Some days I ate out and couldn't control the menu. Some days I was busy and fell back on convenience food. My lowest day in Week 4 was 24.1g &mdash; still short of 25g. It didn't matter. What mattered was the weekly average trending up. Consistency over perfection.</p>
+    </div>
+
+    <div class="tip-card">
+      <h4>7. Track your plant count too</h4>
+      <p>Counting unique plant species per week gave me a secondary goal that pushed me toward variety. Instead of eating black beans every day, I'd rotate between black beans, chickpeas, lentils, and edamame. Instead of just apples, I'd grab raspberries, pears, and kiwis. It made meals more interesting and my gut more diverse.</p>
+    </div>
+
+    <h2>Why Tracking Made the Difference</h2>
+
+    <p>I've tried to "eat healthier" plenty of times before. It never stuck because it was too vague. Eat more vegetables. Choose whole grains. It's good advice but there's no way to measure it, so there's no feedback loop.</p>
+
+    <p>Tracking fiber gave me a single number to focus on each day. Not calories, not macros, not 15 different micronutrients &mdash; just one number. Did I hit 25g? If not, what can I add to get there? That simplicity is what made it sustainable.</p>
+
+    <p>I built <a href="https://apps.apple.com/us/app/fiberup/id6760719879">FiberUp</a> to be exactly that kind of tool. You open the app, log your food, and watch the progress ring fill up. It tracks your daily fiber and your weekly plant count. No calorie counting, no account required, no subscription. Just the one metric that matters if you're trying to improve your gut health.</p>
+
+    <p>If I could go from 9.4g on Day 1 to averaging 30g by Week 4, anyone can. The hardest part is starting. The second hardest part is getting through the first two weeks. After that, it just becomes how you eat.</p>
+
+    <!-- CTA -->
+    <div class="cta-banner">
+      <h3>Ready to start your own 30-day fiber challenge?</h3>
+      <p>FiberUp is free, no account required. Track your fiber intake and plant count starting today.</p>
+      <a href="https://apps.apple.com/us/app/fiberup/id6760719879" class="btn" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download FiberUp — Free
+      </a>
+    </div>
+
+    <!-- FAQ -->
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>What happens when you track fiber for 30 days?</h3>
+      <p>In a 30-day fiber tracking challenge, most people discover they're eating far less fiber than recommended (10-15g vs. the 25-38g target). By tracking consistently and making gradual changes &mdash; adding legumes, whole grains, fruits, and vegetables &mdash; you can expect improved digestion, more consistent energy levels, and a wider variety of plant foods in your diet within a month.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How long does it take to see results from eating more fiber?</h3>
+      <p>Most people notice digestive changes within 1-2 weeks of increasing fiber intake. Initial days may include bloating as your gut adjusts, but by weeks 2-3, digestion typically becomes more regular. Energy improvements and reduced cravings often appear by weeks 3-4. The key is increasing fiber gradually &mdash; adding 5g per week &mdash; rather than all at once.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How much fiber should you eat per day?</h3>
+      <p>The FDA recommends 25g of fiber per day for women and 38g for men based on a 2,000-calorie diet. Most Americans only consume about 10-15g daily. High-fiber foods like lentils (15.6g per cup), black beans (15g per cup), avocado (10g per fruit), and chia seeds (10g per ounce) can help close the gap.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the best app for tracking fiber intake?</h3>
+      <p>FiberUp is a free, dedicated fiber tracking app for iPhone with a USDA-verified food database, barcode scanner, daily progress ring, and plant count tracking. It requires no account and no subscription, making it easy to start a fiber tracking challenge immediately.</p>
+    </div>
+
+  </article>
+
+  <footer>
+    <p>
+      &copy; 2026 FiberUp &nbsp;&middot;&nbsp;
+      <a href="https://apps.apple.com/us/app/fiberup/id6760719879" rel="noopener">App Store</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://acalise.github.io/privacy/">Privacy Policy</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://acalise.github.io">acalise.github.io</a>
+    </p>
+    <p style="margin-top: 8px; font-size: 0.72rem; color: var(--muted2);">
+      fiber tracking results &middot; tracking fiber intake &middot; fiber challenge &middot; 30 day fiber challenge
+    </p>
+  </footer>
+
+</body>
+</html>
