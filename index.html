@@ -9,6 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://acalise.github.io">
   <meta property="og:description" content="Personal website of Anthony Calise">
+  <meta property="og:site_name" content="Anthony Calise">
   <meta name="description" content="Personal website of Anthony Calise">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Anthony Calise">
@@ -20,17 +21,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #131318;
-      --card: #1b1b20;
-      --card-hover: #181822;
-      --border: rgba(255,255,255,0.07);
-      --border-hover: rgba(255,255,255,0.15);
-      --text: #f0f0f5;
-      --muted: #7a7a95;
-      --blue: #4f8ef7;
-      --green: #30d158;
-      --purple: #bf5af2;
-      --orange: #ff9f0a;
+      --bg: #0e0e10;
+      --card: #161618;
+      --card-hover: #1a1a1d;
+      --border: rgba(255,255,255,0.06);
+      --border-hover: rgba(255,255,255,0.14);
+      --text: #e8e8ec;
+      --muted: #6e6e7a;
+      --accent: #e8e8ec;
+      --blue: #5b9cf5;
+      --green: #4ade80;
+      --orange: #f59e42;
+      --red: #ef6b6b;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { overflow-x: hidden; }
@@ -47,13 +49,17 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       padding: 16px 32px;
       display: flex; align-items: center; justify-content: space-between;
-      background: rgba(19,19,24,0.8);
-      backdrop-filter: blur(20px);
+      background: rgba(14,14,16,0.85);
+      backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
     }
-    .nav-logo { font-size: 14px; font-weight: 700; color: var(--text); text-decoration: none; }
+    .nav-logo {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 16px; font-weight: 800; color: var(--text); text-decoration: none;
+      letter-spacing: -0.5px;
+    }
     .nav-links { display: flex; gap: 24px; list-style: none; }
-    .nav-links a { font-size: 13px; font-weight: 500; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .nav-links a { font-size: 12px; font-weight: 500; color: var(--muted); text-decoration: none; transition: color 0.2s; }
     .nav-links a:hover { color: var(--text); }
 
     /* Hero */
@@ -62,119 +68,96 @@
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       padding: 120px 24px 80px;
       position: relative; overflow: hidden;
-      background-image: radial-gradient(circle at 20% 30%, rgba(80, 143, 248, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 70%, rgba(125, 1, 177, 0.15) 0%, transparent 50%);
     }
-    .hero-orb {
-      position: absolute; border-radius: 50%; pointer-events: none;
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 15%; left: 50%; transform: translateX(-50%);
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+      pointer-events: none;
     }
-    .hero-orb-1 {
-      width: 24rem; height: 24rem; top: 25%; left: -5rem;
-      background: rgba(80, 143, 248, 0.2); filter: blur(120px);
-    }
-    .hero-orb-2 {
-      width: 30rem; height: 30rem; bottom: 25%; right: -5rem;
-      background: rgba(125, 1, 177, 0.1); filter: blur(150px);
-    }
-    .hero-grid-overlay {
-      position: absolute; inset: 0; pointer-events: none; opacity: 0.2; mix-blend-mode: overlay;
-    }
-    .hero-grid-overlay svg { width: 100%; height: 100%; }
 
-    /* Glass Card */
-    .glass-card {
-      backdrop-filter: blur(20px);
-      background: rgba(27, 27, 32, 0.4);
-      border-radius: 2.5rem;
-      padding: 1px;
-      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+    /* Hero Card */
+    .hero-card {
+      background: var(--card);
+      border-radius: 20px;
+      border: 1px solid var(--border);
       position: relative;
       z-index: 10;
       width: 100%;
       max-width: 56rem;
+      overflow: hidden;
     }
-    .glass-card-border {
-      position: absolute; inset: 0; border-radius: 2.5rem;
-      border: 1px solid rgba(66, 71, 83, 0.15); pointer-events: none;
-    }
-    .glass-card-inner {
+    .hero-card-inner {
       display: flex; flex-direction: row; gap: 3rem;
-      padding: 4rem; align-items: center;
+      padding: 3.5rem; align-items: center;
     }
-    .glass-card-content { flex: 1; }
-    .glass-card-label {
-      color: #e9b3ff; font-weight: 700; letter-spacing: 0.4em;
-      font-size: 0.75rem; text-transform: uppercase; margin-bottom: 8px;
+    .hero-content { flex: 1; }
+    .hero-label {
+      color: var(--muted); font-weight: 600; letter-spacing: 0.15em;
+      font-size: 11px; text-transform: uppercase; margin-bottom: 12px;
     }
-    .glass-card h1 {
-      font-size: clamp(36px, 6vw, 72px); font-weight: 900;
-      color: #e4e1e9; letter-spacing: -3px; line-height: 0.9;
-      padding: 8px 0;
+    .hero-card h1 {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: clamp(38px, 6vw, 72px); font-weight: 800;
+      color: var(--text); letter-spacing: -3px; line-height: 0.9;
+      padding: 4px 0;
     }
-    .glass-card h1 span {
-      background: linear-gradient(to right, #acc7ff, #e9b3ff, #508ff8);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      display: inline-block; padding-right: 0.1em;
+    .hero-card h1 span {
+      color: var(--muted);
+      font-weight: 400;
     }
-    .glass-card-desc {
-      color: #c2c6d5; font-size: 18px; line-height: 1.6;
-      max-width: 28rem; margin-top: 16px;
+    .hero-desc {
+      color: var(--muted); font-size: 13px; line-height: 1.7;
+      max-width: 26rem; margin-top: 16px;
     }
-    .glass-card-btns {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px;
+    .hero-btns {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 24px;
     }
-    .glow-btn-cyan {
-      display: flex; align-items: center; justify-content: center;
-      padding: 12px 16px; border-radius: 8px;
-      font-weight: 700; font-size: 14px; text-transform: uppercase;
-      letter-spacing: 0.1em; text-decoration: none;
-      border: 1px solid rgba(172, 199, 255, 0.5);
-      box-shadow: 0 0 10px rgba(172, 199, 255, 0.2);
-      background-color: #0e0e13; color: #acc7ff;
-      transition: all 0.3s;
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 10px 20px; border-radius: 8px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-weight: 600; font-size: 12px;
+      letter-spacing: 0.02em; text-decoration: none;
+      transition: all 0.2s ease;
     }
-    .glow-btn-cyan:hover {
-      box-shadow: 0 0 20px rgba(172, 199, 255, 0.4);
-      border-color: #acc7ff;
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border-hover);
     }
-    .glow-btn-violet {
-      display: flex; align-items: center; justify-content: center;
-      padding: 12px 16px; border-radius: 8px;
-      font-weight: 700; font-size: 14px; text-transform: uppercase;
-      letter-spacing: 0.1em; text-decoration: none;
-      border: 1px solid rgba(233, 179, 255, 0.5);
-      box-shadow: 0 0 10px rgba(233, 179, 255, 0.2);
-      background-color: #0e0e13; color: #e9b3ff;
-      transition: all 0.3s;
+    .btn-ghost:hover {
+      border-color: rgba(255,255,255,0.3);
+      color: #fff;
+      transform: translateY(-1px);
     }
-    .glow-btn-violet:hover {
-      box-shadow: 0 0 20px rgba(233, 179, 255, 0.4);
-      border-color: #e9b3ff;
+    .hero-photo {
+      position: relative; width: 300px; flex-shrink: 0;
+      aspect-ratio: 3/4; border-radius: 14px; overflow: hidden;
+      border: 1px solid var(--border);
+      transform: rotate(2deg);
+      transition: transform 0.5s ease;
     }
-    .glass-card-photo {
-      position: relative; width: 320px; flex-shrink: 0;
-      aspect-ratio: 3/4; border-radius: 1.5rem; overflow: hidden;
-      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
-      transform: rotate(3deg); transition: transform 0.7s;
-    }
-    .glass-card:hover .glass-card-photo { transform: rotate(0deg); }
-    .glass-card-photo img {
+    .hero-card:hover .hero-photo { transform: rotate(0deg); }
+    .hero-photo img {
       position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
       object-position: 40% center;
     }
 
     @media (max-width: 768px) {
-      .glass-card-inner {
+      .hero-card-inner {
         flex-direction: column; padding: 2rem; gap: 2rem; text-align: center;
       }
-      .glass-card h1 { font-size: 40px; padding-right: 8px; }
-      .glass-card-desc { max-width: none; }
-      .glass-card-photo {
-        width: 100%; max-width: 280px; transform: rotate(0deg);
+      .hero-card h1 { font-size: 40px; }
+      .hero-desc { max-width: none; }
+      .hero-photo {
+        width: 100%; max-width: 260px; transform: rotate(0deg);
         order: -1;
       }
-      .glass-card { border-radius: 1.5rem; }
-      .glass-card-border { border-radius: 1.5rem; }
+      .hero-btns { justify-content: center; }
+      .hero-card { border-radius: 16px; }
     }
 
     /* Timeline — horizontal on desktop */
@@ -190,9 +173,8 @@
       top: 7px;
       left: 8px;
       right: 8px;
-      height: 2px;
-      background: linear-gradient(to right, #508ff8, #e9b3ff, #acc7ff);
-      opacity: 0.4;
+      height: 1px;
+      background: var(--border-hover);
     }
     .timeline-item {
       position: relative;
@@ -205,37 +187,32 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
-      border: 2px solid #acc7ff;
+      border: 2px solid var(--muted);
       background: var(--bg);
       z-index: 1;
     }
     .timeline-item:last-child .timeline-dot {
-      background: #acc7ff;
-      box-shadow: 0 0 12px rgba(172, 199, 255, 0.5);
+      background: var(--text);
+      border-color: var(--text);
     }
     .timeline-arrow { display: none; }
     .timeline-company {
-      font-size: 20px; font-weight: 800; color: var(--text);
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 18px; font-weight: 700; color: var(--text);
       letter-spacing: -0.5px; text-decoration: none;
       transition: color 0.2s;
     }
-    .timeline-company:hover { color: #acc7ff; }
+    .timeline-company:hover { color: var(--blue); }
     .timeline-role {
-      font-size: 13px; font-weight: 600; color: #acc7ff;
+      font-size: 11px; font-weight: 500; color: var(--blue);
       margin-top: 4px;
     }
     .timeline-date {
-      font-size: 11px; font-weight: 600; color: var(--muted);
-      letter-spacing: 0.5px; margin-top: 4px;
-    }
-    .timeline-tech {
-      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px;
-    }
-    .timeline-tech .tag {
-      font-size: 10px; padding: 3px 10px;
+      font-size: 10px; font-weight: 500; color: var(--muted);
+      letter-spacing: 0.3px; margin-top: 4px;
     }
 
     /* Timeline — vertical on mobile */
@@ -249,9 +226,9 @@
         bottom: 28px;
         left: 7px;
         right: auto;
-        width: 2px;
+        width: 1px;
         height: auto;
-        background: linear-gradient(to bottom, #508ff8, #e9b3ff, #acc7ff);
+        background: var(--border-hover);
       }
       .timeline-item {
         padding-top: 0;
@@ -265,9 +242,6 @@
         top: 28px;
         left: -40px;
       }
-      .timeline-arrow {
-        display: none;
-      }
       .timeline-item:nth-child(1) { order: 4; }
       .timeline-item:nth-child(2) { order: 3; }
       .timeline-item:nth-child(3) { order: 2; }
@@ -277,63 +251,63 @@
     /* Sections */
     section { max-width: 1000px; margin: 0 auto; padding: 48px 24px; scroll-margin-top: 80px; }
     .section-label {
-      font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-left: 2px;
-      margin-bottom: 12px;
+      font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; margin-left: 2px;
+      margin-bottom: 10px;
     }
-    .section-title { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 24px; }
+    .section-title {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 28px; font-weight: 700; letter-spacing: -1px; margin-bottom: 24px;
+    }
 
     /* Cards */
     .card {
-      background: var(--card); border: 1px solid var(--border); border-radius: 16px;
-      overflow: hidden; transition: all 0.3s;
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      overflow: hidden; transition: all 0.2s ease;
     }
-    .card:hover { border-color: var(--border-hover); transform: translateY(-4px); background: var(--card-hover); }
+    .card:hover { border-color: var(--border-hover); transform: translateY(-3px); background: var(--card-hover); }
     .card-img { width: 100%; height: 280px; object-fit: cover; }
     .card-body { padding: 24px; }
-    .card-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
-    .card-desc { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+    .card-title { font-family: 'Inter', -apple-system, sans-serif; font-size: 17px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.3px; }
+    .card-desc { font-size: 12px; color: var(--muted); line-height: 1.7; margin-bottom: 16px; }
     .card-link {
       display: inline-flex; align-items: center; gap: 6px;
-      font-size: 13px; font-weight: 600; text-decoration: none; transition: gap 0.2s;
+      font-size: 12px; font-weight: 600; text-decoration: none; transition: gap 0.2s;
     }
     .card-link:hover { gap: 10px; }
 
-    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 
     /* Featured app card */
     .featured {
       display: grid; grid-template-columns: 120px 1fr; gap: 32px; align-items: center;
-      padding: 40px; background: var(--card); border: 1px solid var(--border); border-radius: 16px;
-      transition: all 0.3s;
+      padding: 36px; background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      transition: all 0.2s ease;
     }
     .featured:hover { border-color: var(--border-hover); background: var(--card-hover); }
     .featured-logo { width: 120px; height: 120px; border-radius: 24px; object-fit: cover; background: #fff; padding: 8px; }
-    .featured-badge {
-      display: inline-block; padding: 4px 12px; border-radius: 100px;
-      font-size: 11px; font-weight: 700; margin-bottom: 8px;
-    }
 
     /* Tag chips */
-    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
     .tag {
-      padding: 4px 12px; border-radius: 6px; font-size: 11px; font-weight: 600;
-      background: rgba(255,255,255,0.05); color: var(--muted);
+      padding: 3px 10px; border-radius: 4px; font-size: 10px; font-weight: 500;
+      background: rgba(255,255,255,0.04); color: var(--muted);
+      border: 1px solid rgba(255,255,255,0.04);
     }
 
     /* Twitter cards */
     .twitter-card {
       display: flex; align-items: center; gap: 20px;
-      padding: 24px; background: var(--card); border: 1px solid var(--border); border-radius: 16px;
-      text-decoration: none; color: var(--text); transition: all 0.3s;
+      padding: 24px; background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      text-decoration: none; color: var(--text); transition: all 0.2s ease;
     }
     .twitter-card:hover { border-color: var(--border-hover); background: var(--card-hover); transform: translateY(-2px); }
     .twitter-avatar {
-      width: 56px; height: 56px; border-radius: 50%;
+      width: 52px; height: 52px; border-radius: 50%;
       flex-shrink: 0; overflow: hidden;
     }
     .twitter-avatar img { width: 100%; height: 100%; object-fit: cover; }
-    .twitter-handle { font-size: 15px; font-weight: 700; }
-    .twitter-desc { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .twitter-handle { font-family: 'Inter', -apple-system, sans-serif; font-size: 15px; font-weight: 700; letter-spacing: -0.3px; }
+    .twitter-desc { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
     /* Footer */
     footer {
@@ -343,14 +317,14 @@
       display: flex; align-items: center; justify-content: space-between;
       flex-wrap: wrap; gap: 16px;
     }
-    .footer-left { font-size: 13px; color: var(--muted); }
+    .footer-left { font-size: 12px; color: var(--muted); }
     .footer-left span { color: var(--text); font-weight: 600; }
     .footer-links { display: flex; gap: 24px; list-style: none; }
-    .footer-links a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .footer-links a { font-size: 12px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: var(--text); }
 
     /* Fade in */
-    .fade { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .fade { opacity: 0; transform: translateY(16px); transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
     .fade.show { opacity: 1; transform: none; }
 
     /* Responsive */
@@ -368,35 +342,29 @@
 
   <nav>
     <a href="/" class="nav-logo">AC</a>
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#apps">Apps</a></li>
+      <li><a href="#opensource">Open Source</a></li>
+      <li><a href="#bots">Bots</a></li>
+      <li><a href="#games">Games</a></li>
+    </ul>
   </nav>
 
   <div class="hero">
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-grid-overlay">
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(172,199,255,0.2)" stroke-width="0.5"/>
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)"/>
-      </svg>
-    </div>
-    <div class="glass-card">
-      <div class="glass-card-border"></div>
-      <div class="glass-card-inner">
-        <div class="glass-card-content">
-          <div class="glass-card-label">Senior Software Engineer</div>
+    <div class="hero-card">
+      <div class="hero-card-inner">
+        <div class="hero-content">
+          <div class="hero-label">Senior Software Engineer</div>
           <h1>Anthony <br><span>Calise</span></h1>
-          <div class="glass-card-btns">
-            <a href="https://linkedin.com/in/acalise" class="glow-btn-cyan" target="_blank">LinkedIn</a>
-            <a href="https://github.com/acalise" class="glow-btn-cyan" target="_blank">GitHub</a>
-            <a href="Anthony Calise Resume 2026.pdf" class="glow-btn-violet" target="_blank">Resume</a>
-            <a href="#apps" class="glow-btn-violet">Projects</a>
+          <div class="hero-btns">
+            <a href="https://linkedin.com/in/acalise" class="btn btn-ghost" target="_blank">LinkedIn</a>
+            <a href="https://github.com/acalise" class="btn btn-ghost" target="_blank">GitHub</a>
+            <a href="Anthony Calise Resume 2026.pdf" class="btn btn-ghost" target="_blank">Resume</a>
+            <a href="#apps" class="btn btn-ghost">Projects</a>
           </div>
         </div>
-        <div class="glass-card-photo">
+        <div class="hero-photo">
           <img src="IMG_7070.jpg" alt="Anthony Calise">
         </div>
       </div>
@@ -406,7 +374,7 @@
   <!-- Experience -->
   <section id="experience">
     <div class="fade">
-      <p class="section-label" style="color: #acc7ff;">Career</p>
+      <p class="section-label" style="color: var(--blue);">Career</p>
       <h2 class="section-title">Experience.</h2>
       <div class="timeline">
         <div class="timeline-item">
@@ -468,12 +436,12 @@
     <div class="fade">
       <p class="section-label" style="color: var(--green);">Built in Public</p>
       <h2 class="section-title">Open source.</h2>
-      <div style="margin-bottom: 24px;">
+      <div style="margin-bottom: 20px;">
         <a href="https://acalise.github.io/ios-screenshot-generator/" target="_blank" style="text-decoration: none;">
           <div class="card">
             <div class="card-body">
               <div class="tags" style="margin-bottom: 12px;">
-                <span class="tag" style="background: rgba(79,142,247,0.1); color: var(--blue);">Web App</span>
+                <span class="tag" style="background: rgba(74,222,128,0.08); color: var(--green);">Web App</span>
               </div>
               <h3 class="card-title" style="color: var(--text);">iOS App Store Screenshot Generator</h3>
               <p class="card-desc">Generate polished App Store screenshots in your browser. Upload a screenshot, customize the headline, background, and typography, then export pixel-perfect PNGs. No server, no sign-up.</p>
@@ -498,7 +466,7 @@
         <div class="card">
           <div class="card-body">
             <div class="tags" style="margin-bottom: 12px;">
-              <span class="tag" style="background: rgba(48,209,88,0.1); color: var(--green);">Boilerplate</span>
+              <span class="tag" style="background: rgba(74,222,128,0.08); color: var(--green);">Boilerplate</span>
             </div>
             <h3 class="card-title" style="color: var(--text);">React Native Boilerplate — Expo, HeroUI, Google AdMob</h3>
             <p class="card-desc">Production-ready Expo starter template with HeroUI Native components, dark/light mode, one-line accent color system, bottom tab navigation, polished onboarding flow, and optional Google AdMob integration.</p>
@@ -520,7 +488,7 @@
   <!-- Twitter Bots -->
   <section id="bots">
     <div class="fade">
-      <p class="section-label" style="color: var(--purple);">Automation</p>
+      <p class="section-label" style="color: var(--red);">Automation</p>
       <h2 class="section-title">Twitter bots.</h2>
       <div class="grid-2">
         <a href="https://x.com/ufcrosternews" target="_blank" class="twitter-card">
