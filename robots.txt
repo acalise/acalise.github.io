@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://acalise.github.io/sitemap.xml
+Sitemap: https://acalise.com/sitemap.xml
