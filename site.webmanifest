@@ -1,0 +1,19 @@
+{
+  "name": "Anthony Calise",
+  "short_name": "AC",
+  "icons": [
+    {
+      "src": "/assets/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "display": "browser",
+  "background_color": "#0e0e10",
+  "theme_color": "#0e0e10"
+}
