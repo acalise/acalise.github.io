@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://acalise.com/tiktok-slideshow/">
+  <title>TikTok Slideshow Skill — Anthony Calise</title>
+  <meta property="og:title" content="TikTok Slideshow — Claude Code Skill">
+  <meta property="og:description" content="Open-source Claude Code skill that turns one idea into a 5-slide vertical slideshow. Browse example output.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://acalise.com/tiktok-slideshow/">
+  <meta property="og:image" content="https://acalise.com/tiktok-slideshow/examples/roman-legion/slide-1.jpg">
+  <meta name="description" content="Open-source Claude Code skill that turns one idea into a 5-slide vertical slideshow. Browse example output across history, science, food, and more.">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0e0e10;
+      --card: #161618;
+      --card-hover: #1a1a1d;
+      --border: rgba(255,255,255,0.06);
+      --border-hover: rgba(255,255,255,0.14);
+      --text: #e8e8ec;
+      --muted: #6e6e7a;
+      --accent: #a78bfa;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { overflow-x: hidden; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 16px 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(14,14,16,0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-size: 16px; font-weight: 800; color: var(--text); text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { font-size: 12px; font-weight: 500; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 120px 24px 80px; }
+
+    .hero-header { text-align: center; margin-bottom: 56px; }
+    .eyebrow { font-size: 11px; font-weight: 600; color: var(--accent); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 20px; }
+    h1 {
+      font-size: clamp(44px, 7vw, 84px);
+      font-weight: 900; line-height: 0.95; letter-spacing: -3px;
+      margin-bottom: 20px;
+    }
+    h1 .dot { color: var(--accent); }
+    .lede { font-size: 17px; color: var(--muted); max-width: 640px; margin: 0 auto 28px; line-height: 1.7; }
+    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 22px; border-radius: 999px;
+      font-size: 14px; font-weight: 600; text-decoration: none;
+      border: 1px solid var(--border-hover);
+      transition: background 0.15s, border-color 0.15s, transform 0.15s;
+    }
+    .btn-primary { background: var(--accent); color: #0e0e10; border-color: var(--accent); }
+    .btn-primary:hover { transform: translateY(-1px); }
+    .btn-ghost { color: var(--text); background: transparent; }
+    .btn-ghost:hover { background: var(--card); }
+
+    .how { max-width: 720px; margin: 72px auto 0; padding: 28px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; }
+    .how h2 { font-size: 20px; font-weight: 700; margin-bottom: 14px; letter-spacing: -0.4px; }
+    .how ol { margin-left: 18px; color: var(--muted); font-size: 14px; line-height: 1.75; }
+    .how code { background: rgba(255,255,255,0.05); color: var(--text); padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+
+    .section-label { font-size: 11px; font-weight: 600; color: var(--accent); letter-spacing: 0.2em; text-transform: uppercase; margin: 96px 0 12px; text-align: center; }
+    .section-title { font-size: clamp(32px, 4vw, 44px); font-weight: 900; letter-spacing: -1.5px; text-align: center; margin-bottom: 48px; }
+
+    .slideshows { display: grid; gap: 80px; }
+
+    .slideshow { }
+    .slideshow-head { margin-bottom: 20px; }
+    .slideshow-title { font-size: 22px; font-weight: 700; letter-spacing: -0.4px; }
+    .slideshow-meta { font-size: 12px; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    .tag { font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; padding: 4px 8px; border-radius: 4px; background: rgba(167,139,250,0.08); color: var(--accent); }
+    .tag.neutral { background: rgba(255,255,255,0.05); color: var(--muted); }
+
+    .slides { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+    .slide { aspect-ratio: 9 / 16; border-radius: 10px; overflow: hidden; background: #000; border: 1px solid var(--border); }
+    .slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    @media (max-width: 640px) {
+      .slides { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    }
+
+    footer { text-align: center; color: var(--muted); font-size: 12px; padding: 64px 24px; border-top: 1px solid var(--border); margin-top: 120px; }
+    footer a { color: var(--muted); text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="nav-logo">AC</a>
+    <ul class="nav-links">
+      <li><a href="https://github.com/acalise/claude-skills" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="hero-header">
+      <div class="eyebrow">Claude Code Skill</div>
+      <h1>TikTok Slideshow<span class="dot">.</span></h1>
+      <p class="lede">Open-source Claude Code skill. One sentence in, a ready-to-post 5-slide vertical slideshow out. Claude writes the copy, Gemini renders the images. Optional MP4 assembly via ffmpeg. Bring your own API key.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/acalise/claude-skills/tree/main/tiktok-slideshow" target="_blank">View on GitHub →</a>
+        <a class="btn btn-ghost" href="#examples">See examples</a>
+      </div>
+    </div>
+
+    <div class="section-label" id="examples">Examples</div>
+    <h2 class="section-title">Five ideas, five slideshows<span style="color: var(--accent);">.</span></h2>
+
+    <div class="slideshows">
+      <section class="slideshow">
+        <div class="slideshow-head">
+          <div class="slideshow-title">The 20-mile march of a Roman legion</div>
+          <div class="slideshow-meta"><span class="tag">minimal</span><span class="tag neutral">history</span></div>
+        </div>
+        <div class="slides">
+          <div class="slide"><img src="examples/roman-legion/slide-1.jpg" alt="Roman legion slide 1" loading="lazy"></div>
+          <div class="slide"><img src="examples/roman-legion/slide-2.jpg" alt="Roman legion slide 2" loading="lazy"></div>
+          <div class="slide"><img src="examples/roman-legion/slide-3.jpg" alt="Roman legion slide 3" loading="lazy"></div>
+          <div class="slide"><img src="examples/roman-legion/slide-4.jpg" alt="Roman legion slide 4" loading="lazy"></div>
+          <div class="slide"><img src="examples/roman-legion/slide-5.jpg" alt="Roman legion slide 5" loading="lazy"></div>
+        </div>
+      </section>
+
+      <section class="slideshow">
+        <div class="slideshow-head">
+          <div class="slideshow-title">Why octopuses taste with their arms</div>
+          <div class="slideshow-meta"><span class="tag">cartoon</span><span class="tag neutral">science</span></div>
+        </div>
+        <div class="slides">
+          <div class="slide"><img src="examples/octopus-taste/slide-1.jpg" alt="Octopus slide 1" loading="lazy"></div>
+          <div class="slide"><img src="examples/octopus-taste/slide-2.jpg" alt="Octopus slide 2" loading="lazy"></div>
+          <div class="slide"><img src="examples/octopus-taste/slide-3.jpg" alt="Octopus slide 3" loading="lazy"></div>
+          <div class="slide"><img src="examples/octopus-taste/slide-4.jpg" alt="Octopus slide 4" loading="lazy"></div>
+          <div class="slide"><img src="examples/octopus-taste/slide-5.jpg" alt="Octopus slide 5" loading="lazy"></div>
+        </div>
+      </section>
+
+      <section class="slideshow">
+        <div class="slideshow-head">
+          <div class="slideshow-title">Why your coffee tastes burnt</div>
+          <div class="slideshow-meta"><span class="tag">minimal</span><span class="tag neutral">food</span></div>
+        </div>
+        <div class="slides">
+          <div class="slide"><img src="examples/coffee-burnt/slide-1.jpg" alt="Coffee slide 1" loading="lazy"></div>
+          <div class="slide"><img src="examples/coffee-burnt/slide-2.jpg" alt="Coffee slide 2" loading="lazy"></div>
+          <div class="slide"><img src="examples/coffee-burnt/slide-3.jpg" alt="Coffee slide 3" loading="lazy"></div>
+          <div class="slide"><img src="examples/coffee-burnt/slide-4.jpg" alt="Coffee slide 4" loading="lazy"></div>
+          <div class="slide"><img src="examples/coffee-burnt/slide-5.jpg" alt="Coffee slide 5" loading="lazy"></div>
+        </div>
+      </section>
+
+      <section class="slideshow">
+        <div class="slideshow-head">
+          <div class="slideshow-title">How bees pick a new hive location</div>
+          <div class="slideshow-meta"><span class="tag">cartoon</span><span class="tag neutral">nature</span></div>
+        </div>
+        <div class="slides">
+          <div class="slide"><img src="examples/bee-hive-vote/slide-1.jpg" alt="Bee slide 1" loading="lazy"></div>
+          <div class="slide"><img src="examples/bee-hive-vote/slide-2.jpg" alt="Bee slide 2" loading="lazy"></div>
+          <div class="slide"><img src="examples/bee-hive-vote/slide-3.jpg" alt="Bee slide 3" loading="lazy"></div>
+          <div class="slide"><img src="examples/bee-hive-vote/slide-4.jpg" alt="Bee slide 4" loading="lazy"></div>
+          <div class="slide"><img src="examples/bee-hive-vote/slide-5.jpg" alt="Bee slide 5" loading="lazy"></div>
+        </div>
+      </section>
+
+      <section class="slideshow">
+        <div class="slideshow-head">
+          <div class="slideshow-title">How submarines hide from sonar</div>
+          <div class="slideshow-meta"><span class="tag">minimal</span><span class="tag neutral">engineering</span></div>
+        </div>
+        <div class="slides">
+          <div class="slide"><img src="examples/submarine-sonar/slide-1.jpg" alt="Submarine slide 1" loading="lazy"></div>
+          <div class="slide"><img src="examples/submarine-sonar/slide-2.jpg" alt="Submarine slide 2" loading="lazy"></div>
+          <div class="slide"><img src="examples/submarine-sonar/slide-3.jpg" alt="Submarine slide 3" loading="lazy"></div>
+          <div class="slide"><img src="examples/submarine-sonar/slide-4.jpg" alt="Submarine slide 4" loading="lazy"></div>
+          <div class="slide"><img src="examples/submarine-sonar/slide-5.jpg" alt="Submarine slide 5" loading="lazy"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    Built with Claude Code and Gemini 3.1 Flash Image. <a href="https://github.com/acalise/claude-skills/tree/main/tiktok-slideshow" target="_blank">Source on GitHub</a>.
+  </footer>
+</body>
+</html>
