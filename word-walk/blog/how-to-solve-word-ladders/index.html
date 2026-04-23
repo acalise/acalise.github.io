@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Solve Word Ladder Puzzles: A Beginner's Guide | Word Walk</title>
+  <meta name="description" content="Learn how to solve word ladder puzzles step by step. The mental model, the search strategy, and the pitfalls to avoid. Works for any word ladder, any length.">
+  <meta name="keywords" content="how to solve word ladder, word ladder guide, word ladder tutorial, solving word ladders, word ladder how to play, word ladder for beginners">
+  <link rel="canonical" href="https://acalise.com/word-walk/blog/how-to-solve-word-ladders/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://acalise.com/word-walk/blog/how-to-solve-word-ladders/">
+  <meta property="og:title" content="How to Solve Word Ladder Puzzles: A Beginner's Guide">
+  <meta property="og:description" content="The mental model, the search strategy, and the pitfalls to avoid.">
+  <meta property="og:image" content="https://acalise.com/word-walk/icon.png">
+  <meta property="og:site_name" content="Word Walk">
+  <meta property="article:published_time" content="2026-04-23">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Solve Word Ladder Puzzles: A Beginner's Guide">
+  <meta name="twitter:description" content="The mental model, the search strategy, and the pitfalls to avoid.">
+  <meta name="twitter:image" content="https://acalise.com/word-walk/icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/assets/favicon-192.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "Article", "headline": "How to Solve Word Ladder Puzzles: A Beginner's Guide",
+    "description": "The mental model, search strategy, and pitfalls to avoid when solving word ladders.",
+    "author": { "@type": "Person", "name": "Anthony Calise", "url": "https://acalise.com" },
+    "publisher": { "@type": "Organization", "name": "Word Walk", "logo": { "@type": "ImageObject", "url": "https://acalise.com/word-walk/icon.png" } },
+    "datePublished": "2026-04-23", "dateModified": "2026-04-23",
+    "image": "https://acalise.com/word-walk/icon.png",
+    "mainEntityOfPage": "https://acalise.com/word-walk/blog/how-to-solve-word-ladders/" }
+  </script>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Word Walk", "item": "https://acalise.com/word-walk/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://acalise.com/word-walk/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "How to Solve Word Ladders", "item": "https://acalise.com/word-walk/blog/how-to-solve-word-ladders/" } ] }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #0a0a0f; --bg2: #12121a; --card: #14141d; --border: rgba(255,184,117,0.18); --accent: #FFB875; --accent2: #E5944D; --accent-light: #FFD4A8; --accent-glow: rgba(255,184,117,0.18); --text: #f5f1ec; --muted: #9ca3af; --muted2: #6b7280; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; background: rgba(10,10,15,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1rem; color: var(--text); }
+    .nav-brand img { width: 32px; height: 32px; border-radius: 8px; }
+    .nav-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #0a0a0f; font-weight: 700; font-size: 0.875rem; padding: 9px 18px; border-radius: 100px; }
+    .nav-cta:hover { background: var(--accent-light); text-decoration: none; }
+    .article-wrapper { max-width: 740px; margin: 0 auto; padding: 100px 24px 80px; }
+    .article-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+    .article-meta .badge { display: inline-flex; align-items: center; gap: 6px; background: var(--accent-glow); border: 1px solid var(--border); color: var(--accent-light); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; }
+    .article-meta .date { font-size: 0.8rem; color: var(--muted); }
+    .article-wrapper h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 20px; }
+    .article-intro { font-size: 1.1rem; color: var(--muted); line-height: 1.7; margin-bottom: 40px; max-width: 640px; }
+    .article-wrapper h2 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; margin: 48px 0 16px; line-height: 1.2; }
+    .article-wrapper h3 { font-size: 1.15rem; font-weight: 700; margin: 32px 0 12px; }
+    .article-wrapper p { font-size: 1rem; line-height: 1.75; color: #d8d0c5; margin-bottom: 16px; }
+    .article-wrapper ul, .article-wrapper ol { padding-left: 24px; margin-bottom: 16px; }
+    .article-wrapper li { font-size: 1rem; line-height: 1.75; color: #d8d0c5; margin-bottom: 8px; }
+    .article-wrapper strong { color: var(--text); }
+    .ladder { display: inline-block; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin: 16px 0; font-family: ui-monospace, 'SF Mono', monospace; font-size: 1.05rem; letter-spacing: 0.1em; color: var(--accent-light); }
+    .cta-banner { background: linear-gradient(135deg, var(--accent2), var(--accent)); border-radius: 16px; padding: 32px; text-align: center; margin: 48px 0; }
+    .cta-banner h3 { font-size: 1.3rem; font-weight: 800; color: #0a0a0f; margin: 0 0 8px; }
+    .cta-banner p { font-size: 0.95rem; color: rgba(10,10,15,0.82); margin-bottom: 20px; }
+    .cta-banner .btn { display: inline-flex; align-items: center; gap: 8px; background: #0a0a0f; color: var(--accent-light); font-weight: 700; font-size: 0.95rem; padding: 14px 28px; border-radius: 100px; }
+    .takeaways { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px 28px; margin: 32px 0; }
+    .takeaways h3 { font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin: 0 0 14px; }
+    .takeaways ul { margin: 0; padding-left: 20px; }
+    .takeaways li { font-size: 0.95rem; margin-bottom: 8px; }
+    footer { text-align: center; padding: 40px 24px; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/word-walk/" class="nav-brand"><img src="../../icon.png" alt="Word Walk icon"><span>Word Walk</span></a>
+    <a href="https://apps.apple.com/us/app/word-walk-daily-word-puzzles/id6758919074" class="nav-cta" rel="noopener">Get on App Store</a>
+  </nav>
+
+  <article class="article-wrapper">
+    <div class="article-meta"><span class="badge">Guide</span><span class="date">Published April 23, 2026</span></div>
+
+    <h1>How to Solve Word Ladder Puzzles: A Beginner's Guide</h1>
+
+    <p class="article-intro">Word ladders look simple. Then you're staring at COLD on top, WARM on the bottom, and your brain just will not produce a middle rung. Been there. Here's the mental model that actually works. It's what fast solvers do without thinking about it.</p>
+
+    <h2>The One-Sentence Method</h2>
+    <p><strong>Look at the target, identify the letters that need to change, and find a path that swaps them one at a time through real words.</strong> That's the whole trick. The rest is practice.</p>
+
+    <h2>Step 1: Line Up the Words</h2>
+    <p>Write the start and target one above the other. Underline the letters that differ.</p>
+    <div class="ladder">C O L D<br>W A R M</div>
+    <p>All four letters differ. That means you need at least four moves. In practice, you'll need more, because not every intermediate letter change lands on a valid word.</p>
+
+    <h2>Step 2: Work From Both Ends</h2>
+    <p>Don't just push forward from the start. Also work backward from the target. If you can find a word that's one step from WARM, you've essentially cut the problem in half.</p>
+    <p>Words one letter from WARM: WARD, WARE, WARS, WARP, WART, WART, WARY, WART; or change the first letter: BARM, FARM, HARM; or the second: WORM, WERM; or the third: WAIM, WAYM (no); or the last: WARE, WARD, WARP, WARS, WART, WARY.</p>
+    <p>Now do the same for COLD: BOLD, CORD, COLD, COLT, COLS, FOLD, GOLD, HOLD, MOLD, SOLD, TOLD.</p>
+    <p>The search space just shrank dramatically.</p>
+
+    <h2>Step 3: Find the Bridge</h2>
+    <p>You're now looking for a short chain that connects one of COLD's neighbors to one of WARM's neighbors. A classic solve:</p>
+    <div class="ladder">COLD → CORD → CARD → WARD → WARM</div>
+    <p>Four moves. One letter per step. Every rung a real word. Clean.</p>
+
+    <div class="cta-banner">
+      <h3>Practice on a fresh ladder every day</h3>
+      <p>Word Walk serves up a new hand-crafted ladder daily. Build the habit, build the skill.</p>
+      <a href="https://apps.apple.com/us/app/word-walk-daily-word-puzzles/id6758919074" class="btn" rel="noopener">Download on App Store →</a>
+    </div>
+
+    <h2>Step 4: When You Get Stuck</h2>
+    <p>Stuck happens. Here's the order of operations I use:</p>
+    <ol>
+      <li><strong>Try changing a different letter.</strong> If swapping the vowel feels like a dead end, swap the last consonant instead.</li>
+      <li><strong>Allow one "sideways" move.</strong> A rung that doesn't obviously reduce distance to the target can still unlock a path. COLD → CORD doesn't share more letters with WARM, but it opens the door.</li>
+      <li><strong>Think in word families.</strong> -ARD, -ORD, -OLD, -OOD are all rich vowel families. Land in a family and your options multiply.</li>
+      <li><strong>Back up one rung.</strong> If you've followed a thread that only produces weird words, the last valid word was probably wrong. Back up and branch.</li>
+    </ol>
+
+    <h2>The Most Common Beginner Mistakes</h2>
+    <ul>
+      <li><strong>Tunnel vision.</strong> You lock onto a plan and don't branch when it stalls. Solve word ladders like a binary tree, not a straight line.</li>
+      <li><strong>Using non-words.</strong> WERE, SARE, DEAD, TARD, some of these are words, some aren't. If you're not sure, it's probably not. Stick to words you'd confidently use in a sentence.</li>
+      <li><strong>Changing two letters.</strong> Easy to miss. Always re-check that your new rung differs from the previous by exactly one letter.</li>
+      <li><strong>Ignoring the target.</strong> If you're 5 rungs deep and your current word shares fewer letters with the target than where you started, you're wandering.</li>
+    </ul>
+
+    <h2>Try This Ladder Now</h2>
+    <p>Put the guide into practice. Solve <strong>HEAD → TAIL</strong> in 5 moves. (It's the original Lewis Carroll ladder from 1877.) Answer at the bottom.</p>
+
+    <div class="takeaways">
+      <h3>Quick Takeaways</h3>
+      <ul>
+        <li>Count the letters that differ. That's your minimum step count.</li>
+        <li>Search forward from start and backward from target. Meet in the middle.</li>
+        <li>Think in word families: -OLD, -ARD, -AIN, -ILL.</li>
+        <li>Allow sideways rungs that don't obviously reduce distance.</li>
+        <li>Back up and branch when you hit a dead end.</li>
+      </ul>
+    </div>
+
+    <h2>Ready For More?</h2>
+    <p>Once you can solve basic ladders, graduate to the <a href="/word-walk/blog/word-ladder-strategy-tips/">advanced strategy tips</a>. Or explore our <a href="/word-walk/blog/four-letter-word-ladders/">4-letter ladder collection</a>, which is the sweet spot for daily practice.</p>
+
+    <p style="color: var(--muted); font-size: 0.9rem; margin-top: 40px;"><strong>HEAD → TAIL solution:</strong> HEAD → HEAL → TEAL → TELL → TALL → TAIL.</p>
+
+    <h2>Related Articles</h2>
+    <ul>
+      <li><a href="/word-walk/blog/what-is-a-word-ladder/">What Is a Word Ladder Puzzle? The Classic Game Explained</a></li>
+      <li><a href="/word-walk/blog/word-ladder-strategy-tips/">7 Word Ladder Strategy Tips (From Beginner to Expert)</a></li>
+      <li><a href="/word-walk/blog/four-letter-word-ladders/">4-Letter Word Ladders: The Sweet Spot</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p>&copy; 2026 Word Walk &middot; <a href="/word-walk/">Home</a> &middot; <a href="/word-walk/blog/">Blog</a> &middot; <a href="https://acalise.com">acalise.com</a></p>
+  </footer>
+
+</body>
+</html>
