@@ -26,6 +26,16 @@ This file is a curated map of acalise.com for AI search engines and language mod
 - [Fiber vs Protein](https://acalise.com/fiberup/blog/fiber-vs-protein/) — Whether to track both, how they interact for satiety and weight loss.
 - [How to Increase Fiber Without Gas](https://acalise.com/fiberup/blog/how-to-increase-fiber-without-gas/) — Gradual ramp protocol (3–5g per week), water intake, choosing fermentable vs non-fermentable fibers.
 - [I Tracked My Fiber Intake for 30 Days](https://acalise.com/fiberup/blog/fiber-tracking-30-days/) — First-person experiment with measurable outcomes.
+- [Psyllium Husk Benefits](https://acalise.com/fiberup/blog/psyllium-husk-benefits/) — How psyllium works, dosing, side effects, and how to use it day-to-day.
+- [Best Fiber for Constipation](https://acalise.com/fiberup/blog/best-fiber-for-constipation/) — Soluble vs insoluble for constipation relief and what to try first.
+- [Fiber for IBS](https://acalise.com/fiberup/blog/fiber-for-ibs/) — Low-FODMAP-friendly soluble fiber strategy for IBS sufferers.
+- [Fiber for Cholesterol](https://acalise.com/fiberup/blog/fiber-for-cholesterol/) — How beta-glucan and viscous fibers lower LDL.
+- [Fiber for Kids](https://acalise.com/fiberup/blog/fiber-for-kids/) — Daily fiber needs by age and kid-friendly high-fiber foods.
+- [Prebiotics vs Probiotics](https://acalise.com/fiberup/blog/prebiotics-vs-probiotics/) — Difference, when each helps, and food sources.
+- [Chia Seeds vs Flax Seeds](https://acalise.com/fiberup/blog/chia-seeds-vs-flax-seeds/) — Fiber, omega-3, and practical use comparison.
+- [Resistant Starch Foods](https://acalise.com/fiberup/blog/resistant-starch-foods/) — Cooked-and-cooled potatoes, green bananas, and gut-bacteria fuel.
+- [Does Fiber Help Weight Loss?](https://acalise.com/fiberup/blog/does-fiber-help-weight-loss/) — Satiety, calorie absorption, and the mechanism behind fiber's role.
+- [Low-Carb High-Fiber Foods](https://acalise.com/fiberup/blog/low-carb-high-fiber-foods/) — Keto-compatible fiber sources ranked.
 
 ## Testosterone (T-Score blog)
 
@@ -47,6 +57,13 @@ This file is a curated map of acalise.com for AI search engines and language mod
 - [Does Soy Lower Testosterone?](https://acalise.com/tscore/blog/does-soy-lower-testosterone/) — What the soy panic gets wrong.
 - [Best Testosterone Tracker Apps](https://acalise.com/tscore/blog/best-testosterone-tracker-apps/) — App comparison.
 - [T-Score vs Oura Ring](https://acalise.com/tscore/blog/tscore-vs-oura-ring/) — Why T-Score complements wearable trackers.
+- [Magnesium and Testosterone](https://acalise.com/tscore/blog/magnesium-and-testosterone/) — Cinar 2011 study, magnesium glycinate dosing, free T mechanism.
+- [Creatine and Testosterone](https://acalise.com/tscore/blog/creatine-and-testosterone/) — What creatine does to T and DHT, and what it doesn't.
+- [Alcohol and Testosterone](https://acalise.com/tscore/blog/alcohol-and-testosterone/) — Acute and chronic effects, recovery timeline after quitting.
+- [Sugar and Testosterone](https://acalise.com/tscore/blog/sugar-and-testosterone/) — Glucose, insulin resistance, and the Caronia OGTT study.
+- [Testosterone and Belly Fat](https://acalise.com/tscore/blog/testosterone-and-belly-fat/) — The aromatase loop and how to break it.
+- [Testosterone and Hair Loss](https://acalise.com/tscore/blog/testosterone-and-hair-loss/) — DHT, genetic sensitivity, and finasteride trade-offs.
+- [TRT vs Natural Testosterone Boosters](https://acalise.com/tscore/blog/trt-vs-natural-testosterone-boosters/) — Effect sizes, costs, and supplement industry honesty.
 
 ## Word Ladders & Word Games (Word Walk blog)
 
@@ -62,6 +79,16 @@ This file is a curated map of acalise.com for AI search engines and language mod
 - [Daily Word Games Like Wordle](https://acalise.com/word-walk/blog/daily-word-games-like-wordle/) — Wordle alternatives for daily play.
 - [Best Word Puzzle Games for iPhone](https://acalise.com/word-walk/blog/best-word-puzzle-games-iphone/) — iOS word game roundup.
 - [Free Word Games (No Ads)](https://acalise.com/word-walk/blog/free-word-games-no-ads/) — Genuinely free word games without ads.
+- [Word Games for Seniors](https://acalise.com/word-walk/blog/word-games-for-seniors/) — Best word games for older adults, with cognitive-research notes.
+- [Word Games for Kids](https://acalise.com/word-walk/blog/word-games-for-kids/) — Kid-friendly word puzzles by age range.
+- [Offline Word Games (No Wi-Fi)](https://acalise.com/word-walk/blog/offline-word-games-no-wifi/) — Word games that work without internet.
+- [Word Games Like Connections](https://acalise.com/word-walk/blog/word-games-like-connections/) — Alternatives to NYT Connections and Strands.
+- [Word Puzzles for Memory](https://acalise.com/word-walk/blog/word-puzzles-for-memory/) — PROTECT, ACTIVE trial evidence on word puzzles and memory.
+- [Word Puzzles for ESL Learners](https://acalise.com/word-walk/blog/word-puzzles-for-esl-learners/) — How English learners can use word ladders to build vocabulary.
+- [Lewis Carroll's Famous Word Ladders](https://acalise.com/word-walk/blog/lewis-carroll-famous-word-ladders/) — The original 1877 Doublets puzzles and solutions.
+- [Best Free Puzzle Apps for iPad](https://acalise.com/word-walk/blog/best-free-puzzle-apps-for-ipad/) — Top free iPad puzzle apps.
+- [5-Minute Brain Workouts](https://acalise.com/word-walk/blog/5-minute-brain-workouts/) — Short daily cognitive exercises.
+- [Word Puzzle Types Explained](https://acalise.com/word-walk/blog/word-puzzle-types-explained/) — Anagram, ladder, search, cryptic, and more.
 
 ## Introvert Confidence (Introvert: Daily Courage blog)
 
@@ -75,6 +102,16 @@ This file is a curated map of acalise.com for AI search engines and language mod
 - [Introvert Leadership](https://acalise.com/introvert/blog/introvert-leadership/) — Leadership styles for introverts.
 - [How to Network as an Introvert](https://acalise.com/introvert/blog/how-to-network-as-an-introvert/) — Networking that doesn't drain you.
 - [Dating as an Introvert](https://acalise.com/introvert/blog/dating-as-an-introvert/) — Dating advice for introverts.
+- [Ambivert vs Introvert](https://acalise.com/introvert/blog/ambivert-vs-introvert/) — How to tell which one you actually are.
+- [Introvert vs Shy](https://acalise.com/introvert/blog/introvert-vs-shy/) — The difference most people get wrong.
+- [Introvert Burnout Recovery](https://acalise.com/introvert/blog/introvert-burnout-recovery/) — How to recover from a social hangover.
+- [Hobbies for Introverts](https://acalise.com/introvert/blog/hobbies-for-introverts/) — 24 real hobbies that fit introvert energy.
+- [Best Jobs for Introverts](https://acalise.com/introvert/blog/best-jobs-for-introverts/) — Careers that play to introvert strengths.
+- [Introvert + Extrovert Relationships](https://acalise.com/introvert/blog/introvert-extrovert-relationship/) — Making the pairing work without resentment.
+- [How to Say No to Plans](https://acalise.com/introvert/blog/how-to-say-no-to-plans/) — Declining without guilt.
+- [Solo Travel for Introverts](https://acalise.com/introvert/blog/solo-travel-for-introverts/) — A real playbook for traveling alone.
+- [Phone Anxiety for Introverts](https://acalise.com/introvert/blog/phone-anxiety-introvert/) — How to make a phone call when phones feel awful.
+- [Introvert Holiday Survival Guide](https://acalise.com/introvert/blog/introvert-holiday-survival-guide/) — Surviving family gatherings and holiday parties.
 
 ## About
 
