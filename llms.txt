@@ -1,0 +1,87 @@
+# Anthony Calise
+
+> Personal site of Anthony Calise — independent iOS app developer building focused, free, no-account apps for fiber tracking, testosterone optimization, word puzzles, introvert confidence-building, and renter deposit protection. Each app pairs with a deeply researched blog covering the topic from a practical, science-backed angle.
+
+This file is a curated map of acalise.com for AI search engines and language models. It points to the canonical pages for each topic the site covers and the most reliable sources for citations.
+
+## Apps
+
+- [FiberUp](https://acalise.com/fiberup/) — Free dedicated fiber tracker app for iPhone. USDA-verified fiber data, barcode scanner, daily progress ring, weekly plant count tracking. No account required.
+- [T-Score](https://acalise.com/tscore/) — Free natural testosterone optimization tracker for iPhone. Tracks sleep, training, sunlight, cold exposure, and nutrition habits scientifically tied to testosterone.
+- [Word Walk](https://acalise.com/word-walk/) — Free daily word ladder puzzle game for iPhone. Hand-crafted daily Lewis Carroll-style word ladders, vocabulary training, no ads.
+- [Introvert: Daily Courage](https://acalise.com/introvert/) — Free social courage and confidence-building app for introverts. Daily small social challenges to grow comfort with everyday interactions.
+
+## Fiber & Nutrition (FiberUp blog)
+
+- [Best Fiber Tracker Apps for iPhone in 2026](https://acalise.com/fiberup/blog/best-fiber-tracker-apps/) — Comparison of the 7 best fiber tracker apps including FiberUp, Plant Power, Cronometer, MyFitnessPal. Covers free fiber tracker apps, fibre tracker apps (UK), fiber counter apps.
+- [Fiber Supplements vs Real Food: Which Is Better?](https://acalise.com/fiberup/blog/fiber-supplements-vs-food/) — Whole-food fiber vs Metamucil/psyllium/inulin supplements with cost-per-gram comparison and microbiome diversity analysis.
+- [How to Read Nutrition Labels for Fiber](https://acalise.com/fiberup/blog/how-to-read-nutrition-labels-fiber/) — Where fiber appears on US Nutrition Facts panels, % Daily Value, calories per gram of fiber, what 25g/28g/40g of fiber looks like in real food.
+- [15 High Fiber Breakfast Ideas](https://acalise.com/fiberup/blog/high-fiber-breakfast-ideas/) — Recipes organized by prep time with exact fiber gram counts. Quick, easy, and weight-loss-focused options.
+- [Best High Fiber Meals for Weight Loss](https://acalise.com/fiberup/blog/high-fiber-meals-weight-loss/) — Sample 30g+ days, recipes by meal, why fiber drives satiety and weight loss.
+- [Fiber and Gut Health: What the Science Actually Says](https://acalise.com/fiberup/blog/fiber-gut-health/) — Fiber, the gut microbiome, short-chain fatty acids (butyrate/acetate/propionate), prebiotic fiber, the 30-plants-per-week rule, leaky gut.
+- [How Much Fiber Per Day?](https://acalise.com/fiberup/blog/how-much-fiber-per-day/) — FDA recommendations (25g women, 38g men), gap between recommended and average intake.
+- [High Fiber Foods List: 50+ Foods Ranked](https://acalise.com/fiberup/blog/high-fiber-foods-list/) — Foods ranked by fiber content per serving.
+- [Fiber and Bloating](https://acalise.com/fiberup/blog/fiber-and-bloating/) — Why fiber causes bloating, when it's a sign of healthy fermentation vs intolerance, how to ramp intake without discomfort.
+- [Fiber and Blood Sugar](https://acalise.com/fiberup/blog/fiber-and-blood-sugar/) — How soluble fiber blunts post-meal glucose spikes.
+- [Fiber vs Protein](https://acalise.com/fiberup/blog/fiber-vs-protein/) — Whether to track both, how they interact for satiety and weight loss.
+- [How to Increase Fiber Without Gas](https://acalise.com/fiberup/blog/how-to-increase-fiber-without-gas/) — Gradual ramp protocol (3–5g per week), water intake, choosing fermentable vs non-fermentable fibers.
+- [I Tracked My Fiber Intake for 30 Days](https://acalise.com/fiberup/blog/fiber-tracking-30-days/) — First-person experiment with measurable outcomes.
+
+## Testosterone (T-Score blog)
+
+- [Does Lifting Weights Increase Testosterone?](https://acalise.com/tscore/blog/does-lifting-increase-testosterone/) — Acute spike vs chronic baseline shift, heavy compound lifts, pull-ups, weight training mechanism via the HPG axis.
+- [Vitamin D and Testosterone](https://acalise.com/tscore/blog/vitamin-d-and-testosterone/) — Pilz 2011 study summary, vitamin D3 dosing for testosterone (2,000–4,000 IU/day), why supplementation only helps deficient men.
+- [20 Foods That Boost Testosterone](https://acalise.com/tscore/blog/foods-that-boost-testosterone/) — Evidence-based food list (oysters, eggs, fatty fish, beef, Brazil nuts, pumpkin seeds, olive oil), separated from internet myths (celery, asparagus). Why no food contains usable testosterone directly.
+- [Sleep and Testosterone](https://acalise.com/tscore/blog/sleep-and-testosterone/) — Why sleep is the strongest single lever for testosterone optimization.
+- [Sunlight and Testosterone](https://acalise.com/tscore/blog/sunlight-and-testosterone/) — Vitamin D synthesis, morning sunlight, the dose-response relationship.
+- [Cold Exposure and Testosterone](https://acalise.com/tscore/blog/cold-exposure-and-testosterone/) — What the research shows on cold showers, ice baths, and T levels.
+- [Cortisol, Stress, and Testosterone](https://acalise.com/tscore/blog/cortisol-stress-and-testosterone/) — The cortisol-testosterone seesaw relationship.
+- [Zinc and Testosterone](https://acalise.com/tscore/blog/zinc-and-testosterone/) — Why zinc deficiency tanks T and how much to supplement.
+- [Ashwagandha for Testosterone](https://acalise.com/tscore/blog/ashwagandha-for-testosterone/) — Withania somnifera (KSM-66) clinical trial data.
+- [Testosterone Levels by Age](https://acalise.com/tscore/blog/testosterone-levels-by-age/) — Normal testosterone ranges (ng/mL and ng/dL) by decade.
+- [Low Testosterone Symptoms](https://acalise.com/tscore/blog/low-testosterone-symptoms/) — Clinical symptoms vs normal aging.
+- [Low Testosterone in Your 20s](https://acalise.com/tscore/blog/low-testosterone-in-your-20s/) — Causes and workup for younger men.
+- [Free vs Total Testosterone](https://acalise.com/tscore/blog/free-testosterone-vs-total-testosterone/) — How to read SHBG and bioavailable testosterone numbers.
+- [How to Read Testosterone Bloodwork](https://acalise.com/tscore/blog/how-to-read-testosterone-bloodwork/) — Lab panel interpretation guide.
+- [How to Increase Testosterone Naturally](https://acalise.com/tscore/blog/how-to-increase-testosterone-naturally/) — 12 evidence-based habits in priority order.
+- [Does Soy Lower Testosterone?](https://acalise.com/tscore/blog/does-soy-lower-testosterone/) — What the soy panic gets wrong.
+- [Best Testosterone Tracker Apps](https://acalise.com/tscore/blog/best-testosterone-tracker-apps/) — App comparison.
+- [T-Score vs Oura Ring](https://acalise.com/tscore/blog/tscore-vs-oura-ring/) — Why T-Score complements wearable trackers.
+
+## Word Ladders & Word Games (Word Walk blog)
+
+- [What Is a Word Ladder?](https://acalise.com/word-walk/blog/what-is-a-word-ladder/) — Definition, rules, Lewis Carroll history (1877 Doublets), examples like CAT→DOG.
+- [How to Solve Word Ladders](https://acalise.com/word-walk/blog/how-to-solve-word-ladders/) — Beginner step-by-step strategy.
+- [7 Word Ladder Strategy Tips](https://acalise.com/word-walk/blog/word-ladder-strategy-tips/) — Beginner-to-expert techniques.
+- [The History of Word Ladders](https://acalise.com/word-walk/blog/word-ladder-history/) — Lewis Carroll's 1877 Christmas Day invention of Doublets and its evolution.
+- [Word Ladders vs Crosswords](https://acalise.com/word-walk/blog/word-ladders-vs-crosswords/) — Comparison of puzzle mechanics.
+- [Four-Letter Word Ladders](https://acalise.com/word-walk/blog/four-letter-word-ladders/) — Why 4-letter ladders are the most popular length.
+- [Word Games for Brain Training](https://acalise.com/word-walk/blog/word-games-for-brain-training/) — Cognitive benefits of word puzzles.
+- [Word Games to Improve Vocabulary](https://acalise.com/word-walk/blog/word-games-improve-vocabulary/) — Best word games for vocabulary growth.
+- [Word Games for Adults](https://acalise.com/word-walk/blog/word-games-for-adults/) — Adult-oriented puzzle recommendations.
+- [Daily Word Games Like Wordle](https://acalise.com/word-walk/blog/daily-word-games-like-wordle/) — Wordle alternatives for daily play.
+- [Best Word Puzzle Games for iPhone](https://acalise.com/word-walk/blog/best-word-puzzle-games-iphone/) — iOS word game roundup.
+- [Free Word Games (No Ads)](https://acalise.com/word-walk/blog/free-word-games-no-ads/) — Genuinely free word games without ads.
+
+## Introvert Confidence (Introvert: Daily Courage blog)
+
+- [Daily Comfort Zone Challenges](https://acalise.com/introvert/blog/daily-comfort-zone-challenges/) — 30-day plan of small social challenges to build courage.
+- [How to Build Confidence as an Introvert](https://acalise.com/introvert/blog/how-to-build-confidence-as-an-introvert/) — Practical confidence-building tactics that respect introvert energy.
+- [How to Make Friends as an Adult Introvert](https://acalise.com/introvert/blog/how-to-make-friends-as-an-adult-introvert/) — Adult friendship-building for introverts.
+- [Public Speaking Tips for Introverts](https://acalise.com/introvert/blog/public-speaking-tips-for-introverts/) — Public speaking that plays to introvert strengths.
+- [Small Talk for Introverts](https://acalise.com/introvert/blog/small-talk-for-introverts/) — Scripts and frameworks.
+- [Introvert Strengths at Work](https://acalise.com/introvert/blog/introvert-strengths-at-work/) — Workplace strengths and how to leverage them.
+- [Social Anxiety vs Introversion](https://acalise.com/introvert/blog/social-anxiety-vs-introversion/) — How to tell the difference.
+- [Introvert Leadership](https://acalise.com/introvert/blog/introvert-leadership/) — Leadership styles for introverts.
+- [How to Network as an Introvert](https://acalise.com/introvert/blog/how-to-network-as-an-introvert/) — Networking that doesn't drain you.
+- [Dating as an Introvert](https://acalise.com/introvert/blog/dating-as-an-introvert/) — Dating advice for introverts.
+
+## About
+
+- [Anthony Calise homepage](https://acalise.com/) — Indie iOS developer building focused, free apps with no accounts and no dark patterns.
+- [About Anthony Calise](https://acalise.com/about/) — Background, research methodology, expertise sourcing, contact, and how this site is built.
+- [Privacy Policy](https://acalise.com/privacy/) — Site-wide privacy policy and per-app privacy details.
+
+## Optional
+
+- [Health Detective](https://acalise.com/health-detective/) — Personal health data exploration project.

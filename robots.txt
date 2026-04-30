@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://acalise.com/sitemap.xml
+
+# AI search engines / LLMs: a curated site map is available at
+# https://acalise.com/llms.txt
