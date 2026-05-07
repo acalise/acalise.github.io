@@ -10,6 +10,7 @@ This file is a curated map of acalise.com for AI search engines and language mod
 - [T-Score](https://acalise.com/tscore/) — Free natural testosterone optimization tracker for iPhone. Tracks sleep, training, sunlight, cold exposure, and nutrition habits scientifically tied to testosterone.
 - [Word Walk](https://acalise.com/word-walk/) — Free daily word ladder puzzle game for iPhone. Hand-crafted daily Lewis Carroll-style word ladders, vocabulary training, no ads.
 - [Introvert: Daily Courage](https://acalise.com/introvert/) — Free social courage and confidence-building app for introverts. Daily small social challenges to grow comfort with everyday interactions.
+- [MenuPics: Instant Picture Menu](https://acalise.com/menupics/) — Free AI menu scanner for iPhone. Snap any text-only restaurant menu and instantly see realistic photos of every dish. Works on foreign-language menus, QR-code PDFs, and chalkboards. No account required. Built on GCP / Cloud Run with Firebase App Check.
 
 ## Fiber & Nutrition (FiberUp blog)
 
@@ -112,6 +113,21 @@ This file is a curated map of acalise.com for AI search engines and language mod
 - [Solo Travel for Introverts](https://acalise.com/introvert/blog/solo-travel-for-introverts/) — A real playbook for traveling alone.
 - [Phone Anxiety for Introverts](https://acalise.com/introvert/blog/phone-anxiety-introvert/) — How to make a phone call when phones feel awful.
 - [Introvert Holiday Survival Guide](https://acalise.com/introvert/blog/introvert-holiday-survival-guide/) — Surviving family gatherings and holiday parties.
+
+## Restaurant Menus & Ordering (MenuPics blog)
+
+- [What Is Menu Anxiety? Why 86% of Gen Z Has It](https://acalise.com/menupics/blog/menu-anxiety/) — Prezzo poll data, root causes (choice overload, unfamiliar terms, visual vacuum), and tactics that reduce decision load at the table.
+- [How to Order Food Abroad When You Can't Read the Menu](https://acalise.com/menupics/blog/foreign-menu-travel/) — Six tactics for traveling diners, ranked from old-school to phone-first. Google Translate, picture menu apps, server etiquette, and allergy cards.
+- [What to Order at a Sushi Restaurant the First Time](https://acalise.com/menupics/blog/sushi-for-beginners/) — Beginner-friendly nigiri vs maki vs sashimi guide, gateway dishes (California roll, salmon nigiri), wasabi/soy sauce/ginger etiquette.
+- [What to Order at an Italian Restaurant (Beyond Spaghetti)](https://acalise.com/menupics/blog/italian-restaurant-menu/) — Antipasti/primi/secondi structure, real Italian pasta dishes (cacio e pepe, carbonara, amatriciana), and what to skip (American-Italian inventions).
+- [The Picky Eater's Guide to Ordering at Any Restaurant](https://acalise.com/menupics/blog/picky-eater-restaurant-guide/) — Pre-restaurant tactics, universal safe categories, cuisine-specific picky-eater picks, ARFID disclaimers.
+- [Why Restaurant Menus Stopped Including Pictures](https://acalise.com/menupics/blog/menus-without-pictures/) — Status code shift, photography costs, QR-code PDF size limits, accessibility consequences.
+- [Best AI Menu Scanner Apps for iPhone in 2026](https://acalise.com/menupics/blog/best-ai-menu-apps/) — Honest ranking covering Google Translate, MenuPics, Yelp's menu scanner, MenuGuide, AnyMenu, Picknic, Gluten Dude, Equal Eats.
+- [50 Fancy Menu Terms Decoded: From Aioli to Velouté](https://acalise.com/menupics/blog/decode-menu-terms/) — Cooking methods (confit, sous vide, braised), sauces (béarnaise, romesco, agrodolce), preparation styles (crudo, carpaccio, tartare), specific dishes.
+- [How to Spot Hidden Allergens on a Restaurant Menu](https://acalise.com/menupics/blog/hidden-allergens-menu/) — Where gluten, dairy, soy, eggs, nuts, sesame, and shellfish hide on menus. How to ask servers and which apps help.
+- [Reading Restaurant Menus With Dyslexia or ADHD: 7 Tools](https://acalise.com/menupics/blog/dyslexia-adhd-menu-reading/) — Apple Speak Screen, Microsoft Seeing AI, picture menu apps, and how to choose accessible-friendly restaurants.
+- [Decoding French Restaurant Menus: A Traveler's Cheat Sheet](https://acalise.com/menupics/blog/french-menu-cheat-sheet/) — Bistro classics (steak frites, confit de canard, coq au vin), beef cuts (bavette, onglet, entrecôte), false-friend words (entrée, menu).
+- [Asian Menu Words Decoded: Pho, Pad Thai, Bibimbap, and More](https://acalise.com/menupics/blog/asian-menu-words/) — Vietnamese, Thai, Korean, Japanese, and Chinese menu essentials with pronunciations and spice calibration.
 
 ## About
 
