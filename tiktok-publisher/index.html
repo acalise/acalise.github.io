@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://acalise.com/tiktok-publisher/">
+  <title>TikTok Publisher</title>
+  <meta name="description" content="A personal scheduling tool that publishes pre-generated slideshow content to a small set of TikTok accounts owned and operated by Anthony Calise.">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/assets/favicon-192.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #FAFAFA; color: #333; padding: 48px 24px; max-width: 720px; margin: 0 auto; line-height: 1.7; }
+    h1 { font-size: 32px; color: #1a1a1a; margin-bottom: 8px; }
+    .tag { font-size: 14px; color: #888; margin-bottom: 32px; }
+    h2 { font-size: 20px; color: #1a1a1a; margin-top: 32px; margin-bottom: 12px; }
+    p, li { font-size: 16px; margin-bottom: 12px; }
+    ul { padding-left: 24px; margin-bottom: 16px; }
+    a { color: #1a1a1a; }
+    a:hover { color: #FE2C55; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 14px; color: #888; text-decoration: none; }
+    .back:hover { color: #1a1a1a; }
+    .links { margin-top: 40px; padding-top: 24px; border-top: 1px solid #eee; font-size: 15px; }
+    .links a { display: inline-block; margin-right: 16px; }
+  </style>
+</head>
+<body>
+  <a class="back" href="/">&larr; Home</a>
+  <h1>TikTok Publisher</h1>
+  <p class="tag">A personal posting tool for accounts owned by Anthony Calise.</p>
+
+  <h2>What it does</h2>
+  <p>TikTok Publisher is a private automation script that publishes pre-generated slideshow posts (images plus captions) to a small set of TikTok accounts that I personally own and operate. It is not a multi-tenant product, not offered to other creators, and not available for download or sign-up.</p>
+
+  <h2>Accounts published to</h2>
+  <ul>
+    <li>@yourgutbestie &mdash; gut health educational content</li>
+    <li>@fuelmodemedia &mdash; nutrition educational content</li>
+    <li>@testosterone.score &mdash; men's health educational content</li>
+    <li>@mayaoutside &mdash; lifestyle content</li>
+  </ul>
+  <p>Each of these accounts is owned by me. I authorize the integration once per account using the standard TikTok OAuth flow.</p>
+
+  <h2>How it works</h2>
+  <ul>
+    <li>A local script generates a 5&ndash;10 image carousel and a caption for an account.</li>
+    <li>The images are uploaded to a verified URL prefix on this domain.</li>
+    <li>The script calls the TikTok Content Posting API (Direct Post, photo) to publish the carousel to the authorized account.</li>
+    <li>Once TikTok confirms the upload, the source images are removed from this domain.</li>
+  </ul>
+
+  <h2>Why I built it</h2>
+  <p>The accounts post on a daily cadence. Manually exporting images, switching accounts in the TikTok app, and pasting captions multiple times a day is the bottleneck I am replacing. The integration is a personal time-saver, not a product.</p>
+
+  <h2>Scopes used</h2>
+  <ul>
+    <li><code>video.publish</code> &mdash; required to publish photo carousels via Direct Post.</li>
+  </ul>
+  <p>No other scopes are requested. The integration does not read user data, comments, analytics, follower lists, or messages.</p>
+
+  <div class="links">
+    <a href="/privacy/tiktok-publisher/">Privacy Policy</a>
+    <a href="/terms/tiktok-publisher/">Terms of Use</a>
+    <a href="mailto:anthonydcalise@gmail.com">Contact</a>
+  </div>
+</body>
+</html>
