@@ -15,6 +15,7 @@
   <meta property="og:image" content="https://acalise.com/word-walk/icon.png">
   <meta property="og:site_name" content="Word Walk">
   <meta property="article:published_time" content="2026-04-23">
+  <meta property="article:modified_time" content="2026-05-16">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to Solve Word Ladder Puzzles: A Beginner's Guide">
   <meta name="twitter:description" content="The mental model, the search strategy, and the pitfalls to avoid.">
@@ -31,7 +32,7 @@
     "description": "The mental model, search strategy, and pitfalls to avoid when solving word ladders.",
     "author": { "@type": "Person", "name": "Anthony Calise", "url": "https://acalise.com" },
     "publisher": { "@type": "Organization", "name": "Word Walk", "logo": { "@type": "ImageObject", "url": "https://acalise.com/word-walk/icon.png" } },
-    "datePublished": "2026-04-23", "dateModified": "2026-04-23",
+    "datePublished": "2026-04-23", "dateModified": "2026-05-16",
     "image": "https://acalise.com/word-walk/icon.png",
     "mainEntityOfPage": "https://acalise.com/word-walk/blog/how-to-solve-word-ladders/" }
   </script>
@@ -99,6 +100,9 @@
     .article-meta .date { font-size: 0.8rem; color: var(--muted); }
     .article-wrapper h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 20px; }
     .article-intro { font-size: 1.1rem; color: var(--muted); line-height: 1.7; margin-bottom: 40px; max-width: 640px; }
+    .answer-box { background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 12px; padding: 20px 22px; margin: -12px 0 36px; }
+    .article-wrapper .answer-box h2 { font-size: 0.95rem; font-weight: 800; color: var(--accent); margin: 0 0 10px; line-height: 1.25; }
+    .article-wrapper .answer-box p { margin: 0; color: #e8e0d4; }
     .article-wrapper h2 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; margin: 48px 0 16px; line-height: 1.2; }
     .article-wrapper h3 { font-size: 1.15rem; font-weight: 700; margin: 32px 0 12px; }
     .article-wrapper p { font-size: 1rem; line-height: 1.75; color: #d8d0c5; margin-bottom: 16px; }
@@ -127,11 +131,19 @@
   </nav>
 
   <article class="article-wrapper">
-    <div class="article-meta"><span class="badge">Guide</span><span class="date">Published April 23, 2026</span></div>
+    <div class="article-meta"><span class="badge">Guide</span><span class="date">Published April 23, 2026</span>
+      <span class="date">By Anthony Calise</span>
+      <span class="date">Updated May 16, 2026</span>
+    </div>
 
     <h1>How to Solve Word Ladder Puzzles: A Beginner's Guide</h1>
 
     <p class="article-intro">Word ladders look simple. Then you're staring at COLD on top, WARM on the bottom, and your brain just will not produce a middle rung. Been there. Here's the mental model that actually works. It's what fast solvers do without thinking about it.</p>
+
+    <section class="answer-box" aria-labelledby="quick-answer">
+      <h2 id="quick-answer">Quick Answer</h2>
+      <p>Learn how to solve word ladder puzzles step by step. The mental model, the search strategy, and the pitfalls to avoid. Works for any word ladder, any length.</p>
+    </section>
 
     <h2>The One-Sentence Method</h2>
     <p><strong>Look at the target, identify the letters that need to change, and find a path that swaps them one at a time through real words.</strong> That's the whole trick. The rest is practice.</p>
