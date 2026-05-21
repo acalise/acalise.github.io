@@ -47,14 +47,14 @@
   <h2>Data sent to TikTok</h2>
   <p>To publish a post, the integration sends to TikTok:</p>
   <ul>
-    <li>A set of image URLs hosted on a verified prefix of acalise.com.</li>
+    <li>A set of image URLs (for a photo carousel) or a single video URL (for a short video), all hosted on a verified prefix of acalise.com.</li>
     <li>A caption, hashtags, and post-visibility settings.</li>
     <li>The OAuth access token for the target account.</li>
   </ul>
 
   <h2>Data storage</h2>
   <p>OAuth tokens are stored locally on the operator's machine in a file outside any source-controlled directory. Tokens are never transmitted to a third party, never shared, and never uploaded to a server we do not control.</p>
-  <p>Slideshow images served from acalise.com are removed within 24 hours of the post publishing successfully. The image URLs are public during the upload window because the TikTok server requires HTTPS GET access without authentication.</p>
+  <p>Photos and videos served from acalise.com are removed within 24 hours of the post publishing successfully. The media URLs are public during the upload window because the TikTok server requires HTTPS GET access without authentication.</p>
 
   <h2>Sharing of data</h2>
   <p>We do not share, sell, lease, or transfer any TikTok-related data to any third party. The only recipient of TikTok-related data is TikTok itself, via the official Content Posting API.</p>
@@ -62,7 +62,7 @@
   <h2>Data retention</h2>
   <ul>
     <li>OAuth tokens: retained until the operator revokes access in TikTok settings or rotates the integration.</li>
-    <li>Slideshow images: removed from acalise.com within 24 hours of a successful publish.</li>
+    <li>Photos and videos: removed from acalise.com within 24 hours of a successful publish.</li>
     <li>Post metadata (timestamps, post IDs returned by TikTok): retained locally for scheduling and deduplication.</li>
   </ul>
 

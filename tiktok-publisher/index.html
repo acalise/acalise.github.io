@@ -35,7 +35,7 @@
   <p class="tag">A personal posting tool for accounts owned by Anthony Calise.</p>
 
   <h2>What it does</h2>
-  <p>TikTok Publisher is a private automation script that publishes pre-generated slideshow posts (images plus captions) to a small set of TikTok accounts that I personally own and operate. It is not a multi-tenant product, not offered to other creators, and not available for download or sign-up.</p>
+  <p>TikTok Publisher is a private automation script that publishes pre-generated photo carousels and short videos (with captions) to a small set of TikTok accounts that I personally own and operate. It is not a multi-tenant product, not offered to other creators, and not available for download or sign-up.</p>
 
   <h2>Accounts published to</h2>
   <ul>
@@ -50,10 +50,10 @@
 
   <h2>How it works</h2>
   <ul>
-    <li>A local script generates a 5&ndash;10 image carousel and a caption for an account.</li>
-    <li>The images are uploaded to a verified URL prefix on this domain.</li>
-    <li>The script calls the TikTok Content Posting API (Direct Post, photo) to publish the carousel to the authorized account.</li>
-    <li>Once TikTok confirms the upload, the source images are removed from this domain.</li>
+    <li>A local script generates either a 5&ndash;10 image carousel or a short 1080&times;1920 mp4, plus a caption.</li>
+    <li>The media is uploaded to a verified URL prefix on this domain.</li>
+    <li>The script calls the TikTok Content Posting API (Direct Post) to publish to the authorized account.</li>
+    <li>Once TikTok confirms the upload, the source media is removed from this domain.</li>
   </ul>
 
   <h2>Why I built it</h2>
@@ -61,9 +61,11 @@
 
   <h2>Scopes used</h2>
   <ul>
-    <li><code>video.publish</code> &mdash; required to publish photo carousels via Direct Post.</li>
+    <li><code>video.publish</code> &mdash; required to publish photos and videos via Direct Post. This is the only scope the integration actively calls.</li>
+    <li><code>user.info.basic</code> &mdash; automatically included by Login Kit because the OAuth flow runs through it. Only the user's <code>open_id</code> is stored.</li>
+    <li><code>video.upload</code> &mdash; automatically included with the Content Posting API product. Not called by this integration.</li>
   </ul>
-  <p>No other scopes are requested. The integration does not read user data, comments, analytics, follower lists, or messages.</p>
+  <p>The integration does not read user data, comments, analytics, follower lists, or messages.</p>
 
   <div class="links">
     <a href="/privacy/tiktok-publisher/">Privacy Policy</a>
