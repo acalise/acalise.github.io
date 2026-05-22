@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="https://acalise.com/privacy/tiktok-publisher/">
-  <title>TikTok Publisher &mdash; Privacy Policy</title>
+  <link rel="canonical" href="https://acalise.com/privacy/acalise-publisher/">
+  <title>Acalise Publisher &mdash; Privacy Policy</title>
   <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
@@ -26,20 +26,17 @@
   </style>
 </head>
 <body>
-  <a class="back" href="/tiktok-publisher/">&larr; TikTok Publisher</a>
-  <h1>TikTok Publisher Privacy Policy</h1>
-  <p class="updated">Last updated: May 7, 2026</p>
+  <a class="back" href="/acalise-publisher/">&larr; Acalise Publisher</a>
+  <h1>Acalise Publisher Privacy Policy</h1>
+  <p class="updated">Last updated: May 21, 2026</p>
 
   <h2>Overview</h2>
-  <p>TikTok Publisher ("the integration") is a personal posting tool used by Anthony Calise ("we", "I") to publish pre-generated content to TikTok accounts that I personally own and operate. The integration is not offered to third parties, not available for sign-up, and does not collect data from anyone other than the operator.</p>
-
-  <h2>Who this policy applies to</h2>
-  <p>The integration only authorizes accounts owned by the operator (currently @yourgutbestie, @fuelmodemedia, @testosterone_score, @mayaoutside, @menupics_app, and @kpop.bias.battle). No other TikTok user authorizes or is involved in the integration.</p>
+  <p>Acalise Publisher ("the integration") is a publishing tool that posts photo carousels and short videos to TikTok via the Content Posting API. This policy describes what data the integration accesses, sends, and stores.</p>
 
   <h2>Data accessed from TikTok</h2>
   <p>The integration accesses only what is required to publish a post via the Content Posting API:</p>
   <ul>
-    <li><strong>OAuth access token, refresh token, and open ID</strong> &mdash; issued by TikTok when the operator authorizes the integration for an owned account. Used to authenticate posting requests.</li>
+    <li><strong>OAuth access token, refresh token, and open ID</strong> &mdash; issued by TikTok when an account authorizes the integration. Used to authenticate posting requests.</li>
     <li><strong>Granted scopes</strong> &mdash; the integration requests <code>video.publish</code> only.</li>
   </ul>
   <p>The integration does not read videos, comments, follower lists, direct messages, analytics, profile data, or any other TikTok content. It does not call any read endpoint.</p>
@@ -53,21 +50,19 @@
   </ul>
 
   <h2>Data storage</h2>
-  <p>OAuth tokens are stored locally on the operator's machine in a file outside any source-controlled directory. Tokens are never transmitted to a third party, never shared, and never uploaded to a server we do not control.</p>
-  <p>Photos and videos served from acalise.com are removed within 24 hours of the post publishing successfully. The media URLs are public during the upload window because the TikTok server requires HTTPS GET access without authentication.</p>
+  <p>OAuth tokens are stored locally and are never transmitted to a third party. Photos and videos served from acalise.com are public during the upload window because the TikTok server requires HTTPS GET access without authentication.</p>
 
   <h2>Sharing of data</h2>
-  <p>We do not share, sell, lease, or transfer any TikTok-related data to any third party. The only recipient of TikTok-related data is TikTok itself, via the official Content Posting API.</p>
+  <p>The integration does not share, sell, lease, or transfer any TikTok-related data to any third party. The only recipient of TikTok-related data is TikTok itself, via the official Content Posting API.</p>
 
   <h2>Data retention</h2>
   <ul>
-    <li>OAuth tokens: retained until the operator revokes access in TikTok settings or rotates the integration.</li>
-    <li>Photos and videos: removed from acalise.com within 24 hours of a successful publish.</li>
+    <li>OAuth tokens: retained until access is revoked in TikTok settings or the integration is rotated.</li>
     <li>Post metadata (timestamps, post IDs returned by TikTok): retained locally for scheduling and deduplication.</li>
   </ul>
 
   <h2>Revoking access</h2>
-  <p>The operator can revoke the integration's access at any time by visiting TikTok &rarr; Settings and Privacy &rarr; Security and Permissions &rarr; Manage app permissions, and removing TikTok Publisher.</p>
+  <p>Access can be revoked at any time by visiting TikTok &rarr; Settings and Privacy &rarr; Security and Permissions &rarr; Manage app permissions, and removing Acalise Publisher.</p>
 
   <h2>Children</h2>
   <p>The integration is not directed to anyone under 13 and does not collect data from children.</p>
