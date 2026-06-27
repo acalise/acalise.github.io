@@ -28,32 +28,41 @@
 <body>
   <a class="back" href="/privacy/">&larr; All Policies</a>
   <h1>FiberUp Privacy Policy</h1>
-  <p class="updated">Last updated: March 19, 2026</p>
+  <p class="updated">Last updated: June 27, 2026</p>
 
   <h2>Overview</h2>
-  <p>FiberUp ("we", "the app") is a fiber tracking app for iOS. We are committed to protecting your privacy. This policy explains what data the app collects, how it is used, and your rights.</p>
+  <p>FiberUp ("we", "the app") is a fiber tracking app for iOS that also offers optional AI meal scanning. We are committed to protecting your privacy. This policy explains what data the app collects, how it is used, and your rights.</p>
 
   <h2>Data Storage</h2>
-  <p>All of your fiber tracking data — including daily logs, food entries, goals, and preferences — is stored locally on your device. We do not operate servers, databases, or cloud storage. Your data never leaves your device except as described below.</p>
+  <p>All of your fiber tracking data — including daily logs, food entries, goals, streaks, and preferences — is stored locally on your device. We do not operate a database of your fiber log or browsing history. Your tracking data never leaves your device except as described below (advertising, barcode lookups, AI meal scanning, and purchase verification).</p>
 
   <h2>No Account Required</h2>
-  <p>FiberUp does not require you to create an account, sign in, or provide any personal information such as your name, email address, or phone number.</p>
+  <p>FiberUp does not require you to create an account, sign in, or provide any personal information such as your name, email address, or phone number. To use AI meal scanning, the app receives a server-issued anonymous identifier the first time you scan, used only to secure and rate-limit requests to our service. This identifier is not linked to your real identity.</p>
+
+  <h2>AI Meal Scanning</h2>
+  <p>FiberUp AI subscribers can scan a meal by taking a photo. When you scan a meal, the photo you capture is sent to our backend service for analysis. The backend uses Google Gemini to identify the foods in the photo and the USDA FoodData Central database to estimate their fiber content. After processing:</p>
+  <ul>
+    <li>The image is not stored on our servers beyond the duration of the request.</li>
+    <li>The AI provider does not retain the image for training purposes (per our service agreements).</li>
+    <li>The estimated results are returned to your device, and are only saved if you choose to log them.</li>
+    <li>We do not associate the image with directly identifying information such as your name, email address, or phone number.</li>
+  </ul>
+
+  <h2>Barcode Scanning</h2>
+  <p>FiberUp requests camera access to scan barcodes on packaged foods and to take meal photos for AI scanning. Barcode scanning is processed on-device in real time; the barcode number (text only, no personal data) is sent to Open Food Facts to look up nutritional information. The camera feed itself is not recorded or stored.</p>
 
   <h2>Advertising</h2>
-  <p>FiberUp uses Google AdMob to display ads. AdMob may collect and use certain data to serve personalized or non-personalized ads, including:</p>
+  <p>FiberUp uses Google AdMob to display ads to users on the free tier. AdMob may collect and use certain data to serve personalized or non-personalized ads, including:</p>
   <ul>
     <li>Device identifiers (IDFA, when permitted)</li>
     <li>IP address</li>
     <li>General location (country/region level)</li>
     <li>App usage data related to ad interactions</li>
   </ul>
-  <p>You can opt out of personalized advertising through your device's privacy settings (Settings &gt; Privacy &gt; Tracking). For more information, see <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+  <p>You can opt out of personalized advertising through your device's privacy settings (Settings &gt; Privacy &amp; Security &gt; Tracking). For more information, see <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
 
-  <h2>In-App Purchases</h2>
-  <p>FiberUp offers an optional "Remove Ads" in-app purchase processed entirely through Apple's App Store. We do not collect or store any payment information. All transactions are handled by Apple. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> for details.</p>
-
-  <h2>Camera</h2>
-  <p>FiberUp requests camera access solely to scan barcodes on packaged food products. Camera data is processed on-device in real time and is not recorded, stored, or transmitted.</p>
+  <h2>Subscriptions and Purchases</h2>
+  <p>FiberUp offers an optional one-time "Remove Ads" purchase and an optional auto-renewable subscription ("FiberUp AI") that unlocks AI meal scanning and removes ads. All purchases and billing are handled entirely through Apple's App Store; we do not collect or store any payment information. Subscription and purchase status is verified through RevenueCat, a third-party subscription management service. RevenueCat receives an anonymous app user ID and your purchase or entitlement status; no name, email address, phone number, or payment details are shared by FiberUp. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> for details on how Apple handles purchases.</p>
 
   <h2>Notifications</h2>
   <p>FiberUp may request permission to send local notifications as daily reminders. Notifications are scheduled locally on your device and do not involve any external servers.</p>
@@ -63,16 +72,19 @@
   <ul>
     <li><strong>Google AdMob</strong> — for displaying advertisements</li>
     <li><strong>Open Food Facts</strong> — for looking up nutritional data from scanned barcodes (barcode numbers are sent to their public API)</li>
+    <li><strong>Google Gemini</strong> — for identifying foods in meal photos during AI scanning (photos are sent for analysis and not stored)</li>
+    <li><strong>USDA FoodData Central</strong> — for estimating fiber content of identified foods (food queries are sent to their public API)</li>
+    <li><strong>RevenueCat</strong> — for subscription and purchase management (an anonymous app user ID and entitlement status are shared)</li>
   </ul>
 
   <h2>Data Sharing</h2>
-  <p>We do not sell, share, or transfer your personal data to third parties, except as described in the Advertising and Third-Party Services sections above.</p>
+  <p>We do not sell, share, or transfer your personal data to third parties, except as described in the Advertising, AI Meal Scanning, Barcode Scanning, and Subscriptions sections above.</p>
 
   <h2>Children's Privacy</h2>
   <p>FiberUp is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
 
   <h2>Data Deletion</h2>
-  <p>Since all data is stored locally on your device, you can delete all FiberUp data at any time by deleting the app from your device.</p>
+  <p>Since all of your tracking data is stored locally on your device, you can delete it at any time by deleting the app. Anonymous purchase records are kept by RevenueCat in accordance with their data retention policy.</p>
 
   <h2>Changes to This Policy</h2>
   <p>We may update this privacy policy from time to time. The updated version will be indicated by the "Last updated" date at the top of this page.</p>
