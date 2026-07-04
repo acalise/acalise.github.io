@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://acalise.com/privacy/fightmode/">
+  <title>FightMode - Privacy Policy</title>
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/assets/favicon-192.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #FAFAFA; color: #333; padding: 48px 24px; max-width: 720px; margin: 0 auto; line-height: 1.7; }
+    h1 { font-size: 28px; color: #1a1a1a; margin-bottom: 8px; }
+    .updated { font-size: 14px; color: #888; margin-bottom: 32px; }
+    h2 { font-size: 20px; color: #1a1a1a; margin-top: 32px; margin-bottom: 12px; }
+    p, li { font-size: 16px; margin-bottom: 12px; }
+    ul { padding-left: 24px; margin-bottom: 16px; }
+    a { color: #D20A2E; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 14px; color: #888; text-decoration: none; }
+    .back:hover { color: #D20A2E; }
+  </style>
+</head>
+<body>
+  <a class="back" href="/privacy/">&larr; All Policies</a>
+  <h1>FightMode Privacy Policy</h1>
+  <p class="updated">Last updated: July 4, 2026</p>
+
+  <h2>Overview</h2>
+  <p>FightMode ("we", "the app") is an iOS app that blocks distracting apps and lets you earn screen time by fighting boxing or kickboxing rounds. It optionally records your rounds for AI coaching analysis. This policy explains what data the app collects, how it is used, and your rights.</p>
+
+  <h2>Data Storage</h2>
+  <p>Your data — earned minutes, streaks, round history, settings, and blocked-app selections — is stored locally on your device. We do not operate a database of your activity. Your data never leaves your device except as described below (AI round analysis and purchase verification).</p>
+
+  <h2>No Account Required</h2>
+  <p>FightMode does not require you to create an account, sign in, or provide any personal information such as your name, email address, or phone number. The name you optionally enter during setup stays on your device and is only used to personalize on-screen text.</p>
+
+  <h2>Screen Time and App Blocking</h2>
+  <p>FightMode uses Apple's Screen Time frameworks (Family Controls, Managed Settings, and Device Activity) to block the apps you choose. Apple provides your app selections to FightMode as opaque tokens — we cannot see which apps you selected, and neither can anyone else. These tokens are stored locally on your device and are never transmitted anywhere. Screen Time authorization is handled entirely by Apple.</p>
+
+  <h2>Camera, Microphone, and Round Recording</h2>
+  <p>FightMode requests camera and microphone access only if you turn on recording for a round. Recording is optional — you can fight every round without it. Recorded videos are saved locally on your device. You can also choose to save a round video to your Photos library, which uses add-only access (the app cannot read your existing photos).</p>
+
+  <h2>AI Round Analysis</h2>
+  <p>If you request an AI scorecard for a recorded round, the video — along with the round's style, target, and the callouts your coach gave — is sent to our backend service for analysis. The backend uses Google Gemini to evaluate your technique and generate the scorecard. After processing:</p>
+  <ul>
+    <li>The video is not stored on our servers beyond the duration of the request.</li>
+    <li>Temporary files created during AI processing are deleted automatically within 48 hours.</li>
+    <li>The AI provider does not retain your video for training purposes (per our service agreements).</li>
+    <li>The scorecard is returned to your device and stored locally with the round.</li>
+    <li>We do not associate the video with directly identifying information such as your name, email address, or phone number.</li>
+  </ul>
+
+  <h2>Coach Voices</h2>
+  <p>Coach callouts during rounds are played from audio files bundled inside the app. No audio is generated, streamed, or transmitted during a round.</p>
+
+  <h2>Subscriptions and Purchases</h2>
+  <p>FightMode offers an optional auto-renewable subscription. All purchases and billing are handled entirely through Apple's App Store; we do not collect or store any payment information. Subscription status is verified through RevenueCat, a third-party subscription management service. RevenueCat receives an anonymous app user ID and your entitlement status; no name, email address, phone number, or payment details are shared by FightMode. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> for details on how Apple handles purchases.</p>
+
+  <h2>Notifications</h2>
+  <p>FightMode may request permission to send local notifications, such as reminders to fight. Notifications are scheduled locally on your device and do not involve any external servers.</p>
+
+  <h2>No Advertising</h2>
+  <p>FightMode does not show ads and does not include any advertising SDKs.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>FightMode uses the following third-party services:</p>
+  <ul>
+    <li><strong>Google Gemini</strong> — for analyzing round videos you submit for an AI scorecard (videos are sent for analysis and not stored)</li>
+    <li><strong>RevenueCat</strong> — for subscription management (an anonymous app user ID and entitlement status are shared)</li>
+  </ul>
+
+  <h2>Data Sharing</h2>
+  <p>We do not sell, share, or transfer your personal data to third parties, except as described in the AI Round Analysis and Subscriptions sections above.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>FightMode is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+  <h2>Data Deletion</h2>
+  <p>Since your data is stored locally on your device, you can delete it at any time by deleting the app. Round videos you saved to your Photos library remain in Photos until you delete them there. Anonymous purchase records are kept by RevenueCat in accordance with their data retention policy.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this privacy policy from time to time. The updated version will be indicated by the "Last updated" date at the top of this page.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions about this privacy policy, you can contact us at <a href="mailto:acalisedev@gmail.com">acalisedev@gmail.com</a>.</p>
+</body>
+</html>
