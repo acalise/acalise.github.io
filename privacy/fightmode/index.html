@@ -28,13 +28,13 @@
 <body>
   <a class="back" href="/privacy/">&larr; All Policies</a>
   <h1>FightMode Privacy Policy</h1>
-  <p class="updated">Last updated: July 4, 2026</p>
+  <p class="updated">Last updated: July 5, 2026</p>
 
   <h2>Overview</h2>
   <p>FightMode ("we", "the app") is an iOS app that blocks distracting apps and lets you earn screen time by fighting boxing or kickboxing rounds. It optionally records your rounds for AI coaching analysis. This policy explains what data the app collects, how it is used, and your rights.</p>
 
   <h2>Data Storage</h2>
-  <p>Your data — earned minutes, streaks, round history, settings, and blocked-app selections — is stored locally on your device. We do not operate a database of your activity. Your data never leaves your device except as described below (AI round analysis and purchase verification).</p>
+  <p>Your data — earned minutes, streaks, round history, settings, and blocked-app selections — is stored locally on your device. We do not operate a database of your activity. Your data never leaves your device except as described below (AI round analysis, purchase verification, anonymous analytics, and advertising attribution).</p>
 
   <h2>No Account Required</h2>
   <p>FightMode does not require you to create an account, sign in, or provide any personal information such as your name, email address, or phone number. The name you optionally enter during setup stays on your device and is only used to personalize on-screen text.</p>
@@ -64,24 +64,34 @@
   <h2>Notifications</h2>
   <p>FightMode may request permission to send local notifications, such as reminders to fight. Notifications are scheduled locally on your device and do not involve any external servers.</p>
 
-  <h2>No Advertising</h2>
-  <p>FightMode does not show ads and does not include any advertising SDKs.</p>
+  <h2>No Ads Inside the App</h2>
+  <p>FightMode does not display any ads and does not show you third-party advertising while you use it. We do, however, run ads for FightMode on other platforms to reach new users, and we measure how those ads perform as described in the two sections below.</p>
+
+  <h2>Analytics</h2>
+  <p>FightMode uses PostHog, a third-party analytics service, to understand how the app is used and to improve it. We record anonymous events such as which screens you open, when a round starts and finishes, and when the paywall is shown. PostHog also captures anonymized session replays of on-screen activity to help us find and fix usability problems. Text you type is masked and is never recorded. This data is tied to a random, anonymous identifier, not to your name. Analytics data is processed on PostHog servers in the United States.</p>
+
+  <h2>Attribution and Advertising</h2>
+  <p>We run ads for FightMode on other platforms, including Apple Search Ads, Meta, and TikTok. To understand which ads bring new users to the app, we use AppsFlyer, a third-party attribution service, together with your device's advertising identifier (IDFA). When you first open the app we ask permission through Apple's App Tracking Transparency prompt. If you decline, FightMode works exactly the same and installs are measured using Apple's privacy-preserving SKAdNetwork instead. For our Apple Search Ads campaigns we use Apple's AdServices attribution, which does not identify you across other companies' apps or websites. Device identifiers and install data may be shared with these advertising and attribution partners solely to measure the performance of our own ads. We do not sell your data.</p>
+  <p>You can turn off tracking at any time in iOS Settings, under Privacy and Security, then Tracking.</p>
 
   <h2>Third-Party Services</h2>
   <p>FightMode uses the following third-party services:</p>
   <ul>
     <li><strong>Google Gemini</strong> — for analyzing round videos you submit for an AI scorecard (videos are sent for analysis and not stored)</li>
     <li><strong>RevenueCat</strong> — for subscription management (an anonymous app user ID and entitlement status are shared)</li>
+    <li><strong>PostHog</strong> — for anonymous product analytics and session replays used to improve the app</li>
+    <li><strong>AppsFlyer</strong> — for measuring which ad campaigns bring new users to the app</li>
+    <li><strong>Apple (Search Ads and SKAdNetwork)</strong> — for privacy-preserving measurement of our own advertising</li>
   </ul>
 
   <h2>Data Sharing</h2>
-  <p>We do not sell, share, or transfer your personal data to third parties, except as described in the AI Round Analysis and Subscriptions sections above.</p>
+  <p>We do not sell your personal data. We share data with third parties only as described above: with Google Gemini for AI round analysis, with RevenueCat for subscription management, with PostHog for anonymous analytics, and with AppsFlyer and our advertising platforms (Apple Search Ads, Meta, and TikTok) solely to measure the performance of our own ads.</p>
 
   <h2>Children's Privacy</h2>
   <p>FightMode is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
 
   <h2>Data Deletion</h2>
-  <p>Since your data is stored locally on your device, you can delete it at any time by deleting the app. Round videos you saved to your Photos library remain in Photos until you delete them there. Anonymous purchase records are kept by RevenueCat in accordance with their data retention policy.</p>
+  <p>Since your data is stored locally on your device, you can delete it at any time by deleting the app. Round videos you saved to your Photos library remain in Photos until you delete them there. Anonymous records held by our service providers (RevenueCat, PostHog, and AppsFlyer) are retained in accordance with each provider's data retention policy. You can stop advertising attribution at any time by declining tracking in iOS Settings.</p>
 
   <h2>Changes to This Policy</h2>
   <p>We may update this privacy policy from time to time. The updated version will be indicated by the "Last updated" date at the top of this page.</p>
