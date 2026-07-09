@@ -42,8 +42,8 @@
   <h2>Screen Time and App Blocking</h2>
   <p>FightMode uses Apple's Screen Time frameworks (Family Controls, Managed Settings, and Device Activity) to block the apps you choose. Apple provides your app selections to FightMode as opaque tokens — we cannot see which apps you selected, and neither can anyone else. These tokens are stored locally on your device and are never transmitted anywhere. Screen Time authorization is handled entirely by Apple.</p>
 
-  <h2>Camera, Microphone, and Round Recording</h2>
-  <p>FightMode requests camera and microphone access only if you turn on recording for a round. Recording is optional — you can fight every round without it. Recorded videos are saved locally on your device. You can also choose to save a round video to your Photos library, which uses add-only access (the app cannot read your existing photos).</p>
+  <h2>Camera and Round Recording</h2>
+  <p>FightMode requests camera access only if you turn on recording for a round. Recording is optional — you can fight every round without it. Recorded videos are saved locally on your device. You can also choose to save a round video to your Photos library, which uses add-only access (the app cannot read your existing photos).</p>
 
   <h2>AI Round Analysis</h2>
   <p>If you request an AI scorecard for a recorded round, the video — along with the round's style, target, and the callouts your coach gave — is sent to our backend service for analysis. The backend uses Google Gemini to evaluate your technique and generate the scorecard. After processing:</p>
