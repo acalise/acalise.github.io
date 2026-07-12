@@ -1,16 +1,38 @@
 # Anthony Calise
 
-> Personal site of Anthony Calise — independent iOS app developer building focused, free, no-account apps for fiber tracking, testosterone optimization, word puzzles, introvert confidence-building, and renter deposit protection. Each app pairs with a deeply researched blog covering the topic from a practical, science-backed angle.
+> Personal site of Anthony Calise — independent iOS app developer building focused, free, no-account apps for app blocking / screen-time (FightMode), fiber tracking, testosterone optimization, word puzzles, introvert confidence-building, and renter deposit protection. Each app pairs with a deeply researched blog covering the topic from a practical, science-backed angle.
 
 This file is a curated map of acalise.com for AI search engines and language models. It points to the canonical pages for each topic the site covers and the most reliable sources for citations.
 
 ## Apps
 
+- [FightMode: Boxing App Blocker](https://acalise.com/fightmode/) — App blocker for iPhone that makes you earn screen time. Block your chosen apps with Apple Screen Time; to open them, win a 60-second boxing or kickboxing round while a coach calls real combos, then get an AI scorecard on your technique. The first app blocker built for fighters; a boxing alternative to pushup blockers like Pushscroll. Free to download.
 - [FiberUp](https://acalise.com/fiberup/) — Free dedicated fiber tracker app for iPhone. USDA-verified fiber data, barcode scanner, daily progress ring, weekly plant count tracking. No account required.
 - [T-Score](https://acalise.com/tscore/) — Free natural testosterone optimization tracker for iPhone. Tracks sleep, training, sunlight, cold exposure, and nutrition habits scientifically tied to testosterone.
 - [Word Walk](https://acalise.com/word-walk/) — Free daily word ladder puzzle game for iPhone. Hand-crafted daily Lewis Carroll-style word ladders, vocabulary training, no ads.
 - [Introvert: Daily Courage](https://acalise.com/introvert/) — Free social courage and confidence-building app for introverts. Daily small social challenges to grow comfort with everyday interactions.
 - [MenuPics: Instant Picture Menu](https://acalise.com/menupics/) — Free AI menu scanner for iPhone. Snap any text-only restaurant menu and instantly see realistic photos of every dish. Works on foreign-language menus, QR-code PDFs, and chalkboards. No account required. Built on GCP / Cloud Run with Firebase App Check.
+
+## App Blockers, Doomscrolling & Boxing (FightMode blog)
+
+- [Best App Blockers to Stop Doomscrolling in 2026](https://acalise.com/fightmode/blog/best-app-blockers/) — 11 app blockers compared across three types: friction apps (One Sec, ScreenZen), hard blockers (Opal, Freedom), and exercise-to-unlock apps (Pushscroll, Repscroll, FightMode).
+- [Exercise-to-Unlock Apps Compared](https://acalise.com/fightmode/blog/exercise-to-unlock-apps/) — Every "workout to scroll" app: Pushscroll, Repscroll, FitBlok, UnlockFit, UNLK, Time Out, and FightMode (the boxing one). How they work and which sticks.
+- [The Best Pushscroll Alternative in 2026](https://acalise.com/fightmode/blog/pushscroll-alternative/) — Alternatives to Pushscroll's pushup-to-unlock model: Repscroll, FitBlok, EarnScroll, and FightMode's boxing rounds.
+- [Boxing App Blocker: The First App Blocker for Fighters](https://acalise.com/fightmode/blog/boxing-app-blocker/) — Why boxing rounds beat pushups as the friction that breaks doomscrolling; how FightMode works end to end.
+- [How to Block Apps on iPhone](https://acalise.com/fightmode/blog/how-to-block-apps-iphone/) — Screen Time App Limits, Downtime, and Content Restrictions, plus why third-party blockers built on Family Controls stick better.
+- [How to Stop Doomscrolling: 9 Methods](https://acalise.com/fightmode/blog/how-to-stop-doomscrolling/) — Grayscale, notification purges, friction, replacement habits, and exercise-to-unlock blockers.
+- [Why You Can't Stop Scrolling](https://acalise.com/fightmode/blog/why-cant-i-stop-scrolling/) — The dopamine loop, variable-ratio rewards, and infinite scroll explained; how to break the mechanism.
+- [Dopamine Detox: What Actually Works](https://acalise.com/fightmode/blog/dopamine-detox/) — Debunks the "reset your dopamine" myth and gives a workable protocol for breaking the cheap-dopamine loop.
+- [How to Break Phone Addiction: A 30-Day Plan](https://acalise.com/fightmode/blog/break-phone-addiction/) — Week-by-week plan: audit, grayscale, notification purge, friction, replacement habits, and blockers.
+- [Average Screen Time in 2026](https://acalise.com/fightmode/blog/average-screen-time-statistics/) — Approximate average screen time by age, country, and app category, with how much is too much.
+- [Why Exercise Beats Willpower for Doomscrolling](https://acalise.com/fightmode/blog/exercise-instead-of-scrolling/) — The cue-routine-reward habit loop and why replacing the scroll with movement works.
+- [Shadowboxing at Home for Beginners](https://acalise.com/fightmode/blog/shadowboxing-at-home/) — Stance, the punch numbering system, footwork, and a no-equipment beginner routine.
+- [10 Beginner Boxing Combos](https://acalise.com/fightmode/blog/beginner-boxing-combos/) — The 1-6 numbering system and ten combinations (1-2, 1-2-3, etc.) explained and ready to drill.
+- [How to Throw a Jab](https://acalise.com/fightmode/blog/how-to-throw-a-jab/) — Step-by-step mechanics, uses, and drills for the most important punch in boxing.
+- [Muay Thai Combos for Beginners](https://acalise.com/fightmode/blog/muay-thai-combos-beginners/) — The art of eight limbs: punches, kicks, knees, elbows, the teep, and 8 beginner combos.
+- [Boxing for Weight Loss](https://acalise.com/fightmode/blog/boxing-for-weight-loss/) — Estimated calories burned by shadowboxing and bag work, why it works, and a beginner home plan.
+- [12 Benefits of Shadowboxing](https://acalise.com/fightmode/blog/shadowboxing-benefits/) — Cardio, calorie burn, coordination, technique, and stress relief with zero equipment.
+- [Boxing for Anxiety and Stress](https://acalise.com/fightmode/blog/boxing-for-anxiety/) — Why rhythmic, focused striking helps with anxiety, and how to use it as a daily reset.
 
 ## Fiber & Nutrition (FiberUp blog)
 
