@@ -28,7 +28,7 @@
 <body>
   <a class="back" href="/privacy/">&larr; All Policies</a>
   <h1>FiberUp Privacy Policy</h1>
-  <p class="updated">Last updated: June 27, 2026</p>
+  <p class="updated">Last updated: July 13, 2026</p>
 
   <h2>Overview</h2>
   <p>FiberUp ("we", "the app") is a fiber tracking app for iOS that also offers optional AI meal scanning. We are committed to protecting your privacy. This policy explains what data the app collects, how it is used, and your rights.</p>
@@ -67,6 +67,15 @@
   <h2>Notifications</h2>
   <p>FiberUp may request permission to send local notifications as daily reminders. Notifications are scheduled locally on your device and do not involve any external servers.</p>
 
+  <h2>Analytics</h2>
+  <p>FiberUp uses PostHog, a product analytics service, to understand how features are used and to improve the app. PostHog collects:</p>
+  <ul>
+    <li>Product usage events, such as which screens and features are used (for example, onboarding steps, paywall views, and food-scan actions like "scan completed" or "food substituted")</li>
+    <li>App lifecycle events (app opened, app backgrounded)</li>
+    <li>Coarse device context attached by the analytics SDK: device model, OS version, app version, locale, and timezone</li>
+  </ul>
+  <p>Analytics events are associated with an anonymous, randomly generated identifier stored on your device. This identifier is not linked to your name, email address, or any account (the app has no accounts). Analytics does not use the IDFA or any advertising identifier, does not track you across other apps or websites, is not used for advertising, and is never sold. Food photos are not sent to PostHog; photos are only processed for fiber analysis as described in the AI Meal Scanning section above. Analytics data is processed by PostHog Inc. and hosted in the United States. For more information, see <a href="https://posthog.com/privacy" target="_blank">PostHog's Privacy Policy</a>.</p>
+
   <h2>Third-Party Services</h2>
   <p>FiberUp uses the following third-party services:</p>
   <ul>
@@ -75,10 +84,11 @@
     <li><strong>Google Gemini</strong> — for identifying foods in meal photos during AI scanning (photos are sent for analysis and not stored)</li>
     <li><strong>USDA FoodData Central</strong> — for estimating fiber content of identified foods (food queries are sent to their public API)</li>
     <li><strong>RevenueCat</strong> — for subscription and purchase management (an anonymous app user ID and entitlement status are shared)</li>
+    <li><strong>PostHog</strong> — for anonymous product analytics (usage events and coarse device context are shared under a random on-device identifier; data hosted in the United States)</li>
   </ul>
 
   <h2>Data Sharing</h2>
-  <p>We do not sell, share, or transfer your personal data to third parties, except as described in the Advertising, AI Meal Scanning, Barcode Scanning, and Subscriptions sections above.</p>
+  <p>We do not sell, share, or transfer your personal data to third parties, except as described in the Advertising, AI Meal Scanning, Barcode Scanning, Subscriptions, and Analytics sections above.</p>
 
   <h2>Children's Privacy</h2>
   <p>FiberUp is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
