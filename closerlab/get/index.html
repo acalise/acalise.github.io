@@ -62,7 +62,6 @@
     <h1>CloserLab</h1>
     <p class="tag">Practice sales calls against AI buyers. Get scored. Close more.</p>
     <button class="btn" id="go">Download on the App&nbsp;Store</button>
-    <a class="alt" href="https://apps.apple.com/us/app/closerlab-ai-sales-coach/id6773820799">Open App Store page here instead</a>
   </div>
   <script>
     var i = 0;
@@ -70,7 +69,7 @@
       if (document.hidden) return;
       if (i >= SCHEMES.length) { coach(); return; }
       location.href = SCHEMES[i++];
-      setTimeout(attempt, 900);
+      setTimeout(attempt, 450);
     }
     function coach() {
       document.getElementById("coach").style.display = "block";

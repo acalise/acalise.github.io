@@ -72,7 +72,6 @@
     <h1>FightMode</h1>
     <p class="tag">The boxing app blocker. Your apps stay locked until you fight a round.</p>
     <button class="btn" id="go">Download on the App&nbsp;Store</button>
-    <a class="alt" href="https://apps.apple.com/us/app/id6787566707">Open App Store page here instead</a>
   </div>
   <script>
     // Tap cascade: fire each scheme IG might still allow; if the page is
@@ -83,7 +82,7 @@
       if (document.hidden) return;              // one of them worked
       if (i >= SCHEMES.length) { coach(); return; }
       location.href = SCHEMES[i++];
-      setTimeout(attempt, 900);
+      setTimeout(attempt, 450);
     }
     function coach() {
       document.getElementById("coach").style.display = "block";
