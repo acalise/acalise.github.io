@@ -62,7 +62,6 @@
     <h1>FiberUp</h1>
     <p class="tag">Scan any meal, see its fiber, hit your daily goal.</p>
     <button class="btn" id="go">Download on the App&nbsp;Store</button>
-    <a class="alt" href="https://apps.apple.com/us/app/fiberup-fiber-tracker/id6760719879">Open App Store page here instead</a>
   </div>
   <script>
     var i = 0;
@@ -70,7 +69,7 @@
       if (document.hidden) return;
       if (i >= SCHEMES.length) { coach(); return; }
       location.href = SCHEMES[i++];
-      setTimeout(attempt, 900);
+      setTimeout(attempt, 450);
     }
     function coach() {
       document.getElementById("coach").style.display = "block";
