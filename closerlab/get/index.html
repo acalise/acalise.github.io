@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Instagram-bio-safe App Store redirect. See /fightmode/get/ for the why. -->
+  <!-- Instagram-bio-safe App Store redirect. See /fightmode/get/ for the full why. -->
   <title>Get CloserLab – AI Sales Coach</title>
   <meta name="robots" content="noindex,nofollow">
   <meta name="apple-itunes-app" content="app-id=6773820799">
   <link rel="icon" type="image/png" href="/closerlab/icon.png">
   <script>
     var STORE = "https://apps.apple.com/us/app/closerlab-ai-sales-coach/id6773820799";
+    var SCHEMES = [
+      "itms-appss://apps.apple.com/us/app/closerlab-ai-sales-coach/id6773820799",
+      "itms-apps://apps.apple.com/us/app/closerlab-ai-sales-coach/id6773820799",
+      "googlechromes://acalise.com/closerlab/get/"
+    ];
     var inApp = /Instagram|FBAN|FBAV|FB_IAB|musical_ly|Bytedance|TikTok/i.test(navigator.userAgent);
     if (!inApp) location.replace(STORE);
   </script>
@@ -25,23 +30,62 @@
     img.icon { width: 96px; height: 96px; border-radius: 22px; margin-bottom: 20px; }
     h1 { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
     p.tag { font-size: 15px; color: #a9b0bd; margin-bottom: 28px; line-height: 1.45; }
-    a.cta {
-      display: block; background: #2f6bff; color: #fff; text-decoration: none;
+    .btn {
+      display: block; width: 100%; background: #2f6bff; color: #fff; border: none;
       font-size: 17px; font-weight: 700; padding: 16px 24px; border-radius: 14px;
-      margin-bottom: 14px;
+      margin-bottom: 14px; cursor: pointer; font-family: inherit; text-decoration: none;
     }
     a.alt { display: block; color: #a9b0bd; font-size: 13px; text-decoration: underline; }
-    p.hint { font-size: 12px; color: #667; margin-top: 22px; line-height: 1.5; }
+    #coach {
+      display: none; position: fixed; top: 10px; right: 12px; left: 12px;
+      background: #161a22; border: 1px solid #2c3442; border-radius: 16px;
+      padding: 16px 18px; text-align: left; z-index: 10;
+      box-shadow: 0 8px 30px rgba(0,0,0,.55);
+    }
+    #coach .arrow { position: absolute; top: -2px; right: 14px; transform: translateY(-100%);
+      font-size: 28px; line-height: 1; }
+    #coach b { color: #fff; }
+    #coach p { font-size: 15px; color: #cdd3dc; line-height: 1.55; }
+    #coach p.small { font-size: 12px; color: #7f8794; margin-top: 10px; }
+    body.coaching .card { opacity: .25; }
   </style>
 </head>
 <body>
+  <div id="coach">
+    <div class="arrow">⤴</div>
+    <p><b>Instagram blocks App Store links.</b><br>
+       Tap the <b>···</b> menu (top right) → <b>"Open in external browser"</b> — you'll land in the App&nbsp;Store automatically.</p>
+    <p class="small" id="copied">Or <a href="#" id="copy" style="color:#cdd3dc">copy the link</a> and paste it in Safari.</p>
+  </div>
   <div class="card">
     <img class="icon" src="/closerlab/icon.png" alt="CloserLab app icon">
     <h1>CloserLab</h1>
     <p class="tag">Practice sales calls against AI buyers. Get scored. Close more.</p>
-    <a class="cta" href="itms-appss://apps.apple.com/us/app/closerlab-ai-sales-coach/id6773820799">Download on the App&nbsp;Store</a>
-    <a class="alt" href="https://apps.apple.com/us/app/closerlab-ai-sales-coach/id6773820799">Open App Store page in browser</a>
-    <p class="hint">Nothing happening? Tap ··· (top right) &rarr; "Open in external browser", then try again.</p>
+    <button class="btn" id="go">Download on the App&nbsp;Store</button>
+    <a class="alt" href="https://apps.apple.com/us/app/closerlab-ai-sales-coach/id6773820799">Open App Store page here instead</a>
   </div>
+  <script>
+    var i = 0;
+    function attempt() {
+      if (document.hidden) return;
+      if (i >= SCHEMES.length) { coach(); return; }
+      location.href = SCHEMES[i++];
+      setTimeout(attempt, 900);
+    }
+    function coach() {
+      document.getElementById("coach").style.display = "block";
+      document.body.classList.add("coaching");
+    }
+    document.getElementById("go").addEventListener("click", function () {
+      inApp ? attempt() : location.href = STORE;
+    });
+    document.getElementById("copy").addEventListener("click", function (e) {
+      e.preventDefault();
+      (navigator.clipboard ? navigator.clipboard.writeText(STORE) : Promise.reject())
+        .then(function () { document.getElementById("copied").textContent = "Link copied — paste it in Safari."; })
+        .catch(function () { prompt("Copy this link:", STORE); });
+    });
+    if (inApp) setTimeout(function () { if (!document.hidden) coach(); }, 4000);
+  </script>
 </body>
 </html>

@@ -4,18 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Instagram-bio-safe App Store redirect.
-       Why this page exists: Instagram rejects apps.apple.com URLs in the bio
-       field, and its in-app browser can't execute Apple's itms-appss redirect
-       from an auto-navigation (blank page). So: real browsers get bounced
-       straight to the store; in-app browsers (Instagram/FB/TikTok) get a
-       one-tap page — a user-gesture-bound itms-appss link is allowed to open
-       the App Store app where an automatic redirect is not. -->
+       IG rejects apps.apple.com in the bio field, and its iOS in-app browser
+       blocks BOTH auto-redirects and (since ~Aug 2026, verified on device)
+       gesture-bound itms-appss taps. There is no reliable automatic escape on
+       iOS. So: real browsers bounce straight to the store; in-app browsers get
+       a tap cascade (itms-appss → itms-apps → Chrome piggyback, each of which
+       IG may still allow) and, if the page is still visible after that, a
+       visual coach for the guaranteed path: ··· menu → Open in external
+       browser (which lands back here as Safari and auto-bounces). -->
   <title>Get FightMode – Boxing App Blocker</title>
   <meta name="robots" content="noindex,nofollow">
   <meta name="apple-itunes-app" content="app-id=6787566707">
   <link rel="icon" type="image/png" href="/fightmode/icon.png">
   <script>
     var STORE = "https://apps.apple.com/us/app/id6787566707";
+    var SCHEMES = [
+      "itms-appss://apps.apple.com/us/app/id6787566707",
+      "itms-apps://apps.apple.com/us/app/id6787566707",
+      "googlechromes://acalise.com/fightmode/get/"
+    ];
     var inApp = /Instagram|FBAN|FBAV|FB_IAB|musical_ly|Bytedance|TikTok/i.test(navigator.userAgent);
     if (!inApp) location.replace(STORE);
   </script>
@@ -31,23 +38,69 @@
     img.icon { width: 96px; height: 96px; border-radius: 22px; margin-bottom: 20px; }
     h1 { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
     p.tag { font-size: 15px; color: #b8b3ae; margin-bottom: 28px; line-height: 1.45; }
-    a.cta {
-      display: block; background: #E23A2E; color: #fff; text-decoration: none;
+    .btn {
+      display: block; width: 100%; background: #E23A2E; color: #fff; border: none;
       font-size: 17px; font-weight: 700; padding: 16px 24px; border-radius: 14px;
-      margin-bottom: 14px;
+      margin-bottom: 14px; cursor: pointer; font-family: inherit; text-decoration: none;
     }
+    .btn.ghost { background: #262320; font-size: 15px; }
     a.alt { display: block; color: #b8b3ae; font-size: 13px; text-decoration: underline; }
-    p.hint { font-size: 12px; color: #6f6a65; margin-top: 22px; line-height: 1.5; }
+    /* Escape coach — pinned toward the ··· menu, top right */
+    #coach {
+      display: none; position: fixed; top: 10px; right: 12px; left: 12px;
+      background: #1c1917; border: 1px solid #3a352f; border-radius: 16px;
+      padding: 16px 18px; text-align: left; z-index: 10;
+      box-shadow: 0 8px 30px rgba(0,0,0,.55);
+    }
+    #coach .arrow { position: absolute; top: -2px; right: 14px; transform: translateY(-100%);
+      font-size: 28px; line-height: 1; }
+    #coach b { color: #fff; }
+    #coach p { font-size: 15px; color: #d8d3ce; line-height: 1.55; }
+    #coach p.small { font-size: 12px; color: #8a847e; margin-top: 10px; }
+    body.coaching .card { opacity: .25; }
   </style>
 </head>
 <body>
+  <div id="coach">
+    <div class="arrow">⤴</div>
+    <p><b>Instagram blocks App Store links.</b><br>
+       Tap the <b>···</b> menu (top right) → <b>"Open in external browser"</b> — you'll land in the App&nbsp;Store automatically.</p>
+    <p class="small" id="copied">Or <a href="#" id="copy" style="color:#d8d3ce">copy the link</a> and paste it in Safari.</p>
+  </div>
   <div class="card">
     <img class="icon" src="/fightmode/icon.png" alt="FightMode app icon">
     <h1>FightMode</h1>
     <p class="tag">The boxing app blocker. Your apps stay locked until you fight a round.</p>
-    <a class="cta" href="itms-appss://apps.apple.com/us/app/id6787566707">Download on the App&nbsp;Store</a>
-    <a class="alt" href="https://apps.apple.com/us/app/id6787566707">Open App Store page in browser</a>
-    <p class="hint">Nothing happening? Tap ··· (top right) &rarr; "Open in external browser", then try again.</p>
+    <button class="btn" id="go">Download on the App&nbsp;Store</button>
+    <a class="alt" href="https://apps.apple.com/us/app/id6787566707">Open App Store page here instead</a>
   </div>
+  <script>
+    // Tap cascade: fire each scheme IG might still allow; if the page is
+    // still visible when they're exhausted, switch to coaching the manual
+    // escape (the only guaranteed path on iOS).
+    var i = 0;
+    function attempt() {
+      if (document.hidden) return;              // one of them worked
+      if (i >= SCHEMES.length) { coach(); return; }
+      location.href = SCHEMES[i++];
+      setTimeout(attempt, 900);
+    }
+    function coach() {
+      document.getElementById("coach").style.display = "block";
+      document.body.classList.add("coaching");
+    }
+    document.getElementById("go").addEventListener("click", function () {
+      inApp ? attempt() : location.href = STORE;
+    });
+    document.getElementById("copy").addEventListener("click", function (e) {
+      e.preventDefault();
+      (navigator.clipboard ? navigator.clipboard.writeText(STORE) : Promise.reject())
+        .then(function () { document.getElementById("copied").textContent = "Link copied — paste it in Safari."; })
+        .catch(function () { prompt("Copy this link:", STORE); });
+    });
+    // In-app users often look for guidance before tapping anything — surface
+    // the coach automatically after a beat.
+    if (inApp) setTimeout(function () { if (!document.hidden) coach(); }, 4000);
+  </script>
 </body>
 </html>
