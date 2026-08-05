@@ -84,7 +84,6 @@
         .then(function () { document.getElementById("copied").textContent = "Link copied — paste it in Safari."; })
         .catch(function () { prompt("Copy this link:", STORE); });
     });
-    if (inApp) setTimeout(function () { if (!document.hidden) coach(); }, 4000);
   </script>
 </body>
 </html>

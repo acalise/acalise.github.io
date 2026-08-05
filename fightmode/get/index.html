@@ -97,9 +97,6 @@
         .then(function () { document.getElementById("copied").textContent = "Link copied — paste it in Safari."; })
         .catch(function () { prompt("Copy this link:", STORE); });
     });
-    // In-app users often look for guidance before tapping anything — surface
-    // the coach automatically after a beat.
-    if (inApp) setTimeout(function () { if (!document.hidden) coach(); }, 4000);
   </script>
 </body>
 </html>
