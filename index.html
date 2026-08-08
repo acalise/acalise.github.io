@@ -368,9 +368,12 @@
     .app-grid .featured > div { display: flex; flex-direction: column; height: 100%; }
     .app-grid .card-desc { margin-bottom: 14px; }
     .app-grid .tags { margin-bottom: 16px; }
-    /* pin the CTA to the card floor so it lines up across a row no matter
-       how many rows the tag chips wrap onto */
-    .app-grid .card-link { align-self: flex-start; margin-top: auto; }
+    .app-grid .card-link { align-self: flex-start; }
+    /* collapsed-by-default tag chips: extras hide behind a +N more toggle */
+    .app-grid .tag-extra { display: none; }
+    .app-grid .tags.expanded .tag-extra { display: block; }
+    .tag-more { cursor: pointer; user-select: none; transition: color 0.2s, border-color 0.2s; }
+    .tag-more:hover { color: var(--text); border-color: var(--border-hover); }
     @media (max-width: 860px) {
       .app-grid { grid-template-columns: 1fr; }
     }
@@ -497,14 +500,16 @@
             <p class="card-desc">The first app blocker built for fighters. Your apps stay locked until you win a 60-second boxing round - then earn screen time and get an AI scorecard on your technique.</p>
             <div class="tags">
             <span class="tag">Swift</span>
-            <span class="tag">SwiftUI</span>
             <span class="tag">Screen Time API</span>
             <span class="tag">Gemini AI</span>
-            <span class="tag">Cloud Run</span>
-            <span class="tag">RevenueCat</span>
-            <span class="tag">AppsFlyer</span>
-            <span class="tag">PostHog</span>
-            <span class="tag">iOS</span>
+            <span class="tag tag-extra">SwiftUI</span>
+            <span class="tag tag-extra">TypeScript</span>
+            <span class="tag tag-extra">Cloud Run</span>
+            <span class="tag tag-extra">RevenueCat</span>
+            <span class="tag tag-extra">AppsFlyer</span>
+            <span class="tag tag-extra">PostHog</span>
+            <span class="tag tag-extra">iOS</span>
+            <span class="tag tag-more" role="button" tabindex="0">+7 more</span>
           </div>
             <span class="card-link" style="color: var(--blue);">iOS App Store →</span>
           </div>
@@ -515,15 +520,16 @@
             <h3 class="card-title">CloserLab: AI Sales Coach</h3>
             <p class="card-desc">Sales objection practice against AI buyers. Describe what you sell and it builds buyers with their own reason to say no, in voice or text, then scores your call the second you hang up.</p>
             <div class="tags">
-            <span class="tag">React Native</span>
-            <span class="tag">Expo</span>
-            <span class="tag">TypeScript</span>
             <span class="tag">Realtime Voice AI</span>
             <span class="tag">Cloud Run</span>
-            <span class="tag">RevenueCat</span>
-            <span class="tag">AppsFlyer</span>
-            <span class="tag">PostHog</span>
-            <span class="tag">iOS</span>
+            <span class="tag tag-extra">PostHog</span>
+            <span class="tag tag-extra">React Native</span>
+            <span class="tag tag-extra">Expo</span>
+            <span class="tag tag-extra">TypeScript</span>
+            <span class="tag tag-extra">RevenueCat</span>
+            <span class="tag tag-extra">AppsFlyer</span>
+            <span class="tag tag-extra">iOS</span>
+            <span class="tag tag-more" role="button" tabindex="0">+7 more</span>
           </div>
             <span class="card-link" style="color: var(--blue);">iOS App Store →</span>
           </div>
@@ -534,16 +540,17 @@
             <h3 class="card-title">FiberUp: Fiber Tracker</h3>
             <p class="card-desc">A simple, beautiful fiber tracking app. Hit your daily fiber goals, scan barcodes, and snap a photo of any meal for an instant AI fiber estimate.</p>
             <div class="tags">
-            <span class="tag">React Native</span>
-            <span class="tag">Expo</span>
-            <span class="tag">HeroUI Native</span>
-            <span class="tag">TypeScript</span>
             <span class="tag">Gemini AI</span>
+            <span class="tag">HeroUI Native</span>
             <span class="tag">Cloud Run</span>
-            <span class="tag">RevenueCat</span>
-            <span class="tag">AppsFlyer</span>
-            <span class="tag">PostHog</span>
-            <span class="tag">iOS</span>
+            <span class="tag tag-extra">React Native</span>
+            <span class="tag tag-extra">Expo</span>
+            <span class="tag tag-extra">TypeScript</span>
+            <span class="tag tag-extra">RevenueCat</span>
+            <span class="tag tag-extra">AppsFlyer</span>
+            <span class="tag tag-extra">PostHog</span>
+            <span class="tag tag-extra">iOS</span>
+            <span class="tag tag-more" role="button" tabindex="0">+7 more</span>
           </div>
             <span class="card-link" style="color: var(--blue);">iOS App Store →</span>
           </div>
@@ -554,15 +561,16 @@
             <h3 class="card-title">T-Score: Boost Testosterone</h3>
             <p class="card-desc">A simple tracker for the habits that move testosterone. Log your day, sync Apple Health, and watch your score climb.</p>
             <div class="tags">
-            <span class="tag">React Native</span>
-            <span class="tag">Expo</span>
-            <span class="tag">HeroUI Native</span>
-            <span class="tag">TypeScript</span>
             <span class="tag">Apple Health</span>
-            <span class="tag">RevenueCat</span>
-            <span class="tag">AppsFlyer</span>
+            <span class="tag">HeroUI Native</span>
             <span class="tag">AdMob</span>
-            <span class="tag">iOS</span>
+            <span class="tag tag-extra">React Native</span>
+            <span class="tag tag-extra">Expo</span>
+            <span class="tag tag-extra">TypeScript</span>
+            <span class="tag tag-extra">RevenueCat</span>
+            <span class="tag tag-extra">AppsFlyer</span>
+            <span class="tag tag-extra">iOS</span>
+            <span class="tag tag-more" role="button" tabindex="0">+6 more</span>
           </div>
             <span class="card-link" style="color: var(--blue);">iOS App Store →</span>
           </div>
@@ -573,15 +581,17 @@
             <h3 class="card-title">MenuPics: Instant Picture Menu</h3>
             <p class="card-desc">An AI menu scanner that turns any text-only menu into real photos of the dishes. Snap the menu, see what you're actually ordering. No account required.</p>
             <div class="tags">
-            <span class="tag">React Native</span>
-            <span class="tag">Expo</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">GCP</span>
-            <span class="tag">Cloud Run</span>
+            <span class="tag">Gemini AI</span>
             <span class="tag">Firebase App Check</span>
-            <span class="tag">RevenueCat</span>
-            <span class="tag">AppsFlyer</span>
-            <span class="tag">iOS</span>
+            <span class="tag tag-extra">GCP</span>
+            <span class="tag tag-extra">Cloud Run</span>
+            <span class="tag tag-extra">React Native</span>
+            <span class="tag tag-extra">Expo</span>
+            <span class="tag tag-extra">TypeScript</span>
+            <span class="tag tag-extra">RevenueCat</span>
+            <span class="tag tag-extra">AppsFlyer</span>
+            <span class="tag tag-extra">iOS</span>
+            <span class="tag tag-more" role="button" tabindex="0">+8 more</span>
           </div>
             <span class="card-link" style="color: var(--blue);">iOS App Store →</span>
           </div>
@@ -590,16 +600,17 @@
           <img src="/introvert/icon.png" alt="Introvert" class="featured-logo">
           <div>
             <h3 class="card-title">Introvert: Daily Courage</h3>
-            <p class="card-desc">A daily courage app for quiet people. One small, specific challenge a day to push gently past your comfort zone. 580+ challenges across social skills, career, public speaking, and self-expression.</p>
+            <p class="card-desc">A daily courage app for quiet people. One small challenge a day to push gently past your comfort zone, from 580+ across social skills and career.</p>
             <div class="tags">
-            <span class="tag">React Native</span>
-            <span class="tag">Expo</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">RevenueCat</span>
-            <span class="tag">AppsFlyer</span>
-            <span class="tag">AdMob</span>
             <span class="tag">Widgets</span>
-            <span class="tag">iOS</span>
+            <span class="tag">AdMob</span>
+            <span class="tag tag-extra">React Native</span>
+            <span class="tag tag-extra">Expo</span>
+            <span class="tag tag-extra">TypeScript</span>
+            <span class="tag tag-extra">RevenueCat</span>
+            <span class="tag tag-extra">AppsFlyer</span>
+            <span class="tag tag-extra">iOS</span>
+            <span class="tag tag-more" role="button" tabindex="0">+6 more</span>
           </div>
             <span class="card-link" style="color: var(--blue);">iOS App Store →</span>
           </div>
@@ -647,8 +658,8 @@
               <div class="tags" style="margin-bottom: 12px;">
                 <span class="tag" style="background: rgba(74,222,128,0.08); color: var(--green);">Boilerplate</span>
               </div>
-              <h3 class="card-title" style="color: var(--text);">React Native Boilerplate: Expo, HeroUI, RevenueCat, AppsFlyer, PostHog, AdMob</h3>
-              <p class="card-desc">Production-ready Expo SDK 57 starter with the parts that actually take a week: a paywall that passes App Review, RevenueCat subscriptions, AppsFlyer attribution, PostHog analytics, AdMob, and 153 SKAdNetwork IDs. One CSS file themes the whole app. Every integration is optional and no-ops until you add a key.</p>
+              <h3 class="card-title" style="color: var(--text);">React Native Boilerplate: Expo, Payments, Ad Attribution, Analytics, AdMob</h3>
+              <p class="card-desc">Production-ready Expo SDK 57 starter with the parts that actually take a week: a paywall that passes App Review, payments with RevenueCat, ad attribution with AppsFlyer, analytics with PostHog, ads with AdMob, and 153 SKAdNetwork IDs. One CSS file themes the whole app. Every integration is optional and no-ops until you add a key.</p>
               <div class="tags">
                 <span class="tag">React Native</span>
                 <span class="tag">Expo SDK 57</span>
@@ -673,8 +684,8 @@
             <div class="tags" style="margin-bottom: 12px;">
               <span class="tag" style="background: rgba(74,222,128,0.08); color: var(--green);">Boilerplate</span>
             </div>
-            <h3 class="card-title" style="color: var(--text);">SwiftUI Boilerplate: RevenueCat, AppsFlyer, PostHog, AdMob</h3>
-            <p class="card-desc">Production-ready SwiftUI starter for iOS 17+ with the parts that actually take a week: a paywall that passes App Review, RevenueCat subscriptions, AppsFlyer attribution, PostHog analytics, AdMob, and 153 SKAdNetwork IDs. Swift Package Manager only, one file themes the whole app, and every integration is optional and no-ops until you add a key.</p>
+            <h3 class="card-title" style="color: var(--text);">SwiftUI Boilerplate: Payments, Ad Attribution, Analytics, AdMob</h3>
+            <p class="card-desc">Production-ready SwiftUI starter for iOS 17+ with the parts that actually take a week: a paywall that passes App Review, payments with RevenueCat, ad attribution with AppsFlyer, analytics with PostHog, ads with AdMob, and 153 SKAdNetwork IDs. Swift Package Manager only, one file themes the whole app, and every integration is optional and no-ops until you add a key.</p>
             <div class="tags">
               <span class="tag">SwiftUI</span>
               <span class="tag">Swift</span>
@@ -828,6 +839,21 @@
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); } });
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+
+    // one-way reveal of the hidden tag chips; the chip sits inside the card's
+    // <a>, so swallow the click before it navigates
+    document.querySelectorAll('.tag-more').forEach(btn => {
+      const reveal = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        btn.closest('.tags').classList.add('expanded');
+        btn.remove();
+      };
+      btn.addEventListener('click', reveal);
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') reveal(e);
+      });
+    });
   </script>
 </body>
 </html>
