@@ -2,12 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Alias: /fiberup/app -> /fiberup/get (the branded App Store redirect page).
-       Keep the redirect logic in /get only; this page just forwards. -->
-  <title>Get the app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- simplerizz.com/app method: real browsers bounce straight to the App
+       Store; TikTok/IG in-app browsers (which block redirects) get a plain
+       instruction screen pointing at the ... menu -> Open in browser, which
+       reopens this URL in Safari and auto-bounces. -->
+  <title>Get FiberUp | FiberUp</title>
   <meta name="robots" content="noindex,nofollow">
-  <meta http-equiv="refresh" content="0;url=/fiberup/get/">
-  <script>location.replace("/fiberup/get/");</script>
+  <link rel="icon" type="image/png" href="/fiberup/icon.png">
+  <script>
+    var STORE = "https://apps.apple.com/us/app/fiberup-fiber-tracker/id6760719879";
+    var inApp = /Instagram|FBAN|FBAV|FB_IAB|musical_ly|Bytedance|TikTok/i.test(navigator.userAgent);
+    if (!inApp) location.replace(STORE);
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      background: #f7f6f4; color: #111;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      display: flex; flex-direction: column;
+      padding: 24px 28px 56px;
+    }
+    .chevrons {
+      position: fixed; top: 18px; right: 20px; width: 96px; height: 110px;
+    }
+    .spacer { flex: 1 1 38%; }
+    h1 { font-size: 44px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 56px; }
+    ol { list-style: none; }
+    ol li {
+      font-size: 21px; font-weight: 700; letter-spacing: 2.5px;
+      text-transform: uppercase; margin-bottom: 26px; line-height: 1.5;
+    }
+    ol li svg.compass { vertical-align: -4px; }
+    .bottom { flex: 1 1 62%; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+    .bottom img { width: 104px; height: 104px; border-radius: 24px; margin-bottom: 14px; }
+    .bottom .name { font-size: 22px; font-weight: 700; }
+  </style>
 </head>
-<body></body>
+<body>
+  <svg class="chevrons" viewBox="0 0 96 110" fill="none" stroke="#111" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 48 L48 16 L84 48"/>
+    <path d="M12 92 L48 60 L84 92"/>
+  </svg>
+  <div class="spacer"></div>
+  <h1>To download the app,</h1>
+  <ol>
+    <li>1.&nbsp; Click on &nbsp;&bull;&bull;&bull;&nbsp; at the top right</li>
+    <li>2.&nbsp; Then &ldquo;<svg class="compass" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="15.5,8.5 13.5,13.5 8.5,15.5 10.5,10.5" fill="#111" stroke="none"/></svg> Open in browser&rdquo;</li>
+  </ol>
+  <div class="bottom">
+    <a href="https://apps.apple.com/us/app/fiberup-fiber-tracker/id6760719879"><img src="/fiberup/icon.png" alt="FiberUp icon"></a>
+    <div class="name">FiberUp</div>
+  </div>
+</body>
 </html>
