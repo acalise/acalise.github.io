@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- simplerizz.com/app method: real browsers bounce straight to the App
-       Store; TikTok/IG in-app browsers (which block redirects) get a plain
-       instruction screen pointing at the ... menu -> Open in browser, which
-       reopens this URL in Safari and auto-bounces. -->
-  <title>Get FiberUp | FiberUp</title>
+       Store; TikTok/IG in-app browsers (which block redirects and scheme
+       taps on iOS) get a plain instruction screen pointing at the ... menu.
+       Step-2 wording adapts: TikTok menu says "Open in browser", IG says
+       "Open in external browser". Reopening in Safari lands back here and
+       auto-bounces. -->
+  <title>Get FiberUp – Fiber Tracker</title>
   <meta name="robots" content="noindex,nofollow">
+  <meta name="apple-itunes-app" content="app-id=6760719879">
   <link rel="icon" type="image/png" href="/fiberup/icon.png">
   <script>
     var STORE = "https://apps.apple.com/us/app/fiberup-fiber-tracker/id6760719879";
-    var inApp = /Instagram|FBAN|FBAV|FB_IAB|musical_ly|Bytedance|TikTok/i.test(navigator.userAgent);
+    var ua = navigator.userAgent;
+    var isIG = /Instagram|FBAN|FBAV|FB_IAB/i.test(ua);
+    var inApp = isIG || /musical_ly|Bytedance|TikTok/i.test(ua);
     if (!inApp) location.replace(STORE);
   </script>
   <style>
@@ -24,14 +29,12 @@
       display: flex; flex-direction: column;
       padding: 24px 28px 56px;
     }
-    .chevrons {
-      position: fixed; top: 18px; right: 20px; width: 96px; height: 110px;
-    }
+    .chevrons { position: fixed; top: 18px; right: 20px; width: 96px; height: 110px; }
     .spacer { flex: 1 1 38%; }
-    h1 { font-size: 44px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 56px; }
+    h1 { font-size: 42px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 52px; }
     ol { list-style: none; }
     ol li {
-      font-size: 21px; font-weight: 700; letter-spacing: 2.5px;
+      font-size: 20px; font-weight: 700; letter-spacing: 2.5px;
       text-transform: uppercase; margin-bottom: 26px; line-height: 1.5;
     }
     ol li svg.compass { vertical-align: -4px; }
@@ -49,11 +52,14 @@
   <h1>To download the app,</h1>
   <ol>
     <li>1.&nbsp; Click on &nbsp;&bull;&bull;&bull;&nbsp; at the top right</li>
-    <li>2.&nbsp; Then &ldquo;<svg class="compass" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="15.5,8.5 13.5,13.5 8.5,15.5 10.5,10.5" fill="#111" stroke="none"/></svg> Open in browser&rdquo;</li>
+    <li>2.&nbsp; Then &ldquo;<svg class="compass" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="15.5,8.5 13.5,13.5 8.5,15.5 10.5,10.5" fill="#111" stroke="none"/></svg> <span id="browserWord">Open in browser</span>&rdquo;</li>
   </ol>
   <div class="bottom">
     <a href="https://apps.apple.com/us/app/fiberup-fiber-tracker/id6760719879"><img src="/fiberup/icon.png" alt="FiberUp icon"></a>
     <div class="name">FiberUp</div>
   </div>
+  <script>
+    if (isIG) document.getElementById("browserWord").textContent = "Open in external browser";
+  </script>
 </body>
 </html>
