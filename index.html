@@ -779,8 +779,12 @@
   <script>
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+    }, { threshold: 0 });
+    // observe after first paint — a .fade already in the initial viewport
+    // otherwise gets .show pre-paint and the transition never leaves opacity 0
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+    }));
 
     // one-way reveal of the hidden tag chips; the chip sits inside the card's
     // <a>, so swallow the click before it navigates
