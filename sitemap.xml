@@ -444,6 +444,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://acalise.com/privacy/chartcoach/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://acalise.com/privacy/menupics/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>yearly</changefreq>
@@ -458,6 +464,12 @@
   <url>
     <loc>https://acalise.com/terms/fightmode/</loc>
     <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://acalise.com/terms/chartcoach/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
