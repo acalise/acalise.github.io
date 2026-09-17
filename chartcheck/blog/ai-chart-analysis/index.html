@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>AI Chart Analysis: What It Actually Does (and What It Can&#x27;t) | ChartCheck</title>
+  <meta name="description" content="A plain explanation of how AI chart analysis works, what a vision model can genuinely read off a trading chart, and the four things it structurally cannot know.">
+  <meta name="keywords" content="ai chart analysis, ai chart analysis app, ai chart analysis free, ai based chart analysis, ai technical analysis, chart analysis ai">
+  <link rel="canonical" href="https://acalise.com/chartcheck/blog/ai-chart-analysis/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://acalise.com/chartcheck/blog/ai-chart-analysis/">
+  <meta property="og:title" content="AI Chart Analysis: What It Actually Does">
+  <meta property="og:description" content="How AI reads a trading chart, what it gets right, and the four things it structurally cannot know.">
+  <meta property="og:image" content="https://acalise.com/chartcheck/icon.png">
+  <meta property="og:site_name" content="ChartCheck">
+  <meta property="article:published_time" content="2026-09-16">
+  <meta property="article:modified_time" content="2026-09-16">
+  <meta property="article:author" content="Anthony Calise">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Chart Analysis: What It Actually Does">
+  <meta name="twitter:description" content="How AI reads a trading chart, what it gets right, and the four things it structurally cannot know.">
+  <meta name="twitter:image" content="https://acalise.com/chartcheck/icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/chartcheck/icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD: Article -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI Chart Analysis: What It Actually Does, and What It Can't",
+  "description": "A plain explanation of how AI chart analysis works, what a vision model can genuinely read off a trading chart, and the four things it structurally cannot know.",
+  "author": {
+    "@type": "Person",
+    "name": "Anthony Calise",
+    "url": "https://acalise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChartCheck",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://acalise.com/chartcheck/icon.png"
+    }
+  },
+  "datePublished": "2026-09-16",
+  "dateModified": "2026-09-16",
+  "image": "https://acalise.com/chartcheck/icon.png",
+  "mainEntityOfPage": "https://acalise.com/chartcheck/blog/ai-chart-analysis/"
+}
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is AI chart analysis accurate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is accurate at description and unreliable at prediction. Identifying trend direction, marking levels that have been tested repeatedly, and naming a pattern are things a vision model does well, because those are visible facts about the image. Predicting the next move is a different problem entirely, and no technical method - automated or manual - does it reliably. Judge a tool on whether its description of the chart is correct, not on whether the market went the way it implied."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI chart analysis replace learning technical analysis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and relying on it that way tends to go badly. If you cannot evaluate the output, you cannot tell a good read from a confidently wrong one, which means you are following something you do not understand. It works much better as a learning accelerator: form your own read first, then compare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work on any chart?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Any chart that is legible as an image. Stocks, crypto, forex, futures, and ETFs all work because they are all candlesticks on an axis. What matters is screenshot quality - the price axis and enough bars for context need to be visible. A cropped or very low-resolution image produces a correspondingly vague read."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AI chart analysis free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "General-purpose chatbots with vision will describe a chart at no cost, with the tradeoffs covered in our ChatGPT piece. Dedicated tools are typically subscription-based because each analysis costs real compute. Free tiers and trials are common; be wary of anything free that also promises signals or returns."
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- JSON-LD: WebSite -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ChartCheck",
+  "url": "https://acalise.com/chartcheck/"
+}
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://acalise.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ChartCheck",
+      "item": "https://acalise.com/chartcheck/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Blog",
+      "item": "https://acalise.com/chartcheck/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "AI Chart Analysis: What It Actually Does, and What It Can't",
+      "item": "https://acalise.com/chartcheck/blog/ai-chart-analysis/"
+    }
+  ]
+}
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f; --bg2: #0f1117; --card: #14161f;
+      --border: rgba(59,123,246,0.20); --border-soft: rgba(238,240,250,0.09);
+      --accent: #3b7bf6; --accent2: #2563eb; --accent-light: #8ab4ff; --accent-glow: rgba(59,123,246,0.14);
+      --text: #eef0fa; --muted: #a0a6c0; --muted2: #6a708a;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-soft); }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.02em;  color: var(--text); }
+    .nav-brand img { width: 30px; height: 30px; border-radius: 8px; }
+    .nav-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem; padding: 9px 18px; border-radius: 100px; transition: background 0.2s, transform 0.15s; }
+    .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); text-decoration: none; }
+
+    .article-wrapper { max-width: 740px; margin: 0 auto; padding: 100px 24px 80px; }
+    .article-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+    .article-meta .badge { display: inline-flex; align-items: center; gap: 6px; background: var(--accent-glow); border: 1px solid var(--border); color: var(--accent-light); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; }
+    .article-meta .date { font-size: 0.8rem; color: var(--muted); }
+    .article-wrapper h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.08;  margin-bottom: 20px; }
+    .article-intro { font-size: 1.1rem; color: var(--muted); line-height: 1.7; margin-bottom: 40px; }
+    .answer-box { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 12px; padding: 20px 24px; margin-bottom: 36px; }
+    .answer-box h2 { font-size: 0.8rem !important; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-light); margin: 0 0 8px !important; }
+    .answer-box p { margin: 0; }
+    .article-wrapper h2 { font-size: 1.55rem; font-weight: 900; letter-spacing: -0.03em;  margin: 48px 0 16px; line-height: 1.15; }
+    .article-wrapper h3 { font-size: 1.18rem; font-weight: 800; letter-spacing: -0.02em; margin: 32px 0 12px; line-height: 1.3; }
+    .article-wrapper p { font-size: 1rem; line-height: 1.75; color: var(--text); opacity: 0.92; margin-bottom: 16px; }
+    .article-wrapper ul, .article-wrapper ol { padding-left: 24px; margin-bottom: 16px; }
+    .article-wrapper li { font-size: 1rem; line-height: 1.75; color: var(--text); opacity: 0.92; margin-bottom: 8px; }
+    .article-wrapper strong { color: var(--text); opacity: 1; }
+
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 0.85rem; }
+    .comparison-table th, .comparison-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border-soft); }
+    .comparison-table th { font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); background: var(--bg2); }
+    .comparison-table td { color: var(--text); opacity: 0.92; }
+    .comparison-table tr:hover td { background: var(--bg2); }
+    .comparison-table .highlight-row td { color: var(--accent-light); font-weight: 700; opacity: 1; }
+    @media (max-width: 600px) { .comparison-table { font-size: 0.75rem; } .comparison-table th, .comparison-table td { padding: 8px 8px; } }
+
+    .stat-card { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 28px; margin: 24px 0; text-align: center; }
+    .stat-card .stat-number { font-size: 2.5rem; font-weight: 900; color: var(--accent); letter-spacing: -0.04em; line-height: 1.1; }
+    .stat-card .stat-label { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
+    .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+    @media (max-width: 600px) { .stat-row { grid-template-columns: 1fr; } }
+
+    .info-card { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 24px 28px; margin: 24px 0; }
+    .info-card h4 { font-size: 0.98rem; font-weight: 800; margin-bottom: 12px; color: var(--text); }
+    .info-card p { font-size: 0.92rem; margin-bottom: 8px; }
+    .info-card p:last-child { margin-bottom: 0; }
+    .info-card ul { margin-bottom: 0; }
+
+    .script-box { background: var(--bg2); border: 1px solid var(--border-soft); border-left: 3px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 18px 0; }
+    .script-box p { margin: 0 0 8px; font-size: 0.95rem; }
+    .script-box p:last-child { margin-bottom: 0; }
+    .script-box .who { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; display: block; margin-bottom: 4px; }
+
+    .cta-banner { background: linear-gradient(135deg, var(--accent2), var(--accent)); border-radius: 16px; padding: 32px; text-align: center; margin: 48px 0; }
+    .cta-banner h3 { font-size: 1.35rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; color: #fff; margin: 0 0 8px; }
+    .cta-banner p { font-size: 0.95rem; color: rgba(255,255,255,0.88); margin-bottom: 20px; opacity: 1; }
+    .cta-banner .btn { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--accent2); font-weight: 800; font-size: 0.95rem; padding: 14px 28px; border-radius: 100px; transition: transform 0.15s; }
+    .cta-banner .btn:hover { transform: translateY(-2px); text-decoration: none; }
+
+    .faq-item { border-bottom: 1px solid var(--border-soft); padding: 20px 0; }
+    .faq-item h3 { font-size: 1.05rem; margin: 0 0 8px; color: var(--text); }
+    .faq-item p { font-size: 0.95rem; margin: 0; }
+
+    footer { text-align: center; padding: 40px 24px; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border-soft); }
+    footer a { color: var(--muted); transition: color 0.2s; }
+    footer a:hover { color: var(--text); }
+    .kw { margin-top: 8px; font-size: 0.72rem; color: var(--muted2); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/chartcheck/" class="nav-brand">
+      <img src="../../icon.png" alt="ChartCheck app icon">
+      <span>ChartCheck</span>
+    </a>
+    <a href="https://apps.apple.com/us/app/id6811709869" class="nav-cta" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Get ChartCheck
+    </a>
+  </nav>
+
+  <article class="article-wrapper">
+    <div class="article-meta">
+      <span class="badge">Explainer</span>
+      <span class="date">Published September 16, 2026</span>
+    </div>
+
+    <h1>AI Chart Analysis: What It Actually Does, and What It Can&#x27;t</h1>
+
+    <p class="article-intro">AI chart analysis means handing a picture of a price chart to a vision model and getting back a structured technical read. It is genuinely useful for some things and structurally incapable of others, and the difference matters more than any feature list.</p>
+
+    <section class="answer-box" aria-labelledby="quick">
+      <h2 id="quick">The short answer</h2>
+      <p>AI chart analysis reads a chart image the way a human technician would: it identifies trend and structure, marks support and resistance, names candlestick and chart patterns, and reads whatever indicators are visible in the picture. What it cannot do is see anything outside the frame - no order book, no fundamentals, no news, and no future. It describes what already happened on a chart. Treat the output as a fast second read, not a signal.</p>
+    </section>
+
+    <h2>What is actually happening under the hood</h2>
+
+    <p>A modern vision model does not "look up" a ticker. It reads the image. That is the whole trick, and it explains both the strengths and the failure modes.</p>
+
+    <p>When you submit a screenshot, the model is doing roughly what a technician does on a first pass: locate the price axis, establish the scale, trace the sequence of highs and lows, notice where price stalled repeatedly, and name the shapes it recognises. Everything it tells you is derived from pixels that were in the frame you gave it.</p>
+
+    <p>That is why two screenshots of the same instrument can produce different reads. A 15-minute chart and a daily chart of the same asset are genuinely different pictures showing genuinely different structure. Neither read is wrong; they answer different questions.</p>
+
+    <h2>What it does well</h2>
+
+    <div class="info-card">
+      <h4>The honest list</h4>
+      <p><strong>Structure.</strong> Higher highs and higher lows, lower highs and lower lows, and the point where that sequence broke. This is mechanical and models are reliable at it.</p>
+      <p><strong>Horizontal levels.</strong> Price areas that have been touched and respected several times are visually obvious, and a model marks them without the anchoring bias a human brings after staring at a position.</p>
+      <p><strong>Named patterns.</strong> Head and shoulders, double tops, flags, wedges, triangles, and the common candlestick formations are shape-recognition problems, which is exactly what vision models are built for.</p>
+      <p><strong>Visible indicator readings.</strong> If an RSI panel is in the screenshot, reading "RSI is near 70 and rolling over" is straightforward.</p>
+      <p><strong>Consistency.</strong> A model applies the same checklist at 6am and at 11pm, after a winning week and a losing one. Humans do not.</p>
+    </div>
+
+    <p>That last point is underrated. The most common technical mistake is not misreading a pattern; it is reading the chart you want to see because you already have a position. A tool with no stake in the outcome does not do that.</p>
+
+    <h2>The four things it structurally cannot know</h2>
+
+    <p>These are not bugs that get fixed in the next model. They are consequences of analysing a picture.</p>
+
+    <h2>1. Anything outside the frame</h2>
+
+    <p>If your screenshot starts in March, the model does not know about the level that formed in January. It cannot see the weekly structure while reading your 5-minute chart. Whatever you cropped out does not exist as far as the analysis is concerned. This is the single biggest source of confidently wrong reads, and it is entirely under your control.</p>
+
+    <h2>2. Order flow and liquidity</h2>
+
+    <p>A chart shows where price went. It does not show the resting orders, the size behind a bid, who is positioned where, or whether the last move was one large participant or ten thousand small ones. No amount of image analysis recovers information that was never drawn.</p>
+
+    <h2>3. Fundamentals and news</h2>
+
+    <p>A gap down on an earnings miss and a gap down on a sector rotation look identical on a candlestick chart. The model sees a gap. It does not know why, and the why frequently determines whether the level holds.</p>
+
+    <h2>4. The future</h2>
+
+    <p>This one gets restated constantly and ignored constantly. Technical analysis is a description of what has already happened plus a probabilistic statement about what has tended to follow similar setups. It is not a forecast. Every pattern in every textbook fails a substantial share of the time, and the ones that fail do not announce themselves in advance.</p>
+
+    <h2>How to read a confidence score honestly</h2>
+
+    <p>Any decent tool attaches a confidence level to its read. It is worth understanding what that number is actually measuring, because it is not the probability that the trade works.</p>
+
+    <p>Confidence measures how <em>clear the picture is</em>. A clean daily chart with an unambiguous trend, three well-tested touches on a level, and a textbook pattern is a high-confidence read. A choppy low-resolution 1-minute screenshot with overlapping drawings and a cropped price axis is a low-confidence read. Both can be followed by a move in either direction.</p>
+
+    <p>Put differently: high confidence means "I can see this chart clearly," not "this will go up." Conflating the two is the most expensive misreading available.</p>
+
+    <h2>Where AI analysis genuinely helps</h2>
+
+    <p>The realistic use is as a fast, unbiased second opinion on a read you have already formed. You look at the chart, form a view, then check whether an independent pass sees the same structure. When it agrees, you have confirmation that the picture is at least legible. When it disagrees, the interesting question is which of you is looking at something the other missed - often it is a level just outside your visual attention, or a pattern on a timeframe you skipped.</p>
+
+    <p>It is also a fast way to learn. Getting a structured read on fifty charts teaches pattern vocabulary considerably faster than reading a glossary, because each one is attached to a real picture you were already looking at.</p>
+
+    <h2>Where it does not help</h2>
+
+    <p>It does not replace a trading plan, position sizing, or risk management, and those are the parts that actually determine outcomes over time. A perfect read of a chart with no stop loss is worse than a mediocre read with one. No analysis tool, AI or human, changes that arithmetic.</p>
+
+    <div class="cta-banner">
+      <h3>Read your chart in seconds</h3>
+      <p>ChartCheck turns a screenshot of any trading chart into a structured technical read: trend and structure, support and resistance, patterns, your indicators, and an honest confidence level.</p>
+      <a href="https://apps.apple.com/us/app/id6811709869" class="btn" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Get ChartCheck</a>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item">
+      <h3>Is AI chart analysis accurate?</h3>
+      <p>It is accurate at description and unreliable at prediction. Identifying trend direction, marking levels that have been tested repeatedly, and naming a pattern are things a vision model does well, because those are visible facts about the image. Predicting the next move is a different problem entirely, and no technical method - automated or manual - does it reliably. Judge a tool on whether its description of the chart is correct, not on whether the market went the way it implied.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can AI chart analysis replace learning technical analysis?</h3>
+      <p>No, and relying on it that way tends to go badly. If you cannot evaluate the output, you cannot tell a good read from a confidently wrong one, which means you are following something you do not understand. It works much better as a learning accelerator: form your own read first, then compare.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does it work on any chart?</h3>
+      <p>Any chart that is legible as an image. Stocks, crypto, forex, futures, and ETFs all work because they are all candlesticks on an axis. What matters is screenshot quality - the price axis and enough bars for context need to be visible. A cropped or very low-resolution image produces a correspondingly vague read.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is AI chart analysis free?</h3>
+      <p>General-purpose chatbots with vision will describe a chart at no cost, with the tradeoffs covered in our ChatGPT piece. Dedicated tools are typically subscription-based because each analysis costs real compute. Free tiers and trials are common; be wary of anything free that also promises signals or returns.</p>
+    </div>
+
+    <h2>Related Articles</h2>
+    <ul>
+      <li><a href="/chartcheck/blog/chart-analysis-with-chatgpt/">Using ChatGPT for Chart Analysis: What Works and Where It Breaks</a></li>
+      <li><a href="/chartcheck/blog/screenshot-a-chart-for-analysis/">How to Screenshot a Trading Chart So AI Can Actually Read It</a></li>
+      <li><a href="/chartcheck/blog/why-ai-chart-analysis-is-wrong/">When AI Chart Analysis Gets It Wrong, and Why</a></li>
+    </ul>
+
+    <section class="answer-box" aria-labelledby="scope">
+      <h2 id="scope">Scope</h2>
+      <p>This article is educational and is not financial, investment, or trading advice. Nothing here is a recommendation to buy, sell, or hold any security, cryptocurrency, currency, commodity, or derivative. Technical analysis describes what a chart has already done; it does not predict what it will do, and every pattern described here fails a meaningful share of the time. Trading involves risk of loss. Do your own research and consult a licensed financial professional before making any trading decision. ChartCheck is made by the author of this site.</p>
+    </section>
+  </article>
+
+  <footer>
+    <p>
+      &copy; 2026 ChartCheck &nbsp;&middot;&nbsp;
+      <a href="https://apps.apple.com/us/app/id6811709869" rel="noopener">App Store</a> &nbsp;&middot;&nbsp;
+      <a href="/chartcheck/blog/">Blog</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com/privacy/chartcheck/">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com">acalise.com</a>
+    </p>
+    <p class="kw">ai chart analysis · chart analysis app · technical analysis app · candlestick patterns · chart patterns · support and resistance</p>
+  </footer>
+
+</body>
+</html>

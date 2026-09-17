@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>ChartCheck - AI Chart Analysis for iPhone</title>
+  <meta name="description" content="Screenshot any trading chart and get a structured technical read in seconds: trend and structure, support and resistance, patterns, your indicators, and an honest confidence level.">
+  <meta name="keywords" content="ai chart analysis, chart analysis app, technical analysis app, chart reader iphone, candlestick pattern app, ai technical analysis">
+  <link rel="canonical" href="https://acalise.com/chartcheck/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://acalise.com/chartcheck/">
+  <meta property="og:title" content="ChartCheck - AI Chart Analysis for iPhone">
+  <meta property="og:description" content="Screenshot any trading chart. Get trend, structure, levels, patterns and indicators read back in seconds - with an honest note on what the chart could not show.">
+  <meta property="og:image" content="https://acalise.com/chartcheck/icon.png">
+  <meta property="og:site_name" content="ChartCheck">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ChartCheck - AI Chart Analysis for iPhone">
+  <meta name="twitter:description" content="Screenshot any trading chart. Get a structured technical read in seconds.">
+  <meta name="twitter:image" content="https://acalise.com/chartcheck/icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/chartcheck/icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="apple-itunes-app" content="app-id=6811709869">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ChartCheck",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "iOS",
+    "url": "https://acalise.com/chartcheck/",
+    "installUrl": "https://apps.apple.com/us/app/id6811709869",
+    "image": "https://acalise.com/chartcheck/icon.png",
+    "description": "ChartCheck analyses screenshots of trading charts and returns structured technical analysis: trend and structure, support and resistance, chart and candlestick patterns, indicator readings, a plain-language summary and a confidence level. Educational tool, not financial advice.",
+    "author": { "@type": "Person", "name": "Anthony Calise", "url": "https://acalise.com" }
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://acalise.com/" },
+      { "@type": "ListItem", "position": 2, "name": "ChartCheck", "item": "https://acalise.com/chartcheck/" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What does ChartCheck actually do?",
+        "acceptedAnswer": { "@type": "Answer", "text": "You give it a screenshot of a price chart and it reads the picture back to you in a fixed structure: trend and market structure, support and resistance zones, chart and candlestick patterns, whatever indicators are visible, a plain-language summary, and a confidence level describing how clearly the chart could be read." } },
+      { "@type": "Question", "name": "Does ChartCheck tell me what to buy?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. It describes what a chart shows and it is explicitly not financial advice. It does not recommend buying, selling or holding anything, and it makes no claim about what price will do next." } },
+      { "@type": "Question", "name": "Which markets does it work on?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Any market whose chart is legible as an image - stocks, ETFs, crypto, forex and futures all work, because they are all candlesticks on an axis. What matters more than the asset is screenshot quality: the price axis and enough bars for context need to be in frame." } },
+      { "@type": "Question", "name": "Do I need to know technical analysis already?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No, and it is a reasonable way to learn, because every term is attached to a chart you were already looking at. That said, being able to evaluate the output matters - if you cannot tell a good read from a confidently wrong one, you are following something you do not understand." } },
+      { "@type": "Question", "name": "What does the confidence level mean?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It measures how clearly the chart could be read, not the probability that a trade works. A clean daily chart with a visible price axis scores high; a cropped, low-resolution screenshot scores low. High confidence means the picture was legible, never that price will go up." } }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f; --bg2: #0f1117; --card: #14161f;
+      --border: rgba(59,123,246,0.20); --border-soft: rgba(238,240,250,0.09);
+      --accent: #3b7bf6; --accent2: #2563eb; --accent-light: #8ab4ff; --accent-glow: rgba(59,123,246,0.14);
+      --text: #eef0fa; --muted: #a0a6c0; --muted2: #6a708a;
+      --up: #22c55e;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+
+    nav { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; background: rgba(10,10,15,0.82); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-soft); }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -0.02em; }
+    .nav-brand img { width: 30px; height: 30px; border-radius: 8px; }
+    .nav-links { display: flex; align-items: center; gap: 22px; font-size: 0.88rem; color: var(--muted); }
+    .nav-links a:hover { color: var(--text); }
+    .nav-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem; padding: 9px 18px; border-radius: 100px; transition: background 0.2s, transform 0.15s; }
+    .nav-cta:hover { background: var(--accent2); transform: translateY(-1px); }
+    @media (max-width: 720px) { .nav-links a:not(.nav-cta) { display: none; } }
+
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 76px 0; }
+    .section-label { display: inline-block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-light); margin-bottom: 14px; }
+    h2 { font-size: clamp(1.7rem, 3.6vw, 2.4rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 14px; }
+    .lead { color: var(--muted); font-size: 1.04rem; max-width: 62ch; margin-bottom: 40px; }
+    .divider { border: 0; border-top: 1px solid var(--border-soft); }
+
+    /* hero */
+    .hero { text-align: center; padding: 72px 0 60px; background: radial-gradient(900px 420px at 50% -8%, var(--accent-glow), transparent 70%); }
+    .hero-icon { width: 88px; height: 88px; border-radius: 20px; margin-bottom: 24px; box-shadow: 0 16px 48px rgba(0,0,0,0.6); }
+    .hero h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); font-weight: 900; letter-spacing: -0.045em; line-height: 1.05; margin-bottom: 18px; }
+    .hero h1 span { color: var(--accent); }
+    .hero-sub { color: var(--muted); font-size: 1.12rem; max-width: 56ch; margin: 0 auto 30px; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #fff; font-weight: 800; font-size: 1rem; padding: 15px 30px; border-radius: 100px; transition: background 0.2s, transform 0.15s; }
+    .btn-primary:hover { background: var(--accent2); transform: translateY(-2px); }
+    .hero-note { margin-top: 14px; font-size: 0.8rem; color: var(--muted2); }
+
+    .strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 44px; }
+    .chip { border: 1px solid var(--border); background: var(--card); border-radius: 100px; padding: 8px 18px; font-size: 0.83rem; color: var(--muted); font-weight: 600; }
+
+    /* steps */
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .step { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 26px; }
+    .s-num { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 9px; background: var(--accent-glow); color: var(--accent-light); font-weight: 900; font-size: 0.85rem; margin-bottom: 14px; }
+    .step h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 7px; letter-spacing: -0.01em; }
+    .step p { color: var(--muted); font-size: 0.93rem; }
+
+    /* shots */
+    .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; align-items: start; }
+    .shot { border-radius: 18px; overflow: hidden; border: 1px solid var(--border-soft); background: var(--bg2); }
+    .shot img { display: block; width: 100%; height: auto; }
+    .shot-cap { padding: 14px 16px; font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--border-soft); }
+    .shot-cap b { color: var(--text); font-weight: 700; display: block; margin-bottom: 2px; }
+
+    /* features */
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(258px, 1fr)); gap: 18px; }
+    .fcard { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 24px; transition: border-color 0.2s, transform 0.2s; }
+    .fcard:hover { border-color: var(--border); transform: translateY(-2px); }
+    .fcard h3 { font-size: 1rem; font-weight: 800; margin-bottom: 7px; letter-spacing: -0.01em; }
+    .fcard p { color: var(--muted); font-size: 0.92rem; }
+
+    /* honest box */
+    .honest { background: linear-gradient(135deg, var(--accent-glow), var(--card)); border: 1px solid var(--border); border-radius: 18px; padding: 32px; }
+    .honest h3 { font-size: 1.12rem; font-weight: 800; margin-bottom: 14px; }
+    .honest ul { list-style: none; display: grid; gap: 11px; }
+    .honest li { color: var(--muted); font-size: 0.95rem; padding-left: 26px; position: relative; }
+    .honest li::before { content: "—"; position: absolute; left: 0; color: var(--accent-light); font-weight: 800; }
+
+    /* faq */
+    .faq-item { border-bottom: 1px solid var(--border-soft); padding: 22px 0; }
+    .faq-item:last-child { border-bottom: 0; }
+    .faq-item h3 { font-size: 1.02rem; font-weight: 700; margin-bottom: 8px; }
+    .faq-item p { color: var(--muted); font-size: 0.95rem; }
+
+    /* blog */
+    .posts { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+    .post { background: var(--card); border: 1px solid var(--border-soft); border-radius: 14px; padding: 20px; transition: border-color 0.2s, transform 0.2s; display: block; }
+    .post:hover { border-color: var(--border); transform: translateY(-2px); }
+    .post .t { font-weight: 700; font-size: 0.97rem; margin-bottom: 6px; letter-spacing: -0.01em; }
+    .post .d { color: var(--muted); font-size: 0.87rem; }
+
+    /* closer */
+    .closer { text-align: center; background: radial-gradient(760px 340px at 50% 110%, var(--accent-glow), transparent 70%); }
+
+    footer { text-align: center; padding: 44px 24px; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border-soft); }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--text); }
+    .kw { margin-top: 8px; font-size: 0.72rem; color: var(--muted2); }
+    .legal { max-width: 78ch; margin: 18px auto 0; font-size: 0.76rem; color: var(--muted2); line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/chartcheck/" class="nav-brand">
+      <img src="icon.png" alt="ChartCheck app icon">
+      <span>ChartCheck</span>
+    </a>
+    <span class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="/chartcheck/blog/">Blog</a>
+      <a href="https://apps.apple.com/us/app/id6811709869" class="nav-cta" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Get ChartCheck
+      </a>
+    </span>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <img src="icon.png" alt="ChartCheck app icon" class="hero-icon">
+      <h1>Screenshot the chart.<br><span>Get the read.</span></h1>
+      <p class="hero-sub">ChartCheck turns a picture of any trading chart into a structured technical read - trend and structure, support and resistance, patterns, your indicators - in about the time it takes to switch apps.</p>
+      <a href="https://apps.apple.com/us/app/id6811709869" class="btn-primary" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Get ChartCheck on iPhone
+      </a>
+      <p class="hero-note">Educational analysis only. Not financial advice.</p>
+
+      <div class="strip">
+        <span class="chip">Stocks</span>
+        <span class="chip">Crypto</span>
+        <span class="chip">Forex</span>
+        <span class="chip">Futures</span>
+        <span class="chip">ETFs</span>
+      </div>
+    </div>
+  </header>
+
+  <hr class="divider">
+
+  <section id="how">
+    <div class="wrap">
+      <span class="section-label">How it works</span>
+      <h2>Three steps, about fifteen seconds.</h2>
+      <p class="lead">No account setup before you can try it, no connecting a broker, no pasting a ticker. It reads the picture you give it.</p>
+      <div class="steps">
+        <div class="step">
+          <span class="s-num">1</span>
+          <h3>Screenshot any chart</h3>
+          <p>TradingView, your broker app, Webull, MetaTrader - whatever you already use. Keep the price axis and the timeframe in frame and you are done.</p>
+        </div>
+        <div class="step">
+          <span class="s-num">2</span>
+          <h3>Get a structured read</h3>
+          <p>Trend and structure, the levels that have actually been tested, named patterns, your visible indicators, and a plain-language summary - always in the same order.</p>
+        </div>
+        <div class="step">
+          <span class="s-num">3</span>
+          <h3>Ask follow-up questions</h3>
+          <p>Anything you want clarified about that specific chart, in a thread attached to the read. Tap a suggested question or type your own.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap">
+      <span class="section-label">Inside the app</span>
+      <h2>What a read looks like.</h2>
+      <p class="lead">Every analysis comes back in the same shape, so two charts are actually comparable - which is most of what makes a read useful.</p>
+      <div class="shots">
+        <figure class="shot">
+          <img src="shot-hero.jpg" alt="ChartCheck analysis screen showing an NVDA daily chart with trend, confidence, sentiment and levels" loading="lazy" width="720" height="1151">
+          <figcaption class="shot-cap"><b>Key insights first</b>Trend, confidence, sentiment and level count at a glance, above the detail.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="shot-chat.jpg" alt="ChartCheck conversation thread asking follow-up questions about a specific chart" loading="lazy" width="720" height="1205">
+          <figcaption class="shot-cap"><b>Ask about this chart</b>A thread attached to the read, with suggested questions built from what it found.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="shot-tuned.jpg" alt="ChartCheck onboarding asking how much trading experience you have, with beginner through professional options" loading="lazy" width="720" height="1205">
+          <figcaption class="shot-cap"><b>Pitched at your level</b>A short setup tells it how you trade, so the read is ordered and worded for you.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="features">
+    <div class="wrap">
+      <span class="section-label">Features</span>
+      <h2>Everything it reads off the chart.</h2>
+      <p class="lead">The same checklist a technician runs on a first pass, applied identically every time - at 6am, at 11pm, after a winning week and after a losing one.</p>
+      <div class="features">
+        <div class="fcard">
+          <h3>Trend and structure</h3>
+          <p>The sequence of higher highs and higher lows, or lower highs and lower lows, and the exact point where that sequence broke.</p>
+        </div>
+        <div class="fcard">
+          <h3>Support and resistance</h3>
+          <p>The price zones that have actually been tested more than once, described by where they formed rather than a bare number.</p>
+        </div>
+        <div class="fcard">
+          <h3>Chart and candlestick patterns</h3>
+          <p>Triangles, flags, wedges, head and shoulders, double tops, engulfing candles - named, and marked complete or still forming.</p>
+        </div>
+        <div class="fcard">
+          <h3>Your indicators</h3>
+          <p>Whatever is visible in the screenshot gets read - RSI, MACD, moving averages, volume - rather than assumed defaults.</p>
+        </div>
+        <div class="fcard">
+          <h3>An honest confidence level</h3>
+          <p>How clearly the chart could be read. A clean daily scores high; a cropped, low-resolution capture scores low, and says so.</p>
+        </div>
+        <div class="fcard">
+          <h3>"What I couldn't see"</h3>
+          <p>An explicit list of what was cropped out or unreadable, so you know where the read is thin instead of guessing.</p>
+        </div>
+        <div class="fcard">
+          <h3>Per-chart conversation</h3>
+          <p>Follow-up questions in a thread tied to that specific analysis, so context carries between questions.</p>
+        </div>
+        <div class="fcard">
+          <h3>Earlier reads, kept</h3>
+          <p>Previous analyses of the same asset stay with it, so you can see how your read of it has changed over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap">
+      <span class="section-label">Worth being clear about</span>
+      <h2>What ChartCheck does not do.</h2>
+      <p class="lead">Most apps in this category are vague here. Being specific about the limits is more useful than a longer feature list, because you can calibrate around known limits.</p>
+      <div class="honest">
+        <h3>It reads a picture. That has hard boundaries.</h3>
+        <ul>
+          <li>It does not tell you what to buy or sell, and it is not financial advice.</li>
+          <li>It cannot see anything outside the screenshot - not the level from six months ago, not the higher timeframe.</li>
+          <li>It has no order book, no fundamentals and no news. A gap on an earnings miss and a gap on a sector rotation look identical.</li>
+          <li>It does not predict price. Technical analysis describes what already happened, and every pattern fails a meaningful share of the time.</li>
+          <li>Confidence measures how legible the chart was, never the probability that a trade works.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap">
+      <span class="section-label">Questions</span>
+      <h2>Before you download.</h2>
+      <div class="faq-item">
+        <h3>What does ChartCheck actually do?</h3>
+        <p>You give it a screenshot of a price chart and it reads the picture back to you in a fixed structure: trend and market structure, support and resistance zones, chart and candlestick patterns, whatever indicators are visible, a plain-language summary, and a confidence level describing how clearly the chart could be read.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does ChartCheck tell me what to buy?</h3>
+        <p>No. It describes what a chart shows and it is explicitly not financial advice. It does not recommend buying, selling or holding anything, and it makes no claim about what price will do next.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Which markets does it work on?</h3>
+        <p>Any market whose chart is legible as an image - stocks, ETFs, crypto, forex and futures all work, because they are all candlesticks on an axis. What matters more than the asset is screenshot quality: the price axis and enough bars for context need to be in frame.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do I need to know technical analysis already?</h3>
+        <p>No, and it is a reasonable way to learn, because every term is attached to a chart you were already looking at. That said, being able to evaluate the output matters - if you cannot tell a good read from a confidently wrong one, you are following something you do not understand.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What does the confidence level mean?</h3>
+        <p>It measures how clearly the chart could be read, not the probability that a trade works. A clean daily chart with a visible price axis scores high; a cropped, low-resolution screenshot scores low. High confidence means the picture was legible, never that price will go up.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap">
+      <span class="section-label">From the blog</span>
+      <h2>How to read charts, and how AI gets them wrong.</h2>
+      <p class="lead">Guides on what automated chart reading genuinely does, where it fails, and how to read trend, structure and levels yourself.</p>
+      <div class="posts">
+        <a href="/chartcheck/blog/ai-chart-analysis/" class="post">
+          <div class="t">AI Chart Analysis: What It Can and Cannot Do</div>
+          <div class="d">How a vision model reads a chart, and the four things it structurally cannot know.</div>
+        </a>
+        <a href="/chartcheck/blog/screenshot-a-chart-for-analysis/" class="post">
+          <div class="t">How to Screenshot a Chart Properly</div>
+          <div class="d">Most bad AI reads are bad screenshots. The seven things to keep in frame.</div>
+        </a>
+        <a href="/chartcheck/blog/chart-analysis-with-chatgpt/" class="post">
+          <div class="t">Using ChatGPT for Chart Analysis</div>
+          <div class="d">It works, up to a point. The five ways it breaks, and the prompt that fixes most of them.</div>
+        </a>
+        <a href="/chartcheck/blog/why-ai-chart-analysis-is-wrong/" class="post">
+          <div class="t">When AI Chart Analysis Gets It Wrong</div>
+          <div class="d">Six recognisable failure modes, five of which you can catch from the output itself.</div>
+        </a>
+        <a href="/chartcheck/blog/candlestick-patterns-explained/" class="post">
+          <div class="t">Candlestick Patterns Explained</div>
+          <div class="d">Read the anatomy instead of memorising thirty names - and why location decides everything.</div>
+        </a>
+        <a href="/chartcheck/blog/support-and-resistance/" class="post">
+          <div class="t">How to Draw Support and Resistance</div>
+          <div class="d">Zones not lines, which levels matter, and why more touches is not always stronger.</div>
+        </a>
+      </div>
+      <p style="margin-top:24px"><a href="/chartcheck/blog/" style="color:var(--accent-light);font-weight:700;font-size:0.93rem">Read the whole blog &rarr;</a></p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="closer">
+    <div class="wrap">
+      <h2>Stop squinting at the chart.</h2>
+      <p class="hero-sub">Screenshot it, read the structure, ask what you actually want to know.</p>
+      <a href="https://apps.apple.com/us/app/id6811709869" class="btn-primary" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Get ChartCheck on iPhone
+      </a>
+      <p class="hero-note">Requires iOS. Subscription required to analyse charts.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2026 ChartCheck &nbsp;&middot;&nbsp;
+      <a href="https://apps.apple.com/us/app/id6811709869" rel="noopener">App Store</a> &nbsp;&middot;&nbsp;
+      <a href="/chartcheck/blog/">Blog</a> &nbsp;&middot;&nbsp;
+      <a href="/privacy/chartcheck/">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="/terms/chartcheck/">Terms</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com">acalise.com</a>
+    </p>
+    <p class="legal">ChartCheck is an educational tool. It does not provide financial, investment, tax or legal advice, and nothing in the app or on this page is a recommendation, solicitation or offer to buy, sell or hold any security, cryptocurrency, currency, commodity or other financial instrument. Trading involves risk of loss. Always do your own research and consult a licensed financial professional before making any trading or investment decision.</p>
+    <p class="kw">ai chart analysis &middot; chart analysis app &middot; technical analysis app &middot; candlestick patterns &middot; chart patterns &middot; support and resistance</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>How to Read a Stock Chart: A Beginner Walkthrough | ChartCheck</title>
+  <meta name="description" content="A beginner walkthrough of reading a price chart in a deliberate order: timeframe, trend, structure, levels, then patterns. What each element means and what to ignore.">
+  <meta name="keywords" content="how to read a stock chart, how do you read a stock chart for beginners, reading stock charts, stock chart basics, how to read trading charts, candlestick chart basics">
+  <link rel="canonical" href="https://acalise.com/chartcheck/blog/how-to-read-a-stock-chart/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://acalise.com/chartcheck/blog/how-to-read-a-stock-chart/">
+  <meta property="og:title" content="How to Read a Stock Chart">
+  <meta property="og:description" content="Read a chart in a deliberate order: timeframe, trend, structure, levels, then patterns.">
+  <meta property="og:image" content="https://acalise.com/chartcheck/icon.png">
+  <meta property="og:site_name" content="ChartCheck">
+  <meta property="article:published_time" content="2026-09-16">
+  <meta property="article:modified_time" content="2026-09-16">
+  <meta property="article:author" content="Anthony Calise">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Read a Stock Chart">
+  <meta name="twitter:description" content="Read a chart in a deliberate order: timeframe, trend, structure, levels, then patterns.">
+  <meta name="twitter:image" content="https://acalise.com/chartcheck/icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/chartcheck/icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD: Article -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Read a Stock Chart, in the Order You Should Read It",
+  "description": "A beginner walkthrough of reading a price chart in a deliberate order: timeframe, trend, structure, levels, then patterns. What each element means and what to ignore.",
+  "author": {
+    "@type": "Person",
+    "name": "Anthony Calise",
+    "url": "https://acalise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChartCheck",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://acalise.com/chartcheck/icon.png"
+    }
+  },
+  "datePublished": "2026-09-16",
+  "dateModified": "2026-09-16",
+  "image": "https://acalise.com/chartcheck/icon.png",
+  "mainEntityOfPage": "https://acalise.com/chartcheck/blog/how-to-read-a-stock-chart/"
+}
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What do the colours on a candlestick chart mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Conventionally, a green or white candle closed higher than it opened and a red or black candle closed lower. The colours are configurable and mean nothing beyond that. What carries information is the size of the body relative to the wicks, not the colour itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use a log or linear price scale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Log scale for anything spanning a long period or a wide price range, because it shows equal percentage moves as equal distances, which is how returns actually work. Linear is fine for short intraday views. Worth knowing that trendlines do not transfer between the two - a line that touches three lows on a linear chart may miss them entirely on log."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many indicators should a beginner use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One, or none. Every standard indicator is a transformation of price data already on the chart, so adding more does not add information - it adds correlated restatements of the same information, which is easy to mistake for confirmation. Learning to read structure and levels from raw price is more valuable than any indicator combination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What timeframe should I look at?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The one that matches your holding period, plus one above it for context. If you hold for weeks, read the daily and check the weekly. If you hold for hours, read the 15-minute and check the daily. The common mistake is analysing on a much shorter timeframe than you actually trade, which generates far more signals than your holding period can use."
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- JSON-LD: WebSite -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ChartCheck",
+  "url": "https://acalise.com/chartcheck/"
+}
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://acalise.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ChartCheck",
+      "item": "https://acalise.com/chartcheck/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Blog",
+      "item": "https://acalise.com/chartcheck/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "How to Read a Stock Chart, in the Order You Should Read It",
+      "item": "https://acalise.com/chartcheck/blog/how-to-read-a-stock-chart/"
+    }
+  ]
+}
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f; --bg2: #0f1117; --card: #14161f;
+      --border: rgba(59,123,246,0.20); --border-soft: rgba(238,240,250,0.09);
+      --accent: #3b7bf6; --accent2: #2563eb; --accent-light: #8ab4ff; --accent-glow: rgba(59,123,246,0.14);
+      --text: #eef0fa; --muted: #a0a6c0; --muted2: #6a708a;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-soft); }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.02em;  color: var(--text); }
+    .nav-brand img { width: 30px; height: 30px; border-radius: 8px; }
+    .nav-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem; padding: 9px 18px; border-radius: 100px; transition: background 0.2s, transform 0.15s; }
+    .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); text-decoration: none; }
+
+    .article-wrapper { max-width: 740px; margin: 0 auto; padding: 100px 24px 80px; }
+    .article-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+    .article-meta .badge { display: inline-flex; align-items: center; gap: 6px; background: var(--accent-glow); border: 1px solid var(--border); color: var(--accent-light); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; }
+    .article-meta .date { font-size: 0.8rem; color: var(--muted); }
+    .article-wrapper h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.08;  margin-bottom: 20px; }
+    .article-intro { font-size: 1.1rem; color: var(--muted); line-height: 1.7; margin-bottom: 40px; }
+    .answer-box { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 12px; padding: 20px 24px; margin-bottom: 36px; }
+    .answer-box h2 { font-size: 0.8rem !important; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-light); margin: 0 0 8px !important; }
+    .answer-box p { margin: 0; }
+    .article-wrapper h2 { font-size: 1.55rem; font-weight: 900; letter-spacing: -0.03em;  margin: 48px 0 16px; line-height: 1.15; }
+    .article-wrapper h3 { font-size: 1.18rem; font-weight: 800; letter-spacing: -0.02em; margin: 32px 0 12px; line-height: 1.3; }
+    .article-wrapper p { font-size: 1rem; line-height: 1.75; color: var(--text); opacity: 0.92; margin-bottom: 16px; }
+    .article-wrapper ul, .article-wrapper ol { padding-left: 24px; margin-bottom: 16px; }
+    .article-wrapper li { font-size: 1rem; line-height: 1.75; color: var(--text); opacity: 0.92; margin-bottom: 8px; }
+    .article-wrapper strong { color: var(--text); opacity: 1; }
+
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 0.85rem; }
+    .comparison-table th, .comparison-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border-soft); }
+    .comparison-table th { font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); background: var(--bg2); }
+    .comparison-table td { color: var(--text); opacity: 0.92; }
+    .comparison-table tr:hover td { background: var(--bg2); }
+    .comparison-table .highlight-row td { color: var(--accent-light); font-weight: 700; opacity: 1; }
+    @media (max-width: 600px) { .comparison-table { font-size: 0.75rem; } .comparison-table th, .comparison-table td { padding: 8px 8px; } }
+
+    .stat-card { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 28px; margin: 24px 0; text-align: center; }
+    .stat-card .stat-number { font-size: 2.5rem; font-weight: 900; color: var(--accent); letter-spacing: -0.04em; line-height: 1.1; }
+    .stat-card .stat-label { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
+    .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+    @media (max-width: 600px) { .stat-row { grid-template-columns: 1fr; } }
+
+    .info-card { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 24px 28px; margin: 24px 0; }
+    .info-card h4 { font-size: 0.98rem; font-weight: 800; margin-bottom: 12px; color: var(--text); }
+    .info-card p { font-size: 0.92rem; margin-bottom: 8px; }
+    .info-card p:last-child { margin-bottom: 0; }
+    .info-card ul { margin-bottom: 0; }
+
+    .script-box { background: var(--bg2); border: 1px solid var(--border-soft); border-left: 3px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 18px 0; }
+    .script-box p { margin: 0 0 8px; font-size: 0.95rem; }
+    .script-box p:last-child { margin-bottom: 0; }
+    .script-box .who { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; display: block; margin-bottom: 4px; }
+
+    .cta-banner { background: linear-gradient(135deg, var(--accent2), var(--accent)); border-radius: 16px; padding: 32px; text-align: center; margin: 48px 0; }
+    .cta-banner h3 { font-size: 1.35rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; color: #fff; margin: 0 0 8px; }
+    .cta-banner p { font-size: 0.95rem; color: rgba(255,255,255,0.88); margin-bottom: 20px; opacity: 1; }
+    .cta-banner .btn { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--accent2); font-weight: 800; font-size: 0.95rem; padding: 14px 28px; border-radius: 100px; transition: transform 0.15s; }
+    .cta-banner .btn:hover { transform: translateY(-2px); text-decoration: none; }
+
+    .faq-item { border-bottom: 1px solid var(--border-soft); padding: 20px 0; }
+    .faq-item h3 { font-size: 1.05rem; margin: 0 0 8px; color: var(--text); }
+    .faq-item p { font-size: 0.95rem; margin: 0; }
+
+    footer { text-align: center; padding: 40px 24px; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border-soft); }
+    footer a { color: var(--muted); transition: color 0.2s; }
+    footer a:hover { color: var(--text); }
+    .kw { margin-top: 8px; font-size: 0.72rem; color: var(--muted2); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/chartcheck/" class="nav-brand">
+      <img src="../../icon.png" alt="ChartCheck app icon">
+      <span>ChartCheck</span>
+    </a>
+    <a href="https://apps.apple.com/us/app/id6811709869" class="nav-cta" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Get ChartCheck
+    </a>
+  </nav>
+
+  <article class="article-wrapper">
+    <div class="article-meta">
+      <span class="badge">Beginner</span>
+      <span class="date">Published September 16, 2026</span>
+    </div>
+
+    <h1>How to Read a Stock Chart, in the Order You Should Read It</h1>
+
+    <p class="article-intro">Most people learn to read charts by absorbing fragments - a pattern here, an indicator there - and end up with a pile of signals and no method. It works considerably better to read every chart in the same fixed order, from the widest information to the narrowest.</p>
+
+    <section class="answer-box" aria-labelledby="quick">
+      <h2 id="quick">The short answer</h2>
+      <p>Read a chart in five passes, in this order. First the axes and timeframe, so you know the scale and period. Second the trend, by looking at the overall direction of highs and lows. Third the structure, meaning the specific sequence of swing highs and lows and whether it is intact. Fourth the levels, meaning the horizontal prices that have been tested repeatedly. Only then patterns and indicators. Doing it in this order stops you from finding a pattern and building a story around it.</p>
+    </section>
+
+    <h2>Pass 1: the axes and the timeframe</h2>
+
+    <p>Before anything else, establish what you are looking at. The vertical axis is price, the horizontal axis is time, and each candle represents one period of whatever timeframe the chart is set to.</p>
+
+    <p>Two things here trip up beginners regularly.</p>
+
+    <p><strong>Log versus linear scale.</strong> On a linear axis, the distance from 10 to 20 is the same as from 100 to 110. On a logarithmic axis, equal distances represent equal percentage moves. For anything spanning a long period or a large range, log scale is usually the more honest picture, and trendlines drawn on one scale will not match the other.</p>
+
+    <p><strong>Timeframe changes everything.</strong> The same instrument can be in a clear uptrend on the weekly chart and a clear downtrend on the hourly, and both readings are correct. Neither is the "real" trend. Which one matters depends entirely on how long you intend to hold.</p>
+
+    <h2>Pass 2: the trend</h2>
+
+    <p>Zoom out far enough that the individual candles stop mattering and ask one question: over the visible history, is price generally higher on the right than the left, lower, or neither?</p>
+
+    <p>That is it for this pass. Do not draw anything yet. The point is to form the broad impression before you start looking for detail, because detail will otherwise steer the impression.</p>
+
+    <h2>Pass 3: the structure</h2>
+
+    <p>Now get specific. Structure is the sequence of swing highs and swing lows, and it is the most useful concept in chart reading.</p>
+
+    <div class="info-card">
+      <h4>What structure means</h4>
+      <p><strong>Uptrend.</strong> Each swing high is higher than the last, and each swing low is higher than the last. Higher highs, higher lows.</p>
+      <p><strong>Downtrend.</strong> Lower highs and lower lows.</p>
+      <p><strong>Range.</strong> Highs and lows at roughly consistent levels, no progression.</p>
+      <p><strong>Break of structure.</strong> The moment the sequence stops. In an uptrend, the first time price makes a lower low is the single most informative event on the chart.</p>
+    </div>
+
+    <p>A break of structure is not a guarantee of reversal - plenty resume the old trend afterwards. What it is, is the first genuine evidence that the pattern which had been holding has stopped holding. That is worth more than any indicator reading.</p>
+
+    <h2>Pass 4: the levels</h2>
+
+    <p>Look for horizontal prices where the chart has repeatedly done something - stalled, reversed, accelerated away from. These are support and resistance, and they are worth marking before you look for patterns, because they determine which patterns matter.</p>
+
+    <p>Two practical rules. Draw levels as zones rather than precise lines, because price rarely respects an exact number. And weight by number of touches: a price tested four times carries far more information than one tested once.</p>
+
+    <h2>Pass 5: patterns and indicators, last</h2>
+
+    <p>Only now look for named patterns or add indicators. The reason this pass comes last is psychological rather than technical.</p>
+
+    <p>If you start by hunting for patterns, you will find one - there is always something on a chart that resembles a flag or a triangle if you want it to. You then build a narrative around that pattern and read the rest of the chart to support it. Establishing trend, structure and levels first means any pattern you spot gets evaluated against a picture you already formed.</p>
+
+    <p>On indicators: one is plenty when starting out, and none is a defensible choice. Every standard indicator is a mathematical transformation of the same price data already visible on the chart. RSI, MACD and moving averages do not add information; they repackage it in a way that is sometimes easier to read. Stacking six of them produces six correlated opinions derived from one dataset, which feels like confirmation and is not.</p>
+
+    <h2>What to ignore while learning</h2>
+
+    <p>Anything promising a signal. Anything with more than about three parameters you are told not to change. Any indicator whose mechanism you cannot explain in a sentence - if you cannot say what it computes, you cannot tell when it is misleading you, which is exactly when it matters.</p>
+
+    <h2>A worked order of operations</h2>
+
+    <ol>
+      <li><strong>What am I looking at?</strong> Symbol, timeframe, scale.</li>
+      <li><strong>Which way has it been going?</strong> Broad impression, zoomed out.</li>
+      <li><strong>Is that still happening?</strong> Structure intact, or broken.</li>
+      <li><strong>Where does it keep stopping?</strong> Mark the two or three clearest levels.</li>
+      <li><strong>Is anything forming?</strong> Patterns, evaluated against the above.</li>
+      <li><strong>Where would I be wrong?</strong> The level that invalidates the read.</li>
+    </ol>
+
+    <p>Step six is the one beginners skip and professionals do first. A read without an invalidation point is an opinion; a read with one is something you can actually size and manage.</p>
+
+    <div class="cta-banner">
+      <h3>Read your chart in seconds</h3>
+      <p>ChartCheck turns a screenshot of any trading chart into a structured technical read: trend and structure, support and resistance, patterns, your indicators, and an honest confidence level.</p>
+      <a href="https://apps.apple.com/us/app/id6811709869" class="btn" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Get ChartCheck</a>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item">
+      <h3>What do the colours on a candlestick chart mean?</h3>
+      <p>Conventionally, a green or white candle closed higher than it opened and a red or black candle closed lower. The colours are configurable and mean nothing beyond that. What carries information is the size of the body relative to the wicks, not the colour itself.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Should I use a log or linear price scale?</h3>
+      <p>Log scale for anything spanning a long period or a wide price range, because it shows equal percentage moves as equal distances, which is how returns actually work. Linear is fine for short intraday views. Worth knowing that trendlines do not transfer between the two - a line that touches three lows on a linear chart may miss them entirely on log.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How many indicators should a beginner use?</h3>
+      <p>One, or none. Every standard indicator is a transformation of price data already on the chart, so adding more does not add information - it adds correlated restatements of the same information, which is easy to mistake for confirmation. Learning to read structure and levels from raw price is more valuable than any indicator combination.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What timeframe should I look at?</h3>
+      <p>The one that matches your holding period, plus one above it for context. If you hold for weeks, read the daily and check the weekly. If you hold for hours, read the 15-minute and check the daily. The common mistake is analysing on a much shorter timeframe than you actually trade, which generates far more signals than your holding period can use.</p>
+    </div>
+
+    <h2>Related Articles</h2>
+    <ul>
+      <li><a href="/chartcheck/blog/candlestick-patterns-explained/">Candlestick Patterns Explained, With What Each One Actually Means</a></li>
+      <li><a href="/chartcheck/blog/support-and-resistance/">How to Draw Support and Resistance That Actually Holds Up</a></li>
+      <li><a href="/chartcheck/blog/chart-patterns-cheat-sheet/">Chart Patterns Cheat Sheet, With What Each Pattern Is Actually Saying</a></li>
+    </ul>
+
+    <section class="answer-box" aria-labelledby="scope">
+      <h2 id="scope">Scope</h2>
+      <p>This article is educational and is not financial, investment, or trading advice. Nothing here is a recommendation to buy, sell, or hold any security, cryptocurrency, currency, commodity, or derivative. Technical analysis describes what a chart has already done; it does not predict what it will do, and every pattern described here fails a meaningful share of the time. Trading involves risk of loss. Do your own research and consult a licensed financial professional before making any trading decision. ChartCheck is made by the author of this site.</p>
+    </section>
+  </article>
+
+  <footer>
+    <p>
+      &copy; 2026 ChartCheck &nbsp;&middot;&nbsp;
+      <a href="https://apps.apple.com/us/app/id6811709869" rel="noopener">App Store</a> &nbsp;&middot;&nbsp;
+      <a href="/chartcheck/blog/">Blog</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com/privacy/chartcheck/">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com">acalise.com</a>
+    </p>
+    <p class="kw">ai chart analysis · chart analysis app · technical analysis app · candlestick patterns · chart patterns · support and resistance</p>
+  </footer>
+
+</body>
+</html>
