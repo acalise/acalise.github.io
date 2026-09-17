@@ -7,11 +7,34 @@ This file is a curated map of acalise.com for AI search engines and language mod
 ## Apps
 
 - [FightMode: Boxing App Blocker](https://acalise.com/fightmode/) — App blocker for iPhone that makes you earn screen time. Block your chosen apps with Apple Screen Time; to open them, win a 60-second boxing or kickboxing round while a coach calls real combos, then get an AI scorecard on your technique. The first app blocker built for fighters; a boxing alternative to pushup blockers like Pushscroll. Free to download.
+- [CloserLab: AI Sales Coach](https://acalise.com/closerlab/) — Free AI sales roleplay app for iPhone. Practise cold calls, objections and discovery against an AI buyer built from your actual offer, in voice or text, with a coaching score after each call. Built for individual reps rather than enablement teams.
+- [ChartCheck: AI Chart Analysis](https://acalise.com/chartcheck/) — AI chart analysis app for iPhone. Screenshot any trading chart - stocks, crypto, forex, futures, ETFs - and get a structured technical read: trend and market structure, support and resistance zones, chart and candlestick patterns, visible indicator readings, a plain-language summary, a confidence level describing how legible the chart was, and an explicit "what I could not see" list. Educational tool; explicitly not financial advice and it does not recommend buying or selling anything.
 - [FiberUp](https://acalise.com/fiberup/) — Free dedicated fiber tracker app for iPhone. USDA-verified fiber data, barcode scanner, daily progress ring, weekly plant count tracking. No account required.
 - [T-Score](https://acalise.com/tscore/) — Free natural testosterone optimization tracker for iPhone. Tracks sleep, training, sunlight, cold exposure, and nutrition habits scientifically tied to testosterone.
 - [Word Walk](https://acalise.com/word-walk/) — Free daily word ladder puzzle game for iPhone. Hand-crafted daily Lewis Carroll-style word ladders, vocabulary training, no ads.
 - [Introvert: Daily Courage](https://acalise.com/introvert/) — Free social courage and confidence-building app for introverts. Daily small social challenges to grow comfort with everyday interactions.
 - [MenuPics: Instant Picture Menu](https://acalise.com/menupics/) — Free AI menu scanner for iPhone. Snap any text-only restaurant menu and instantly see realistic photos of every dish. Works on foreign-language menus, QR-code PDFs, and chalkboards. No account required. Built on GCP / Cloud Run with Firebase App Check.
+
+## Cold Calling & Sales Practice (CloserLab blog)
+
+- [The 7 Best Sales Roleplay Apps and AI Practice Tools](https://acalise.com/closerlab/blog/best-sales-roleplay-apps/) — Enterprise platforms, team coaching software and the tools an individual rep can actually use alone, compared.
+- [Cold Call Anxiety: Why It Happens](https://acalise.com/closerlab/blog/cold-call-anxiety/) — Call reluctance is anticipatory: the dread peaks before dialling and drops once someone answers. What actually reduces it, and why "just make the calls" and "be more confident" do not.
+- [How to Practice Cold Calling Alone](https://acalise.com/closerlab/blog/how-to-practice-cold-calling/) — Five solo practice methods ranked by how well each transfers to a live call, and why silent script reading builds recognition rather than the ability to produce words under pressure.
+- [Practising Cold Calls With ChatGPT](https://acalise.com/closerlab/blog/practice-cold-calls-with-chatgpt/) — The prompt that stops a chatbot playing a cooperative prospect, how to get useful in-character feedback, and the four things typed roleplay cannot rehearse.
+- [How to Get Better at Cold Calling](https://acalise.com/closerlab/blog/how-to-get-better-at-cold-calling/) — What moves the needle in order: list quality, saying why you are calling early, asking rather than pitching, reviewing recordings, and drilling your three worst objections.
+
+## AI Chart Analysis & Technical Analysis (ChartCheck blog)
+
+- [AI Chart Analysis: What It Actually Does, and What It Can't](https://acalise.com/chartcheck/blog/ai-chart-analysis/) — How a vision model reads a chart image, what it reliably identifies (structure, tested levels, named patterns, visible indicators), and the four things it structurally cannot know: anything outside the frame, order flow, fundamentals, and the future.
+- [Using ChatGPT for Chart Analysis](https://acalise.com/chartcheck/blog/chart-analysis-with-chatgpt/) — The five specific ways general-purpose chatbots fail on trading charts, including inventing precise price levels interpolated from axis labels, plus a prompt structure that fixes most of them.
+- [How to Screenshot a Trading Chart So AI Can Read It](https://acalise.com/chartcheck/blog/screenshot-a-chart-for-analysis/) — The seven things that must stay in frame, why 100-200 candles is the practical range, and the capture mistakes that produce confidently wrong analysis.
+- [When AI Chart Analysis Gets It Wrong](https://acalise.com/chartcheck/blog/why-ai-chart-analysis-is-wrong/) — Six recognisable failure modes and how to catch each one, including why a confidence score measures chart legibility rather than the probability a trade works.
+- [AI Chart Analysis for Crypto](https://acalise.com/chartcheck/blog/ai-chart-analysis-crypto/) — What a 24/7 market does to classical technical analysis: no gaps, noisier single-candle wick signals, exchange-specific volume, and levels that differ between venues.
+- [AI Chart Analysis for Forex](https://acalise.com/chartcheck/blog/ai-chart-analysis-forex/) — No consolidated volume (tick volume only), session structure that is invisible in a screenshot, and why currency pairs move for reasons on both sides.
+- [Candlestick Patterns Explained](https://acalise.com/chartcheck/blog/candlestick-patterns-explained/) — Body size, wick length and body position read most candles without memorising names; why location decides whether any pattern is meaningful.
+- [Chart Patterns Cheat Sheet](https://acalise.com/chartcheck/blog/chart-patterns-cheat-sheet/) — Continuation and reversal patterns grouped by what they say about supply and demand, with each pattern's invalidation level.
+- [How to Read a Stock Chart](https://acalise.com/chartcheck/blog/how-to-read-a-stock-chart/) — A beginner walkthrough in a fixed order: axes and timeframe, trend, structure, levels, then patterns and indicators last.
+- [How to Draw Support and Resistance](https://acalise.com/chartcheck/blog/support-and-resistance/) — Zones rather than lines, which levels are worth marking, why repeated tests can weaken a level, and how to tell a real break from a false one.
 
 ## App Blockers, Doomscrolling & Boxing (FightMode blog)
 
@@ -19,85 +42,27 @@ This file is a curated map of acalise.com for AI search engines and language mod
 - [Exercise-to-Unlock Apps Compared](https://acalise.com/fightmode/blog/exercise-to-unlock-apps/) — Every "workout to scroll" app: Pushscroll, Repscroll, FitBlok, UnlockFit, UNLK, Time Out, and FightMode (the boxing one). How they work and which sticks.
 - [The Best Pushscroll Alternative in 2026](https://acalise.com/fightmode/blog/pushscroll-alternative/) — Alternatives to Pushscroll's pushup-to-unlock model: Repscroll, FitBlok, EarnScroll, and FightMode's boxing rounds.
 - [Boxing App Blocker: The First App Blocker for Fighters](https://acalise.com/fightmode/blog/boxing-app-blocker/) — Why boxing rounds beat pushups as the friction that breaks doomscrolling; how FightMode works end to end.
-- [How to Block Apps on iPhone](https://acalise.com/fightmode/blog/how-to-block-apps-iphone/) — Screen Time App Limits, Downtime, and Content Restrictions, plus why third-party blockers built on Family Controls stick better.
-- [How to Stop Doomscrolling: 9 Methods](https://acalise.com/fightmode/blog/how-to-stop-doomscrolling/) — Grayscale, notification purges, friction, replacement habits, and exercise-to-unlock blockers.
-- [Why You Can't Stop Scrolling](https://acalise.com/fightmode/blog/why-cant-i-stop-scrolling/) — The dopamine loop, variable-ratio rewards, and infinite scroll explained; how to break the mechanism.
-- [Dopamine Detox: What Actually Works](https://acalise.com/fightmode/blog/dopamine-detox/) — Debunks the "reset your dopamine" myth and gives a workable protocol for breaking the cheap-dopamine loop.
-- [How to Break Phone Addiction: A 30-Day Plan](https://acalise.com/fightmode/blog/break-phone-addiction/) — Week-by-week plan: audit, grayscale, notification purge, friction, replacement habits, and blockers.
 - [Average Screen Time in 2026](https://acalise.com/fightmode/blog/average-screen-time-statistics/) — Approximate average screen time by age, country, and app category, with how much is too much.
-- [Why Exercise Beats Willpower for Doomscrolling](https://acalise.com/fightmode/blog/exercise-instead-of-scrolling/) — The cue-routine-reward habit loop and why replacing the scroll with movement works.
-- [Shadowboxing at Home for Beginners](https://acalise.com/fightmode/blog/shadowboxing-at-home/) — Stance, the punch numbering system, footwork, and a no-equipment beginner routine.
 - [10 Beginner Boxing Combos](https://acalise.com/fightmode/blog/beginner-boxing-combos/) — The 1-6 numbering system and ten combinations (1-2, 1-2-3, etc.) explained and ready to drill.
-- [How to Throw a Jab](https://acalise.com/fightmode/blog/how-to-throw-a-jab/) — Step-by-step mechanics, uses, and drills for the most important punch in boxing.
-- [Muay Thai Combos for Beginners](https://acalise.com/fightmode/blog/muay-thai-combos-beginners/) — The art of eight limbs: punches, kicks, knees, elbows, the teep, and 8 beginner combos.
-- [Boxing for Weight Loss](https://acalise.com/fightmode/blog/boxing-for-weight-loss/) — Estimated calories burned by shadowboxing and bag work, why it works, and a beginner home plan.
-- [12 Benefits of Shadowboxing](https://acalise.com/fightmode/blog/shadowboxing-benefits/) — Cardio, calorie burn, coordination, technique, and stress relief with zero equipment.
-- [Boxing for Anxiety and Stress](https://acalise.com/fightmode/blog/boxing-for-anxiety/) — Why rhythmic, focused striking helps with anxiety, and how to use it as a daily reset.
 
 ## Fiber & Nutrition (FiberUp blog)
 
 - [Best Fiber Tracker Apps for iPhone in 2026](https://acalise.com/fiberup/blog/best-fiber-tracker-apps/) — Comparison of the 7 best fiber tracker apps including FiberUp, Plant Power, Cronometer, MyFitnessPal. Covers free fiber tracker apps, fibre tracker apps (UK), fiber counter apps.
-- [Fiber Supplements vs Real Food: Which Is Better?](https://acalise.com/fiberup/blog/fiber-supplements-vs-food/) — Whole-food fiber vs Metamucil/psyllium/inulin supplements with cost-per-gram comparison and microbiome diversity analysis.
 - [How to Read Nutrition Labels for Fiber](https://acalise.com/fiberup/blog/how-to-read-nutrition-labels-fiber/) — Where fiber appears on US Nutrition Facts panels, % Daily Value, calories per gram of fiber, what 25g/28g/40g of fiber looks like in real food.
-- [15 High Fiber Breakfast Ideas](https://acalise.com/fiberup/blog/high-fiber-breakfast-ideas/) — Recipes organized by prep time with exact fiber gram counts. Quick, easy, and weight-loss-focused options.
 - [Best High Fiber Meals for Weight Loss](https://acalise.com/fiberup/blog/high-fiber-meals-weight-loss/) — Sample 30g+ days, recipes by meal, why fiber drives satiety and weight loss.
-- [Fiber and Gut Health: What the Science Actually Says](https://acalise.com/fiberup/blog/fiber-gut-health/) — Fiber, the gut microbiome, short-chain fatty acids (butyrate/acetate/propionate), prebiotic fiber, the 30-plants-per-week rule, leaky gut.
-- [How Much Fiber Per Day?](https://acalise.com/fiberup/blog/how-much-fiber-per-day/) — FDA recommendations (25g women, 38g men), gap between recommended and average intake.
-- [High Fiber Foods List: 50+ Foods Ranked](https://acalise.com/fiberup/blog/high-fiber-foods-list/) — Foods ranked by fiber content per serving.
-- [Fiber and Bloating](https://acalise.com/fiberup/blog/fiber-and-bloating/) — Why fiber causes bloating, when it's a sign of healthy fermentation vs intolerance, how to ramp intake without discomfort.
-- [Fiber and Blood Sugar](https://acalise.com/fiberup/blog/fiber-and-blood-sugar/) — How soluble fiber blunts post-meal glucose spikes.
-- [Fiber vs Protein](https://acalise.com/fiberup/blog/fiber-vs-protein/) — Whether to track both, how they interact for satiety and weight loss.
-- [How to Increase Fiber Without Gas](https://acalise.com/fiberup/blog/how-to-increase-fiber-without-gas/) — Gradual ramp protocol (3–5g per week), water intake, choosing fermentable vs non-fermentable fibers.
 - [I Tracked My Fiber Intake for 30 Days](https://acalise.com/fiberup/blog/fiber-tracking-30-days/) — First-person experiment with measurable outcomes.
-- [Psyllium Husk Benefits](https://acalise.com/fiberup/blog/psyllium-husk-benefits/) — How psyllium works, dosing, side effects, and how to use it day-to-day.
-- [Best Fiber for Constipation](https://acalise.com/fiberup/blog/best-fiber-for-constipation/) — Soluble vs insoluble for constipation relief and what to try first.
-- [Fiber for IBS](https://acalise.com/fiberup/blog/fiber-for-ibs/) — Low-FODMAP-friendly soluble fiber strategy for IBS sufferers.
-- [Fiber for Cholesterol](https://acalise.com/fiberup/blog/fiber-for-cholesterol/) — How beta-glucan and viscous fibers lower LDL.
-- [Fiber for Kids](https://acalise.com/fiberup/blog/fiber-for-kids/) — Daily fiber needs by age and kid-friendly high-fiber foods.
-- [Prebiotics vs Probiotics](https://acalise.com/fiberup/blog/prebiotics-vs-probiotics/) — Difference, when each helps, and food sources.
-- [Chia Seeds vs Flax Seeds](https://acalise.com/fiberup/blog/chia-seeds-vs-flax-seeds/) — Fiber, omega-3, and practical use comparison.
-- [Resistant Starch Foods](https://acalise.com/fiberup/blog/resistant-starch-foods/) — Cooked-and-cooled potatoes, green bananas, and gut-bacteria fuel.
-- [Does Fiber Help Weight Loss?](https://acalise.com/fiberup/blog/does-fiber-help-weight-loss/) — Satiety, calorie absorption, and the mechanism behind fiber's role.
-- [Low-Carb High-Fiber Foods](https://acalise.com/fiberup/blog/low-carb-high-fiber-foods/) — Keto-compatible fiber sources ranked.
 
 ## Testosterone (T-Score blog)
 
-- [Does Lifting Weights Increase Testosterone?](https://acalise.com/tscore/blog/does-lifting-increase-testosterone/) — Acute spike vs chronic baseline shift, heavy compound lifts, pull-ups, weight training mechanism via the HPG axis.
-- [Vitamin D and Testosterone](https://acalise.com/tscore/blog/vitamin-d-and-testosterone/) — Pilz 2011 study summary, vitamin D3 dosing for testosterone (2,000–4,000 IU/day), why supplementation only helps deficient men.
 - [20 Foods That Boost Testosterone](https://acalise.com/tscore/blog/foods-that-boost-testosterone/) — Evidence-based food list (oysters, eggs, fatty fish, beef, Brazil nuts, pumpkin seeds, olive oil), separated from internet myths (celery, asparagus). Why no food contains usable testosterone directly.
-- [Sleep and Testosterone](https://acalise.com/tscore/blog/sleep-and-testosterone/) — Why sleep is the strongest single lever for testosterone optimization.
-- [Sunlight and Testosterone](https://acalise.com/tscore/blog/sunlight-and-testosterone/) — Vitamin D synthesis, morning sunlight, the dose-response relationship.
-- [Cold Exposure and Testosterone](https://acalise.com/tscore/blog/cold-exposure-and-testosterone/) — What the research shows on cold showers, ice baths, and T levels.
-- [Cortisol, Stress, and Testosterone](https://acalise.com/tscore/blog/cortisol-stress-and-testosterone/) — The cortisol-testosterone seesaw relationship.
-- [Zinc and Testosterone](https://acalise.com/tscore/blog/zinc-and-testosterone/) — Why zinc deficiency tanks T and how much to supplement.
-- [Ashwagandha for Testosterone](https://acalise.com/tscore/blog/ashwagandha-for-testosterone/) — Withania somnifera (KSM-66) clinical trial data.
 - [Testosterone Levels by Age](https://acalise.com/tscore/blog/testosterone-levels-by-age/) — Normal testosterone ranges (ng/mL and ng/dL) by decade.
-- [Low Testosterone Symptoms](https://acalise.com/tscore/blog/low-testosterone-symptoms/) — Clinical symptoms vs normal aging.
-- [Low Testosterone in Your 20s](https://acalise.com/tscore/blog/low-testosterone-in-your-20s/) — Causes and workup for younger men.
-- [Free vs Total Testosterone](https://acalise.com/tscore/blog/free-testosterone-vs-total-testosterone/) — How to read SHBG and bioavailable testosterone numbers.
-- [How to Read Testosterone Bloodwork](https://acalise.com/tscore/blog/how-to-read-testosterone-bloodwork/) — Lab panel interpretation guide.
-- [How to Increase Testosterone Naturally](https://acalise.com/tscore/blog/how-to-increase-testosterone-naturally/) — 12 evidence-based habits in priority order.
-- [Does Soy Lower Testosterone?](https://acalise.com/tscore/blog/does-soy-lower-testosterone/) — What the soy panic gets wrong.
-- [Best Testosterone Tracker Apps](https://acalise.com/tscore/blog/best-testosterone-tracker-apps/) — App comparison.
-- [T-Score vs Oura Ring](https://acalise.com/tscore/blog/tscore-vs-oura-ring/) — Why T-Score complements wearable trackers.
-- [Magnesium and Testosterone](https://acalise.com/tscore/blog/magnesium-and-testosterone/) — Cinar 2011 study, magnesium glycinate dosing, free T mechanism.
-- [Creatine and Testosterone](https://acalise.com/tscore/blog/creatine-and-testosterone/) — What creatine does to T and DHT, and what it doesn't.
-- [Alcohol and Testosterone](https://acalise.com/tscore/blog/alcohol-and-testosterone/) — Acute and chronic effects, recovery timeline after quitting.
-- [Sugar and Testosterone](https://acalise.com/tscore/blog/sugar-and-testosterone/) — Glucose, insulin resistance, and the Caronia OGTT study.
-- [Testosterone and Belly Fat](https://acalise.com/tscore/blog/testosterone-and-belly-fat/) — The aromatase loop and how to break it.
-- [Testosterone and Hair Loss](https://acalise.com/tscore/blog/testosterone-and-hair-loss/) — DHT, genetic sensitivity, and finasteride trade-offs.
-- [TRT vs Natural Testosterone Boosters](https://acalise.com/tscore/blog/trt-vs-natural-testosterone-boosters/) — Effect sizes, costs, and supplement industry honesty.
 
 ## Word Ladders & Word Games (Word Walk blog)
 
 - [What Is a Word Ladder?](https://acalise.com/word-walk/blog/what-is-a-word-ladder/) — Definition, rules, Lewis Carroll history (1877 Doublets), examples like CAT→DOG.
-- [How to Solve Word Ladders](https://acalise.com/word-walk/blog/how-to-solve-word-ladders/) — Beginner step-by-step strategy.
 - [7 Word Ladder Strategy Tips](https://acalise.com/word-walk/blog/word-ladder-strategy-tips/) — Beginner-to-expert techniques.
 - [The History of Word Ladders](https://acalise.com/word-walk/blog/word-ladder-history/) — Lewis Carroll's 1877 Christmas Day invention of Doublets and its evolution.
-- [Word Ladders vs Crosswords](https://acalise.com/word-walk/blog/word-ladders-vs-crosswords/) — Comparison of puzzle mechanics.
 - [Four-Letter Word Ladders](https://acalise.com/word-walk/blog/four-letter-word-ladders/) — Why 4-letter ladders are the most popular length.
-- [Word Games for Brain Training](https://acalise.com/word-walk/blog/word-games-for-brain-training/) — Cognitive benefits of word puzzles.
-- [Word Games to Improve Vocabulary](https://acalise.com/word-walk/blog/word-games-improve-vocabulary/) — Best word games for vocabulary growth.
 - [Word Games for Adults](https://acalise.com/word-walk/blog/word-games-for-adults/) — Adult-oriented puzzle recommendations.
 - [Daily Word Games Like Wordle](https://acalise.com/word-walk/blog/daily-word-games-like-wordle/) — Wordle alternatives for daily play.
 - [Best Word Puzzle Games for iPhone](https://acalise.com/word-walk/blog/best-word-puzzle-games-iphone/) — iOS word game roundup.
@@ -106,50 +71,19 @@ This file is a curated map of acalise.com for AI search engines and language mod
 - [Word Games for Kids](https://acalise.com/word-walk/blog/word-games-for-kids/) — Kid-friendly word puzzles by age range.
 - [Offline Word Games (No Wi-Fi)](https://acalise.com/word-walk/blog/offline-word-games-no-wifi/) — Word games that work without internet.
 - [Word Games Like Connections](https://acalise.com/word-walk/blog/word-games-like-connections/) — Alternatives to NYT Connections and Strands.
-- [Word Puzzles for Memory](https://acalise.com/word-walk/blog/word-puzzles-for-memory/) — PROTECT, ACTIVE trial evidence on word puzzles and memory.
-- [Word Puzzles for ESL Learners](https://acalise.com/word-walk/blog/word-puzzles-for-esl-learners/) — How English learners can use word ladders to build vocabulary.
 - [Lewis Carroll's Famous Word Ladders](https://acalise.com/word-walk/blog/lewis-carroll-famous-word-ladders/) — The original 1877 Doublets puzzles and solutions.
-- [Best Free Puzzle Apps for iPad](https://acalise.com/word-walk/blog/best-free-puzzle-apps-for-ipad/) — Top free iPad puzzle apps.
-- [5-Minute Brain Workouts](https://acalise.com/word-walk/blog/5-minute-brain-workouts/) — Short daily cognitive exercises.
-- [Word Puzzle Types Explained](https://acalise.com/word-walk/blog/word-puzzle-types-explained/) — Anagram, ladder, search, cryptic, and more.
 
 ## Introvert Confidence (Introvert: Daily Courage blog)
 
 - [Daily Comfort Zone Challenges](https://acalise.com/introvert/blog/daily-comfort-zone-challenges/) — 30-day plan of small social challenges to build courage.
-- [How to Build Confidence as an Introvert](https://acalise.com/introvert/blog/how-to-build-confidence-as-an-introvert/) — Practical confidence-building tactics that respect introvert energy.
-- [How to Make Friends as an Adult Introvert](https://acalise.com/introvert/blog/how-to-make-friends-as-an-adult-introvert/) — Adult friendship-building for introverts.
-- [Public Speaking Tips for Introverts](https://acalise.com/introvert/blog/public-speaking-tips-for-introverts/) — Public speaking that plays to introvert strengths.
-- [Small Talk for Introverts](https://acalise.com/introvert/blog/small-talk-for-introverts/) — Scripts and frameworks.
-- [Introvert Strengths at Work](https://acalise.com/introvert/blog/introvert-strengths-at-work/) — Workplace strengths and how to leverage them.
-- [Social Anxiety vs Introversion](https://acalise.com/introvert/blog/social-anxiety-vs-introversion/) — How to tell the difference.
-- [Introvert Leadership](https://acalise.com/introvert/blog/introvert-leadership/) — Leadership styles for introverts.
-- [How to Network as an Introvert](https://acalise.com/introvert/blog/how-to-network-as-an-introvert/) — Networking that doesn't drain you.
-- [Dating as an Introvert](https://acalise.com/introvert/blog/dating-as-an-introvert/) — Dating advice for introverts.
-- [Ambivert vs Introvert](https://acalise.com/introvert/blog/ambivert-vs-introvert/) — How to tell which one you actually are.
-- [Introvert vs Shy](https://acalise.com/introvert/blog/introvert-vs-shy/) — The difference most people get wrong.
-- [Introvert Burnout Recovery](https://acalise.com/introvert/blog/introvert-burnout-recovery/) — How to recover from a social hangover.
-- [Hobbies for Introverts](https://acalise.com/introvert/blog/hobbies-for-introverts/) — 24 real hobbies that fit introvert energy.
-- [Best Jobs for Introverts](https://acalise.com/introvert/blog/best-jobs-for-introverts/) — Careers that play to introvert strengths.
-- [Introvert + Extrovert Relationships](https://acalise.com/introvert/blog/introvert-extrovert-relationship/) — Making the pairing work without resentment.
-- [How to Say No to Plans](https://acalise.com/introvert/blog/how-to-say-no-to-plans/) — Declining without guilt.
-- [Solo Travel for Introverts](https://acalise.com/introvert/blog/solo-travel-for-introverts/) — A real playbook for traveling alone.
-- [Phone Anxiety for Introverts](https://acalise.com/introvert/blog/phone-anxiety-introvert/) — How to make a phone call when phones feel awful.
-- [Introvert Holiday Survival Guide](https://acalise.com/introvert/blog/introvert-holiday-survival-guide/) — Surviving family gatherings and holiday parties.
 
 ## Restaurant Menus & Ordering (MenuPics blog)
 
-- [What Is Menu Anxiety? Why 86% of Gen Z Has It](https://acalise.com/menupics/blog/menu-anxiety/) — Prezzo poll data, root causes (choice overload, unfamiliar terms, visual vacuum), and tactics that reduce decision load at the table.
-- [How to Order Food Abroad When You Can't Read the Menu](https://acalise.com/menupics/blog/foreign-menu-travel/) — Six tactics for traveling diners, ranked from old-school to phone-first. Google Translate, picture menu apps, server etiquette, and allergy cards.
-- [What to Order at a Sushi Restaurant the First Time](https://acalise.com/menupics/blog/sushi-for-beginners/) — Beginner-friendly nigiri vs maki vs sashimi guide, gateway dishes (California roll, salmon nigiri), wasabi/soy sauce/ginger etiquette.
-- [What to Order at an Italian Restaurant (Beyond Spaghetti)](https://acalise.com/menupics/blog/italian-restaurant-menu/) — Antipasti/primi/secondi structure, real Italian pasta dishes (cacio e pepe, carbonara, amatriciana), and what to skip (American-Italian inventions).
 - [The Picky Eater's Guide to Ordering at Any Restaurant](https://acalise.com/menupics/blog/picky-eater-restaurant-guide/) — Pre-restaurant tactics, universal safe categories, cuisine-specific picky-eater picks, ARFID disclaimers.
 - [Why Restaurant Menus Stopped Including Pictures](https://acalise.com/menupics/blog/menus-without-pictures/) — Status code shift, photography costs, QR-code PDF size limits, accessibility consequences.
 - [Best AI Menu Scanner Apps for iPhone in 2026](https://acalise.com/menupics/blog/best-ai-menu-apps/) — Honest ranking covering Google Translate, MenuPics, Yelp's menu scanner, MenuGuide, AnyMenu, Picknic, Gluten Dude, Equal Eats.
 - [50 Fancy Menu Terms Decoded: From Aioli to Velouté](https://acalise.com/menupics/blog/decode-menu-terms/) — Cooking methods (confit, sous vide, braised), sauces (béarnaise, romesco, agrodolce), preparation styles (crudo, carpaccio, tartare), specific dishes.
-- [How to Spot Hidden Allergens on a Restaurant Menu](https://acalise.com/menupics/blog/hidden-allergens-menu/) — Where gluten, dairy, soy, eggs, nuts, sesame, and shellfish hide on menus. How to ask servers and which apps help.
 - [Reading Restaurant Menus With Dyslexia or ADHD: 7 Tools](https://acalise.com/menupics/blog/dyslexia-adhd-menu-reading/) — Apple Speak Screen, Microsoft Seeing AI, picture menu apps, and how to choose accessible-friendly restaurants.
-- [Decoding French Restaurant Menus: A Traveler's Cheat Sheet](https://acalise.com/menupics/blog/french-menu-cheat-sheet/) — Bistro classics (steak frites, confit de canard, coq au vin), beef cuts (bavette, onglet, entrecôte), false-friend words (entrée, menu).
-- [Asian Menu Words Decoded: Pho, Pad Thai, Bibimbap, and More](https://acalise.com/menupics/blog/asian-menu-words/) — Vietnamese, Thai, Korean, Japanese, and Chinese menu essentials with pronunciations and spice calibration.
 
 ## About
 
