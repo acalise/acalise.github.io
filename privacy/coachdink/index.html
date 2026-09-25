@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://acalise.com/privacy/coachdink/">
+  <title>Coach Dink - Privacy Policy</title>
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/assets/favicon-192.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #FAFAFA; color: #333; padding: 48px 24px; max-width: 720px; margin: 0 auto; line-height: 1.7; }
+    h1 { font-size: 28px; color: #1a1a1a; margin-bottom: 8px; }
+    .updated { font-size: 14px; color: #888; margin-bottom: 32px; }
+    h2 { font-size: 20px; color: #1a1a1a; margin-top: 32px; margin-bottom: 12px; }
+    p, li { font-size: 16px; margin-bottom: 12px; }
+    ul { padding-left: 24px; margin-bottom: 16px; }
+    a { color: #5B4FE8; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 14px; color: #888; text-decoration: none; }
+    .back:hover { color: #5B4FE8; }
+  </style>
+</head>
+<body>
+  <a class="back" href="/privacy/">&larr; All Policies</a>
+  <h1>Coach Dink Privacy Policy</h1>
+  <p class="updated">Last updated: September 24, 2026</p>
+
+  <h2>Overview</h2>
+  <p>Coach Dink ("we", "the app") is an iOS app that watches videos of your pickleball games and shots and returns coaching feedback, drills, and a skill rating estimate. This policy explains what data the app collects, how it is used, and your rights.</p>
+
+  <h2>No Account Required</h2>
+  <p>Coach Dink does not require you to create an account, sign in, or provide any contact information such as your email address or phone number. If you enter a first name during setup, it is stored only on your device and used to personalize the app.</p>
+
+  <h2>Data Storage</h2>
+  <p>Your data &mdash; your answers from setup (such as your experience, play style, and goals), your rating estimate, your game reports and coaching history, the still frames saved with them, your training plan, and your settings &mdash; is stored locally on your device. We do not operate a database of your activity. Your data leaves your device only as described below (video analysis, notifications, purchase verification, anonymous analytics, and advertising measurement).</p>
+
+  <h2>Camera, Microphone, and Photos</h2>
+  <p>Coach Dink asks for camera and microphone access only if you choose to record a clip inside the app, and photo library access only so you can pick an existing video to analyze. Audio is removed from videos on our server before analysis and is never analyzed.</p>
+
+  <h2>Video Analysis</h2>
+  <p>When you submit a game or shot for analysis, the video (or still frames from it) and basic context you choose, such as game format and which player you are, are sent to our backend service. The backend uses Google Gemini to watch the video and generate coaching feedback. After processing:</p>
+  <ul>
+    <li>Videos are deleted from our servers and from the AI provider once the analysis finishes; if deletion fails, the provider removes the file automatically within 48 hours.</li>
+    <li>The AI provider does not use your videos for training purposes (per our service agreements).</li>
+    <li>The report is returned to your device and stored locally in your history.</li>
+    <li>Requests are tied to a random, anonymous identifier issued to your installation and used only for abuse prevention and rate limiting.</li>
+  </ul>
+  <p>Videos may show other people on the court. Please only submit videos you have the right to share.</p>
+
+  <h2>Notifications</h2>
+  <p>If you allow notifications, the app receives a push token from Apple (through Expo's push service) and sends it with an analysis request so we can tell you when your report is ready. The token identifies your device for notifications only and is not used for advertising. The app may also schedule reminders locally on your device.</p>
+
+  <h2>Subscriptions and Purchases</h2>
+  <p>Coach Dink's features require an auto-renewable subscription. All purchases and billing are handled entirely through Apple's App Store; we do not collect or store any payment information. Subscription status is verified through RevenueCat, a third-party subscription management service. RevenueCat receives an anonymous app user ID, your purchase and entitlement status, and basic device information (such as the device's vendor identifier and IP address) used to verify purchases and measure our own advertising. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> for details on how Apple handles purchases.</p>
+
+  <h2>No Ads Inside the App</h2>
+  <p>Coach Dink does not display ads and does not show you third-party advertising while you use it. We may run ads for Coach Dink on other platforms to reach new users, and we measure how those ads perform as described below.</p>
+
+  <h2>Attribution and Advertising</h2>
+  <p>We may run ads for Coach Dink on other platforms, including Apple Search Ads, TikTok, and Meta. For Apple Search Ads campaigns we use Apple's AdServices attribution, which does not identify you across other companies' apps or websites. To measure ads on other platforms we use AppsFlyer, a mobile measurement partner. Coach Dink does not ask for App Tracking Transparency permission and does not access your device's advertising identifier (IDFA). Installs are measured through Apple's privacy-preserving SKAdNetwork and through AppsFlyer using non-advertising device information (such as the device's vendor identifier, IP address, and device type). Install, trial, and purchase events may be shared with these advertising partners solely to measure and improve the performance of our own ads. We do not sell your data.</p>
+
+  <h2>Analytics</h2>
+  <p>Coach Dink uses PostHog to record anonymous in-app events, such as which screens are viewed and whether an analysis completes. These events are tied to a random device identifier, never to your name, email address, or other contact details, and are used only to understand how the app is used and to improve it.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>Coach Dink uses the following third-party services:</p>
+  <ul>
+    <li><strong>Google Gemini</strong> &mdash; for analyzing the videos you submit (deleted after analysis)</li>
+    <li><strong>Google Cloud</strong> &mdash; hosts our analysis backend</li>
+    <li><strong>RevenueCat</strong> &mdash; for subscription management</li>
+    <li><strong>AppsFlyer</strong> &mdash; for measuring the performance of our own advertising</li>
+    <li><strong>PostHog</strong> &mdash; for anonymous product analytics</li>
+    <li><strong>Expo</strong> &mdash; for delivering "report ready" notifications</li>
+    <li><strong>Apple (Search Ads and SKAdNetwork)</strong> &mdash; for privacy-preserving measurement of our own advertising</li>
+  </ul>
+
+  <h2>Data Sharing</h2>
+  <p>We do not sell your personal data. We share data with third parties only as described above.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>Coach Dink is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+  <h2>Data Deletion</h2>
+  <p>Since your data is stored locally on your device, you can delete it at any time from the app's settings or by deleting the app. Anonymous records held by our service providers (RevenueCat, AppsFlyer, PostHog) are retained in accordance with each provider's data retention policy. To ask us to delete anything associated with your anonymous identifiers, email us at the address below.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this privacy policy from time to time. The updated version will be indicated by the "Last updated" date at the top of this page.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions about this privacy policy, you can contact us at <a href="mailto:acalisedev@gmail.com">acalisedev@gmail.com</a>.</p>
+</body>
+</html>
