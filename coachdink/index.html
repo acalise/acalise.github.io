@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Coach Dink - AI Pickleball Coach and Video Analysis for iPhone</title>
+  <meta name="description" content="Film a game of pickleball on your iPhone and get coached: a game score, the habits costing you points, and the drills that fix them. Singles and doubles.">
+  <meta name="keywords" content="ai pickleball coach, pickleball video analysis app, pickleball analysis app, pickleball drills app, pickleball rating, pickleball coach app">
+  <link rel="canonical" href="https://acalise.com/coachdink/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://acalise.com/coachdink/">
+  <meta property="og:title" content="Coach Dink - AI Pickleball Coach for iPhone">
+  <meta property="og:description" content="Film a game. Get coached. A game score, the habits costing you points, and the drills that fix them.">
+  <meta property="og:image" content="https://acalise.com/coachdink/icon.png">
+  <meta property="og:site_name" content="Coach Dink">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Coach Dink - AI Pickleball Coach for iPhone">
+  <meta name="twitter:description" content="Film a game. Get coached.">
+  <meta name="twitter:image" content="https://acalise.com/coachdink/icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/coachdink/icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Coach Dink",
+    "applicationCategory": "SportsApplication",
+    "operatingSystem": "iOS",
+    "url": "https://acalise.com/coachdink/",
+    "image": "https://acalise.com/coachdink/icon.png",
+    "description": "Coach Dink analyses video of your pickleball games and returns a coaching report: a game score, the habits costing you points and why, ranked drills to fix them, and a rating estimate that updates after every filmed game. Works for singles and doubles.",
+    "author": { "@type": "Person", "name": "Anthony Calise", "url": "https://acalise.com" }
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://acalise.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Coach Dink", "item": "https://acalise.com/coachdink/" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What does Coach Dink actually do?",
+        "acceptedAnswer": { "@type": "Answer", "text": "You film a game of pickleball on your iPhone and Coach Dink watches it. A few minutes later you get a report: a game score, the habits that cost you the most points, why each one matters, and the drills that fix it, ranked so you know what to work on first." } },
+      { "@type": "Question", "name": "Where do I put my phone?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In a corner of the court, about five feet up, on the ultra-wide (0.5x) lens, with all four corners of the court and the server behind the baseline in frame. A tripod, a fence clamp, or a bag on a bench all work. Once it is recording, nobody touches it." } },
+      { "@type": "Question", "name": "Does it work for doubles?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pick yourself, then choose to get a report on just you, or on you and your partner as a team, so you can see how the two of you play together." } },
+      { "@type": "Question", "name": "Is the rating an official pickleball rating?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. It is Coach Dink's own estimate for tracking your progress, not an official rating from any pickleball organization. It only moves when you film a game, never from drills alone." } },
+      { "@type": "Question", "name": "How long can a video be?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Up to 20 minutes per video. One full game is ideal." } }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a100c; --bg2: #0f1712; --card: #141e18;
+      --border: rgba(90,155,104,0.24); --border-soft: rgba(236,244,238,0.09);
+      --accent: #5a9b68; --accent2: #3d7a4e; --accent-light: #c5e35a; --accent-glow: rgba(90,155,104,0.16);
+      --text: #ecf4ee; --muted: #a2b3a7; --muted2: #6b7d70;
+      --up: #c5e35a;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+
+    nav { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; background: rgba(10,16,12,0.82); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-soft); }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -0.02em; }
+    .nav-brand img { width: 30px; height: 30px; border-radius: 8px; }
+    .nav-links { display: flex; align-items: center; gap: 22px; font-size: 0.88rem; color: var(--muted); }
+    .nav-links a:hover { color: var(--text); }
+    .nav-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem; padding: 9px 18px; border-radius: 100px; transition: background 0.2s, transform 0.15s; }
+    .nav-cta:hover { background: var(--accent2); transform: translateY(-1px); }
+    @media (max-width: 720px) { .nav-links a:not(.nav-cta) { display: none; } }
+
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 76px 0; }
+    .section-label { display: inline-block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-light); margin-bottom: 14px; }
+    h2 { font-size: clamp(1.7rem, 3.6vw, 2.4rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 14px; }
+    .lead { color: var(--muted); font-size: 1.04rem; max-width: 62ch; margin-bottom: 40px; }
+    .divider { border: 0; border-top: 1px solid var(--border-soft); }
+
+    /* hero */
+    .hero { text-align: center; padding: 72px 0 60px; background: radial-gradient(900px 420px at 50% -8%, var(--accent-glow), transparent 70%); }
+    .hero-icon { width: 88px; height: 88px; border-radius: 20px; margin-bottom: 24px; box-shadow: 0 16px 48px rgba(0,0,0,0.6); }
+    .hero h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); font-weight: 900; letter-spacing: -0.045em; line-height: 1.05; margin-bottom: 18px; }
+    .hero h1 span { color: var(--accent); }
+    .hero-sub { color: var(--muted); font-size: 1.12rem; max-width: 56ch; margin: 0 auto 30px; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #fff; font-weight: 800; font-size: 1rem; padding: 15px 30px; border-radius: 100px; transition: background 0.2s, transform 0.15s; }
+    .btn-primary:hover { background: var(--accent2); transform: translateY(-2px); }
+    .hero-note { margin-top: 14px; font-size: 0.8rem; color: var(--muted2); }
+
+    .strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 44px; }
+    .chip { border: 1px solid var(--border); background: var(--card); border-radius: 100px; padding: 8px 18px; font-size: 0.83rem; color: var(--muted); font-weight: 600; }
+
+    /* steps */
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .step { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 26px; }
+    .s-num { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 9px; background: var(--accent-glow); color: var(--accent-light); font-weight: 900; font-size: 0.85rem; margin-bottom: 14px; }
+    .step h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 7px; letter-spacing: -0.01em; }
+    .step p { color: var(--muted); font-size: 0.93rem; }
+
+    /* shots */
+    .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; align-items: start; }
+    .shot { border-radius: 18px; overflow: hidden; border: 1px solid var(--border-soft); background: var(--bg2); }
+    .shot img { display: block; width: 100%; height: auto; }
+    .shot-cap { padding: 14px 16px; font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--border-soft); }
+    .shot-cap b { color: var(--text); font-weight: 700; display: block; margin-bottom: 2px; }
+
+    /* features */
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(258px, 1fr)); gap: 18px; }
+    .fcard { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 24px; transition: border-color 0.2s, transform 0.2s; }
+    .fcard:hover { border-color: var(--border); transform: translateY(-2px); }
+    .fcard h3 { font-size: 1rem; font-weight: 800; margin-bottom: 7px; letter-spacing: -0.01em; }
+    .fcard p { color: var(--muted); font-size: 0.92rem; }
+
+    /* honest box */
+    .honest { background: linear-gradient(135deg, var(--accent-glow), var(--card)); border: 1px solid var(--border); border-radius: 18px; padding: 32px; }
+    .honest h3 { font-size: 1.12rem; font-weight: 800; margin-bottom: 14px; }
+    .honest ul { list-style: none; display: grid; gap: 11px; }
+    .honest li { color: var(--muted); font-size: 0.95rem; padding-left: 26px; position: relative; }
+    .honest li::before { content: "-"; position: absolute; left: 0; color: var(--accent-light); font-weight: 800; }
+
+    /* faq */
+    .faq-item { border-bottom: 1px solid var(--border-soft); padding: 22px 0; }
+    .faq-item:last-child { border-bottom: 0; }
+    .faq-item h3 { font-size: 1.02rem; font-weight: 700; margin-bottom: 8px; }
+    .faq-item p { color: var(--muted); font-size: 0.95rem; }
+
+    /* blog */
+    .posts { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+    .post { background: var(--card); border: 1px solid var(--border-soft); border-radius: 14px; padding: 20px; transition: border-color 0.2s, transform 0.2s; display: block; }
+    .post:hover { border-color: var(--border); transform: translateY(-2px); }
+    .post .t { font-weight: 700; font-size: 0.97rem; margin-bottom: 6px; letter-spacing: -0.01em; }
+    .post .d { color: var(--muted); font-size: 0.87rem; }
+
+    /* closer */
+    .closer { text-align: center; background: radial-gradient(760px 340px at 50% 110%, var(--accent-glow), transparent 70%); }
+
+    footer { text-align: center; padding: 44px 24px; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border-soft); }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--text); }
+    .kw { margin-top: 8px; font-size: 0.72rem; color: var(--muted2); }
+    .legal { max-width: 78ch; margin: 18px auto 0; font-size: 0.76rem; color: var(--muted2); line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/coachdink/" class="nav-brand">
+      <img src="icon.png" alt="Coach Dink app icon">
+      <span>Coach Dink</span>
+    </a>
+    <span class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="/coachdink/blog/">Blog</a>
+      <span class="nav-cta" aria-disabled="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Coming soon
+      </span>
+    </span>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <img src="icon.png" alt="Coach Dink app icon" class="hero-icon">
+      <h1>Film a game.<br><span>Get coached.</span></h1>
+      <p class="hero-sub">Prop your iPhone in the corner of the court and play. Coach Dink watches the game and tells you what is costing you points, why, and exactly which drills fix it.</p>
+      <span class="btn-primary" aria-disabled="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Coming soon to the App Store</span>
+      <p class="hero-note">For iPhone. Singles and doubles.</p>
+
+      <div class="strip">
+        <span class="chip">Game score</span>
+        <span class="chip">Habits to fix</span>
+        <span class="chip">50 drills</span>
+        <span class="chip">Doubles team reports</span>
+        <span class="chip">Rating tracking</span>
+      </div>
+    </div>
+  </header>
+
+  <hr class="divider">
+
+  <section id="how">
+    <div class="wrap">
+      <span class="section-label">How it works</span>
+      <h2>Prop your phone. Play. Read the report.</h2>
+      <p class="lead">No sensors, no paddle attachments, no coach standing over you. Just your phone and a game you were going to play anyway.</p>
+      <div class="steps">
+        <div class="step">
+          <span class="s-num">1</span>
+          <h3>Film a game</h3>
+          <p>Phone in a corner of the court, about five feet up, on the 0.5x lens, with all four corners in frame. Up to 20 minutes per video.</p>
+        </div>
+        <div class="step">
+          <span class="s-num">2</span>
+          <h3>Get your report</h3>
+          <p>A game score plus the habits that cost you the most points, each with a plain explanation of why it matters. In doubles, get one for you or for you and your partner.</p>
+        </div>
+        <div class="step">
+          <span class="s-num">3</span>
+          <h3>Drill what it found</h3>
+          <p>Ranked drills for the exact habits in your report, solo, with a partner, or with a ball machine. Then film your next game and see what changed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap">
+      <span class="section-label">Inside the app</span>
+      <h2>What you get after every game.</h2>
+      <p class="lead">Every report follows the same shape, so one game is comparable to the next, which is the whole point of filming more than once.</p>
+      <div class="shots">
+        <figure class="shot">
+          <img src="shot-habits.jpg" alt="Coach Dink report showing a habit to fix first, impatience at the kitchen, with a drill button" loading="lazy" width="600" height="1304">
+          <figcaption class="shot-cap"><b>Know what to fix first</b>The habit costing you the most, why it matters, and the drill for it.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="shot-rating.jpg" alt="Coach Dink rating screen showing a rating estimate and a progress chart over six weeks" loading="lazy" width="600" height="1304">
+          <figcaption class="shot-cap"><b>Watch your rating move</b>An estimate that updates after every filmed game, with your trend over time.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="shot-setup.jpg" alt="An iPhone on a tripod at the corner of a pickleball court filming a doubles game" loading="lazy" width="600" height="1304">
+          <figcaption class="shot-cap"><b>Simple setup</b>A tripod, a fence clamp, or a bag on a bench. Set it and forget it.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="features">
+    <div class="wrap">
+      <span class="section-label">Features</span>
+      <h2>A coach that watches every game.</h2>
+      <p class="lead">Most players never see themselves play. The habits that cost the most points are usually the ones you cannot feel from inside the rally.</p>
+      <div class="features">
+        <div class="fcard"><h3>Game score</h3><p>A score for the whole game plus its parts, and how it compares with your last one.</p></div>
+        <div class="fcard"><h3>Habits, ranked</h3><p>The faults that actually cost you points, ordered by how much they cost, each with the why behind it.</p></div>
+        <div class="fcard"><h3>Doubles team reports</h3><p>Coaching on just you, or on you and your partner together, covering how the two of you move and cover the court.</p></div>
+        <div class="fcard"><h3>50 drills</h3><p>Serve and return, dinks, drops, resets, volleys and footwork. Solo, partner or ball machine, filtered to what your games need.</p></div>
+        <div class="fcard"><h3>Rating tracking</h3><p>Coach Dink's own rating estimate, which only moves when you film a game, never from drills alone.</p></div>
+        <div class="fcard"><h3>Match IQ lessons</h3><p>Short lessons on strategy and decisions, linked from the faults your reports find.</p></div>
+        <div class="fcard"><h3>Your journey</h3><p>A plan built from your recent games, so practice goes where your game needs it.</p></div>
+        <div class="fcard"><h3>Sound is never recorded</h3><p>The camera films video only. Leave the app while the coach works and get a notification when it is done.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap">
+      <span class="section-label">Worth being clear about</span>
+      <h2>What Coach Dink is not.</h2>
+      <p class="lead">Being specific about the limits makes the reports more useful, because you know how to read them.</p>
+      <div class="honest">
+        <h3>It coaches from video. That has boundaries.</h3>
+        <ul>
+          <li>The rating is Coach Dink's own estimate for tracking progress. It is not an official rating from any pickleball organization.</li>
+          <li>It can only coach what the camera sees. If the court corners are cropped or the phone moves, the report says so and has less to say.</li>
+          <li>It does not replace a good in-person coach. It is the reps between lessons, with eyes on every game.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap">
+      <span class="section-label">Questions</span>
+      <h2>Before you download.</h2>
+      <div class="faq-item">
+        <h3>What does Coach Dink actually do?</h3>
+        <p>You film a game of pickleball on your iPhone and Coach Dink watches it. A few minutes later you get a report: a game score, the habits that cost you the most points, why each one matters, and the drills that fix it, ranked so you know what to work on first.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Where do I put my phone?</h3>
+        <p>In a corner of the court, about five feet up, on the ultra-wide (0.5x) lens, with all four corners of the court and the server behind the baseline in frame. A tripod, a fence clamp, or a bag on a bench all work. Once it is recording, nobody touches it.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does it work for doubles?</h3>
+        <p>Yes. Pick yourself, then choose to get a report on just you, or on you and your partner as a team, so you can see how the two of you play together.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is the rating an official pickleball rating?</h3>
+        <p>No. It is Coach Dink's own estimate for tracking your progress, not an official rating from any pickleball organization. It only moves when you film a game, never from drills alone.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How long can a video be?</h3>
+        <p>Up to 20 minutes per video. One full game is ideal.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap">
+      <span class="section-label">From the blog</span>
+      <h2>Pickleball guides, from film to fixes.</h2>
+      <p class="lead">How to film and review your games, what the rating levels mean, and how to fix the shots that cost the most points.</p>
+      <div class="posts">
+        <a href="/coachdink/blog/how-to-film-pickleball/" class="post">
+          <div class="t">How to Film Your Pickleball Games</div>
+          <div class="d">Where to put the phone, which lens, and the setup mistakes that ruin footage.</div>
+        </a>
+        <a href="/coachdink/blog/pickleball-rating-levels-explained/" class="post">
+          <div class="t">Pickleball Rating Levels Explained</div>
+          <div class="d">What 3.0, 3.5 and 4.0 actually look like on court.</div>
+        </a>
+        <a href="/coachdink/blog/pickleball-film-review/" class="post">
+          <div class="t">How to Review Your Own Game Film</div>
+          <div class="d">What to watch for, in what order, so one video teaches you something.</div>
+        </a>
+        <a href="/coachdink/blog/beginner-pickleball-mistakes/" class="post">
+          <div class="t">Beginner Pickleball Mistakes, and the Fixes</div>
+          <div class="d">The habits that cost new players the most points.</div>
+        </a>
+        <a href="/coachdink/blog/third-shot-drop/" class="post">
+          <div class="t">How to Hit a Third Shot Drop</div>
+          <div class="d">The shot that gets you to the kitchen, and when to drive instead.</div>
+        </a>
+        <a href="/coachdink/blog/pickleball-dinking-tips/" class="post">
+          <div class="t">Pickleball Dinking Tips</div>
+          <div class="d">Patience at the kitchen line, and how to stop popping the ball up.</div>
+        </a>
+      </div>
+      <p style="margin-top:24px"><a href="/coachdink/blog/" style="color:var(--accent-light);font-weight:700;font-size:0.93rem">Read the whole blog &rarr;</a></p>
+    </div>
+  </section>
+
+  <section class="closer">
+    <div class="wrap">
+      <h2>Your next game is your first lesson.</h2>
+      <p class="lead" style="margin:0 auto 30px">Film it, and find out what is actually costing you points.</p>
+      <span class="btn-primary" aria-disabled="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Coming soon to the App Store</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2026 Coach Dink &nbsp;&middot;&nbsp;
+      <a href="/coachdink/blog/">Blog</a> &nbsp;&middot;&nbsp;
+      <a href="/support/coachdink/">Support</a> &nbsp;&middot;&nbsp;
+      <a href="/privacy/coachdink/">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="/terms/coachdink/">Terms</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com">acalise.com</a>
+    </p>
+    <p class="kw">ai pickleball coach &middot; pickleball video analysis &middot; pickleball drills &middot; pickleball rating levels &middot; third shot drop &middot; pickleball doubles strategy</p>
+  </footer>
+
+</body>
+</html>

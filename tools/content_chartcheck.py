@@ -938,22 +938,49 @@ CARDS = {
 for _a in ARTICLES:
     _a['card_title'], _a['card_desc'] = CARDS[_a['slug']]
 
+# Second batch (Oct 2026) lives in tools/parts/, written with card copy inline.
+import importlib.util as _u, pathlib as _p
+for _name in ('chartcheck_a', 'chartcheck_b'):
+    _spec = _u.spec_from_file_location(_name, _p.Path(__file__).parent / 'parts' / f'{_name}.py')
+    _mod = _u.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    ARTICLES.extend(_mod.ARTICLES)
+
 CLUSTERS = [
     ('AI Chart Analysis', [
         'ai-chart-analysis',
+        'best-ai-chart-analysis-apps',
+        'ai-chart-analysis-free',
         'chart-analysis-with-chatgpt',
+        'ai-stock-analysis-prompt',
         'screenshot-a-chart-for-analysis',
         'why-ai-chart-analysis-is-wrong',
+        'ai-trading-bots-explained',
     ]),
     ('By Market', [
+        'ai-technical-analysis-stocks',
         'ai-chart-analysis-crypto',
         'ai-chart-analysis-forex',
+        'ai-chart-analysis-gold',
     ]),
     ('Reading Charts', [
         'how-to-read-a-stock-chart',
-        'candlestick-patterns-explained',
-        'chart-patterns-cheat-sheet',
+        'multi-timeframe-analysis',
         'support-and-resistance',
+        'how-to-draw-trend-lines',
+        'volume-analysis-trading',
+        'candlestick-patterns-explained',
+    ]),
+    ('Patterns', [
+        'chart-patterns-cheat-sheet',
+        'head-and-shoulders-pattern',
+        'double-top-double-bottom',
+        'bull-flag-pattern',
+    ]),
+    ('Indicators', [
+        'rsi-indicator-explained',
+        'macd-indicator-explained',
+        'fibonacci-retracement',
     ]),
 ]
 

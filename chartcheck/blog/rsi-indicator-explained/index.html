@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>RSI Indicator Explained: How to Read RSI | ChartCheck</title>
+  <meta name="description" content="How to read the RSI indicator: what the number measures, why 70 and 30 are not sell and buy signals, how RSI divergence works, and where it misleads you.">
+  <meta name="keywords" content="rsi indicator explained, how to read rsi, rsi divergence, relative strength index, rsi overbought oversold, rsi settings">
+  <link rel="canonical" href="https://acalise.com/chartcheck/blog/rsi-indicator-explained/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://acalise.com/chartcheck/blog/rsi-indicator-explained/">
+  <meta property="og:title" content="The RSI Indicator Explained">
+  <meta property="og:description" content="What RSI actually measures, why 70/30 are not signals, and how divergence really works.">
+  <meta property="og:image" content="https://acalise.com/chartcheck/icon.png">
+  <meta property="og:site_name" content="ChartCheck">
+  <meta property="article:published_time" content="2026-10-01">
+  <meta property="article:modified_time" content="2026-10-01">
+  <meta property="article:author" content="Anthony Calise">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The RSI Indicator Explained">
+  <meta name="twitter:description" content="What RSI actually measures, why 70/30 are not signals, and how divergence really works.">
+  <meta name="twitter:image" content="https://acalise.com/chartcheck/icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/chartcheck/icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD: Article -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The RSI Indicator Explained: How to Read It Without Fooling Yourself",
+  "description": "How to read the RSI indicator: what the number measures, why 70 and 30 are not sell and buy signals, how RSI divergence works, and where it misleads you.",
+  "author": {
+    "@type": "Person",
+    "name": "Anthony Calise",
+    "url": "https://acalise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChartCheck",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://acalise.com/chartcheck/icon.png"
+    }
+  },
+  "datePublished": "2026-10-01",
+  "dateModified": "2026-10-01",
+  "image": "https://acalise.com/chartcheck/icon.png",
+  "mainEntityOfPage": "https://acalise.com/chartcheck/blog/rsi-indicator-explained/"
+}
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a good RSI setting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fourteen periods is the standard and a sensible default. Shorter settings reach overbought and oversold far more often and produce more noise; longer settings react slowly. The more important thing than the exact number is picking one and keeping it, rather than adjusting it until the indicator agrees with what you already believe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does RSI above 70 mean the price will drop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It means recent up-moves have been large relative to down-moves, which is what a strong uptrend looks like. In sideways markets an extreme reading can precede a pullback, but in trending markets RSI can stay above 70 for long periods while price keeps rising. Treat it as a description of momentum, not a reversal signal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is RSI divergence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divergence is when price and RSI disagree: price makes a higher high while RSI makes a lower high (bearish), or price makes a lower low while RSI makes a higher low (bullish). It signals that momentum is weakening relative to price. It does not say when, or whether, price will reverse, and divergences can repeat several times before anything happens."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is RSI better for stocks, crypto or forex?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The calculation is identical in every market, so it works the same way mechanically. What differs is behaviour: markets that trend strongly will hold RSI at extremes longer, and very volatile instruments hit extremes more often. Observe where a particular chart's RSI usually ranges rather than applying fixed thresholds everywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI read RSI off a chart image?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the RSI panel is visible, yes - reading the current level and spotting divergence between visible swings is simple visual work. It cannot know the period setting unless the label is readable, and it can only compare swings that are inside the screenshot."
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- JSON-LD: WebSite -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ChartCheck",
+  "url": "https://acalise.com/chartcheck/"
+}
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://acalise.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ChartCheck",
+      "item": "https://acalise.com/chartcheck/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Blog",
+      "item": "https://acalise.com/chartcheck/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "The RSI Indicator Explained: How to Read It Without Fooling Yourself",
+      "item": "https://acalise.com/chartcheck/blog/rsi-indicator-explained/"
+    }
+  ]
+}
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f; --bg2: #0f1117; --card: #14161f;
+      --border: rgba(59,123,246,0.20); --border-soft: rgba(238,240,250,0.09);
+      --accent: #3b7bf6; --accent2: #2563eb; --accent-light: #8ab4ff; --accent-glow: rgba(59,123,246,0.14);
+      --text: #eef0fa; --muted: #a0a6c0; --muted2: #6a708a;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-soft); }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.02em;  color: var(--text); }
+    .nav-brand img { width: 30px; height: 30px; border-radius: 8px; }
+    .nav-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem; padding: 9px 18px; border-radius: 100px; transition: background 0.2s, transform 0.15s; }
+    .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); text-decoration: none; }
+
+    .article-wrapper { max-width: 740px; margin: 0 auto; padding: 100px 24px 80px; }
+    .article-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+    .article-meta .badge { display: inline-flex; align-items: center; gap: 6px; background: var(--accent-glow); border: 1px solid var(--border); color: var(--accent-light); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; }
+    .article-meta .date { font-size: 0.8rem; color: var(--muted); }
+    .article-wrapper h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.08;  margin-bottom: 20px; }
+    .article-intro { font-size: 1.1rem; color: var(--muted); line-height: 1.7; margin-bottom: 40px; }
+    .answer-box { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 12px; padding: 20px 24px; margin-bottom: 36px; }
+    .answer-box h2 { font-size: 0.8rem !important; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-light); margin: 0 0 8px !important; }
+    .answer-box p { margin: 0; }
+    .article-wrapper h2 { font-size: 1.55rem; font-weight: 900; letter-spacing: -0.03em;  margin: 48px 0 16px; line-height: 1.15; }
+    .article-wrapper h3 { font-size: 1.18rem; font-weight: 800; letter-spacing: -0.02em; margin: 32px 0 12px; line-height: 1.3; }
+    .article-wrapper p { font-size: 1rem; line-height: 1.75; color: var(--text); opacity: 0.92; margin-bottom: 16px; }
+    .article-wrapper ul, .article-wrapper ol { padding-left: 24px; margin-bottom: 16px; }
+    .article-wrapper li { font-size: 1rem; line-height: 1.75; color: var(--text); opacity: 0.92; margin-bottom: 8px; }
+    .article-wrapper strong { color: var(--text); opacity: 1; }
+
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 0.85rem; }
+    .comparison-table th, .comparison-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border-soft); }
+    .comparison-table th { font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); background: var(--bg2); }
+    .comparison-table td { color: var(--text); opacity: 0.92; }
+    .comparison-table tr:hover td { background: var(--bg2); }
+    .comparison-table .highlight-row td { color: var(--accent-light); font-weight: 700; opacity: 1; }
+    @media (max-width: 600px) { .comparison-table { font-size: 0.75rem; } .comparison-table th, .comparison-table td { padding: 8px 8px; } }
+
+    .stat-card { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 28px; margin: 24px 0; text-align: center; }
+    .stat-card .stat-number { font-size: 2.5rem; font-weight: 900; color: var(--accent); letter-spacing: -0.04em; line-height: 1.1; }
+    .stat-card .stat-label { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
+    .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+    @media (max-width: 600px) { .stat-row { grid-template-columns: 1fr; } }
+
+    .info-card { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 24px 28px; margin: 24px 0; }
+    .info-card h4 { font-size: 0.98rem; font-weight: 800; margin-bottom: 12px; color: var(--text); }
+    .info-card p { font-size: 0.92rem; margin-bottom: 8px; }
+    .info-card p:last-child { margin-bottom: 0; }
+    .info-card ul { margin-bottom: 0; }
+
+    .script-box { background: var(--bg2); border: 1px solid var(--border-soft); border-left: 3px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 18px 0; }
+    .script-box p { margin: 0 0 8px; font-size: 0.95rem; }
+    .script-box p:last-child { margin-bottom: 0; }
+    .script-box .who { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; display: block; margin-bottom: 4px; }
+
+    .cta-banner { background: linear-gradient(135deg, var(--accent2), var(--accent)); border-radius: 16px; padding: 32px; text-align: center; margin: 48px 0; }
+    .cta-banner h3 { font-size: 1.35rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; color: #fff; margin: 0 0 8px; }
+    .cta-banner p { font-size: 0.95rem; color: rgba(255,255,255,0.88); margin-bottom: 20px; opacity: 1; }
+    .cta-banner .btn { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--accent2); font-weight: 800; font-size: 0.95rem; padding: 14px 28px; border-radius: 100px; transition: transform 0.15s; }
+    .cta-banner .btn:hover { transform: translateY(-2px); text-decoration: none; }
+
+    .faq-item { border-bottom: 1px solid var(--border-soft); padding: 20px 0; }
+    .faq-item h3 { font-size: 1.05rem; margin: 0 0 8px; color: var(--text); }
+    .faq-item p { font-size: 0.95rem; margin: 0; }
+
+    footer { text-align: center; padding: 40px 24px; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border-soft); }
+    footer a { color: var(--muted); transition: color 0.2s; }
+    footer a:hover { color: var(--text); }
+    .kw { margin-top: 8px; font-size: 0.72rem; color: var(--muted2); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/chartcheck/" class="nav-brand">
+      <img src="../../icon.png" alt="ChartCheck app icon">
+      <span>ChartCheck</span>
+    </a>
+    <a href="https://apps.apple.com/us/app/id6811709869" class="nav-cta" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Get ChartCheck
+    </a>
+  </nav>
+
+  <article class="article-wrapper">
+    <div class="article-meta">
+      <span class="badge">Indicators</span>
+      <span class="date">Published October 1, 2026</span>
+    </div>
+
+    <h1>The RSI Indicator Explained: How to Read It Without Fooling Yourself</h1>
+
+    <p class="article-intro">RSI is probably the most widely displayed indicator on retail charts and one of the most consistently misread. The standard explanation - above 70 is overbought, below 30 is oversold - is technically true and practically misleading, and understanding why is most of what there is to learn about it.</p>
+
+    <section class="answer-box" aria-labelledby="quick">
+      <h2 id="quick">The short answer</h2>
+      <p>RSI (Relative Strength Index) compares the size of recent up-moves to recent down-moves over a lookback window, usually 14 periods, and scales the result from 0 to 100. A high reading means recent gains have been large relative to recent losses; a low reading means the reverse. It measures momentum, not value, so "overbought" does not mean "about to fall". Strong trends can hold RSI above 70 for long stretches. The more useful reads are where RSI sits relative to 50, and divergence between RSI and price at a level that already matters.</p>
+    </section>
+
+    <h2>What the number actually measures</h2>
+
+    <p>RSI takes the last N periods (14 by default), averages the size of the up-closes and the size of the down-closes separately, and turns their ratio into a number between 0 and 100. If every recent close was higher than the one before, RSI approaches 100. If every recent close was lower, it approaches 0. A balanced mix lands near 50.</p>
+
+    <p>That is all it is. It does not know about volume, fundamentals, levels or anything else. It is a smoothed answer to one question: <em>over the last few periods, have the up-moves been bigger than the down-moves?</em></p>
+
+    <p>Keeping that definition in mind fixes most RSI mistakes, because it tells you what the indicator cannot possibly tell you. It cannot tell you price is "too high". It can only tell you price has been rising with more force than it has been falling.</p>
+
+    <h2>Why 70 and 30 are not sell and buy signals</h2>
+
+    <p>The overbought / oversold framing comes from the indicator's original use as a mean-reversion tool, and it works acceptably in sideways markets. In trending markets it is close to backwards.</p>
+
+    <p>Think about what a strong uptrend is: a sustained period where up-moves are larger than down-moves. That is precisely the condition that pushes RSI above 70 and keeps it there. Selling every time RSI crosses 70 in a real trend means repeatedly selling the strongest part of the move.</p>
+
+    <div class="info-card">
+      <h4>A more honest reading of the zones</h4>
+      <p><strong>Above 70.</strong> Momentum is strong to the upside. In a range, the move may be stretched. In a trend, it is often just confirmation that the trend is healthy.</p>
+      <p><strong>Below 30.</strong> Momentum is strong to the downside. The same caveat applies in reverse.</p>
+      <p><strong>Around 50.</strong> No clear momentum edge either way. Often the most informative zone to watch, because a trend that keeps bouncing off 50 is intact and one that keeps failing at 50 is weakening.</p>
+    </div>
+
+    <h2>The 50 line is underrated</h2>
+
+    <p>Many technicians find the midline more useful than the extremes. In a healthy uptrend, RSI pullbacks tend to hold somewhere in the 40 to 50 area rather than dropping to 30. In a healthy downtrend, rallies tend to stall somewhere in the 50 to 60 area.</p>
+
+    <p>The practical consequence is a regime read. If RSI spends weeks oscillating between roughly 40 and 80, momentum has a bullish character. If it oscillates between roughly 20 and 60, it has a bearish character. When that range shifts - an uptrend's RSI pullback breaking well below 40, say - something about the character of the move has changed, which is often worth noticing before price itself makes it obvious.</p>
+
+    <p>Those ranges are rules of thumb, not thresholds. Different instruments and timeframes have different typical RSI ranges, and the useful habit is to observe where a particular chart's RSI normally lives rather than impose fixed numbers.</p>
+
+    <h2>RSI divergence</h2>
+
+    <p>Divergence is the most discussed RSI signal and deserves the most care.</p>
+
+    <p><strong>Bearish divergence</strong>: price makes a higher high, but RSI makes a lower high. The new price peak was reached with less momentum than the previous one.</p>
+
+    <p><strong>Bullish divergence</strong>: price makes a lower low, but RSI makes a higher low. Sellers pushed price to a new low but with less force than last time.</p>
+
+    <p>What divergence genuinely tells you is that momentum is fading relative to price. What it does not tell you is when, or whether, price will turn. Momentum can fade for a long time while price keeps grinding in the same direction, producing divergence after divergence before anything happens. Trading every divergence as a reversal is one of the more reliable ways to fight a trend repeatedly.</p>
+
+    <h2>Making divergence more meaningful</h2>
+
+    <ol>
+      <li><strong>Location first.</strong> Divergence at a well-tested <a href="/chartcheck/blog/support-and-resistance/">support or resistance zone</a> combines two pieces of evidence. Divergence in the middle of nowhere is one weak piece.</li>
+      <li><strong>Compare clear swings.</strong> Divergence should be drawn between two obvious swing highs or swing lows, not between arbitrary bars you chose because the lines diverge.</li>
+      <li><strong>Wait for structure.</strong> A divergence followed by a break of the most recent swing low (for bearish) or swing high (for bullish) has been confirmed by price itself. Before that, it is a warning, not an event.</li>
+      <li><strong>Higher timeframes carry more weight.</strong> A divergence on the daily chart reflects weeks of trading. One on the 1-minute chart reflects minutes.</li>
+    </ol>
+
+    <h2>Hidden divergence</h2>
+
+    <p>The mirror concept is sometimes called hidden divergence and is read as a continuation hint rather than a reversal hint. In an uptrend, price makes a higher low while RSI makes a lower low: the pullback was sharp on the momentum reading but price held structure. It is worth knowing the term exists, mostly so you do not mistake it for a regular divergence pointing the other way.</p>
+
+    <h2>Settings</h2>
+
+    <p>Fourteen periods is the default and remains the most common choice. Shorter settings make RSI faster and noisier, reaching extremes more often. Longer settings make it slower and smoother. There is no correct setting; there is only consistency. Changing the period until the indicator agrees with the view you already hold is a form of curve-fitting that feels like analysis.</p>
+
+    <h2>Reading RSI from a screenshot</h2>
+
+    <p>If your chart screenshot includes the RSI panel, an AI read can pick out the current level, whether it is near the extremes or the midline, and obvious divergences between visible swings. That is straightforward visual work.</p>
+
+    <p>What a screenshot read cannot know is your setting, unless the label is legible in the image - a 7-period RSI and a 21-period RSI look similar but mean different things. And it can only judge divergence between swings that are actually in frame. If the prior high you care about is off the left edge, it does not exist for the analysis. The <a href="/chartcheck/blog/screenshot-a-chart-for-analysis/">screenshot guide</a> covers how to keep the right context visible.</p>
+
+    <h2>RSI in ranges versus trends</h2>
+
+    <p>The single most useful thing you can decide before reading RSI is what kind of market you are looking at, because the same reading means different things in each.</p>
+
+    <table class="comparison-table">
+      <thead>
+        <tr><th>Reading</th><th>In a sideways range</th><th>In a strong trend</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>RSI above 70</td><td>Price is near the top of its recent behaviour; a pullback toward the middle of the range is plausible.</td><td>Normal. The trend is doing what trends do.</td></tr>
+        <tr><td>RSI below 30</td><td>Price is near the bottom of its recent behaviour.</td><td>Normal in a downtrend. Not evidence of a bottom.</td></tr>
+        <tr class="highlight-row"><td>RSI around 50</td><td>Unremarkable.</td><td>Worth watching. Pullbacks holding near 40 to 50 in an uptrend suggest the trend is intact; repeated failures there suggest it is tiring.</td></tr>
+        <tr><td>Divergence</td><td>Can mark the edges of the range.</td><td>Common and often early. Needs structure to confirm it.</td></tr>
+      </tbody>
+    </table>
+
+    <p>Deciding the regime is the job of price structure, not RSI. Look at the swings first: rising highs and lows, falling highs and lows, or neither. The <a href="/chartcheck/blog/how-to-read-a-stock-chart/">chart reading guide</a> walks through that first pass. Then interpret RSI inside that context.</p>
+
+    <h2>A worked reading, in words</h2>
+
+    <p>Imagine a daily chart where price has been climbing for two months in a clear sequence of higher highs and higher lows. RSI has spent most of that time between roughly 45 and 75, touching the low end on each pullback and pushing above 70 on each new high.</p>
+
+    <p>Now price makes another new high, but RSI only reaches the mid-60s. That is bearish divergence. The tempting conclusion is "the top is in". The more careful reading is: "the latest push higher had less force than the previous one." Then you ask what would confirm it. If the next pullback drops RSI well below its usual 45 floor and price breaks the most recent swing low, momentum and structure now agree that the character of the move has changed. If instead the pullback holds the usual area and price pushes to another high, the divergence was simply a quieter leg in an ongoing trend.</p>
+
+    <p>Neither outcome was knowable from the divergence alone. That is the point: RSI gives you the question, and price structure gives you the answer.</p>
+
+    <h2>Common RSI mistakes</h2>
+
+    <ul>
+      <li><strong>Treating 70 and 30 as instructions.</strong> They are descriptions of momentum, and in trends they are often signs of strength rather than exhaustion.</li>
+      <li><strong>Trading divergence without structure.</strong> Divergence can stack up several times before price turns, or never lead to a turn at all.</li>
+      <li><strong>Reading RSI on one timeframe in isolation.</strong> A 15-minute RSI at 25 inside a daily uptrend is describing a short pullback, not a reversal. The <a href="/chartcheck/blog/multi-timeframe-analysis/">multi-timeframe guide</a> covers how to stack timeframes sensibly.</li>
+      <li><strong>Stacking near-identical oscillators.</strong> RSI, stochastics and similar momentum tools often agree because they are built from the same price data. Agreement between them is not independent confirmation.</li>
+      <li><strong>Constantly changing the period.</strong> If the setting changes every time the indicator disagrees with you, the indicator is no longer telling you anything.</li>
+    </ul>
+
+    <h2>Where RSI fits</h2>
+
+    <p>RSI is a momentum gauge. It is useful for describing the character of a move and for flagging when that character is changing. It is not a timing tool, and it is at its least reliable exactly when it feels most persuasive: at an extreme reading during a strong trend. Use it to ask better questions about the chart, not to answer them.</p>
+
+    <div class="cta-banner">
+      <h3>Read your chart in seconds</h3>
+      <p>ChartCheck turns a screenshot of any trading chart into a structured technical read: trend and structure, support and resistance, patterns, your indicators, and an honest confidence level.</p>
+      <a href="https://apps.apple.com/us/app/id6811709869" class="btn" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Get ChartCheck</a>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item">
+      <h3>What is a good RSI setting?</h3>
+      <p>Fourteen periods is the standard and a sensible default. Shorter settings reach overbought and oversold far more often and produce more noise; longer settings react slowly. The more important thing than the exact number is picking one and keeping it, rather than adjusting it until the indicator agrees with what you already believe.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does RSI above 70 mean the price will drop?</h3>
+      <p>No. It means recent up-moves have been large relative to down-moves, which is what a strong uptrend looks like. In sideways markets an extreme reading can precede a pullback, but in trending markets RSI can stay above 70 for long periods while price keeps rising. Treat it as a description of momentum, not a reversal signal.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What is RSI divergence?</h3>
+      <p>Divergence is when price and RSI disagree: price makes a higher high while RSI makes a lower high (bearish), or price makes a lower low while RSI makes a higher low (bullish). It signals that momentum is weakening relative to price. It does not say when, or whether, price will reverse, and divergences can repeat several times before anything happens.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is RSI better for stocks, crypto or forex?</h3>
+      <p>The calculation is identical in every market, so it works the same way mechanically. What differs is behaviour: markets that trend strongly will hold RSI at extremes longer, and very volatile instruments hit extremes more often. Observe where a particular chart's RSI usually ranges rather than applying fixed thresholds everywhere.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can AI read RSI off a chart image?</h3>
+      <p>If the RSI panel is visible, yes - reading the current level and spotting divergence between visible swings is simple visual work. It cannot know the period setting unless the label is readable, and it can only compare swings that are inside the screenshot.</p>
+    </div>
+
+    <h2>Related Articles</h2>
+    <ul>
+      <li><a href="/chartcheck/blog/macd-indicator-explained/">MACD Explained: How to Read the Lines, the Histogram and the Crossovers</a></li>
+      <li><a href="/chartcheck/blog/support-and-resistance/">How to Draw Support and Resistance That Actually Holds Up</a></li>
+      <li><a href="/chartcheck/blog/multi-timeframe-analysis/">Multi-Timeframe Analysis: How to Pick Your Timeframes and Read Them Together</a></li>
+    </ul>
+
+    <section class="answer-box" aria-labelledby="scope">
+      <h2 id="scope">Scope</h2>
+      <p>This article is educational and is not financial, investment, or trading advice. Nothing here is a recommendation to buy, sell, or hold any security, cryptocurrency, currency, commodity, or derivative. Technical analysis describes what a chart has already done; it does not predict what it will do, and every pattern described here fails a meaningful share of the time. Trading involves risk of loss. Do your own research and consult a licensed financial professional before making any trading decision. ChartCheck is made by the author of this site.</p>
+    </section>
+  </article>
+
+  <footer>
+    <p>
+      &copy; 2026 ChartCheck &nbsp;&middot;&nbsp;
+      <a href="https://apps.apple.com/us/app/id6811709869" rel="noopener">App Store</a> &nbsp;&middot;&nbsp;
+      <a href="/chartcheck/blog/">Blog</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com/privacy/chartcheck/">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com">acalise.com</a>
+    </p>
+    <p class="kw">ai chart analysis · chart analysis app · technical analysis app · candlestick patterns · chart patterns · support and resistance</p>
+  </footer>
+
+</body>
+</html>

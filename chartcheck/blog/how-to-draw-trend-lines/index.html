@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>How to Draw Trend Lines Correctly | ChartCheck</title>
+  <meta name="description" content="How to draw trend lines correctly: which points to connect, wicks versus bodies, why log scale changes everything, and how to tell a real break from noise.">
+  <meta name="keywords" content="how to draw trend lines, trend line trading, trendline, drawing trendlines, trend line break, ascending trend line, descending trend line">
+  <link rel="canonical" href="https://acalise.com/chartcheck/blog/how-to-draw-trend-lines/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://acalise.com/chartcheck/blog/how-to-draw-trend-lines/">
+  <meta property="og:title" content="How to Draw Trend Lines">
+  <meta property="og:description" content="Which points to connect, wicks vs bodies, log scale, and how to read a trend line break.">
+  <meta property="og:image" content="https://acalise.com/chartcheck/icon.png">
+  <meta property="og:site_name" content="ChartCheck">
+  <meta property="article:published_time" content="2026-10-01">
+  <meta property="article:modified_time" content="2026-10-01">
+  <meta property="article:author" content="Anthony Calise">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Draw Trend Lines">
+  <meta name="twitter:description" content="Which points to connect, wicks vs bodies, log scale, and how to read a trend line break.">
+  <meta name="twitter:image" content="https://acalise.com/chartcheck/icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/chartcheck/icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD: Article -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Draw Trend Lines That Mean Something",
+  "description": "How to draw trend lines correctly: which points to connect, wicks versus bodies, why log scale changes everything, and how to tell a real break from noise.",
+  "author": {
+    "@type": "Person",
+    "name": "Anthony Calise",
+    "url": "https://acalise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChartCheck",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://acalise.com/chartcheck/icon.png"
+    }
+  },
+  "datePublished": "2026-10-01",
+  "dateModified": "2026-10-01",
+  "image": "https://acalise.com/chartcheck/icon.png",
+  "mainEntityOfPage": "https://acalise.com/chartcheck/blog/how-to-draw-trend-lines/"
+}
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many points do you need to draw a trend line?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two points define the line; a third touch validates it. A two-touch line is a hypothesis. A line that price has reacted to three or more times, without being forced through candle bodies, is describing something real about how the trend has progressed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should trend lines connect wicks or bodies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Either is acceptable. Wicks show the full extremes; bodies show where price closed. The important thing is to pick one approach and use it consistently, rather than switching to make a particular line fit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a trend line break mean the trend is over?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. A break first means the trend's pace has changed. The trend itself is in question when the swing structure breaks too - in an uptrend, when price also falls below its most recent swing low. A break followed by a successful retest of the line from the other side is the stronger signal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use log or linear scale for trend lines?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For short timeframes the difference is negligible. For long-term charts or large percentage moves, check both. Log scale treats equal percentage moves as equal distances, which usually makes long-term trend lines more meaningful. A line that only works on one scale deserves less confidence."
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- JSON-LD: WebSite -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ChartCheck",
+  "url": "https://acalise.com/chartcheck/"
+}
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://acalise.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ChartCheck",
+      "item": "https://acalise.com/chartcheck/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Blog",
+      "item": "https://acalise.com/chartcheck/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "How to Draw Trend Lines That Mean Something",
+      "item": "https://acalise.com/chartcheck/blog/how-to-draw-trend-lines/"
+    }
+  ]
+}
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f; --bg2: #0f1117; --card: #14161f;
+      --border: rgba(59,123,246,0.20); --border-soft: rgba(238,240,250,0.09);
+      --accent: #3b7bf6; --accent2: #2563eb; --accent-light: #8ab4ff; --accent-glow: rgba(59,123,246,0.14);
+      --text: #eef0fa; --muted: #a0a6c0; --muted2: #6a708a;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-soft); }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.02em;  color: var(--text); }
+    .nav-brand img { width: 30px; height: 30px; border-radius: 8px; }
+    .nav-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem; padding: 9px 18px; border-radius: 100px; transition: background 0.2s, transform 0.15s; }
+    .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); text-decoration: none; }
+
+    .article-wrapper { max-width: 740px; margin: 0 auto; padding: 100px 24px 80px; }
+    .article-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+    .article-meta .badge { display: inline-flex; align-items: center; gap: 6px; background: var(--accent-glow); border: 1px solid var(--border); color: var(--accent-light); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; }
+    .article-meta .date { font-size: 0.8rem; color: var(--muted); }
+    .article-wrapper h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.08;  margin-bottom: 20px; }
+    .article-intro { font-size: 1.1rem; color: var(--muted); line-height: 1.7; margin-bottom: 40px; }
+    .answer-box { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 12px; padding: 20px 24px; margin-bottom: 36px; }
+    .answer-box h2 { font-size: 0.8rem !important; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-light); margin: 0 0 8px !important; }
+    .answer-box p { margin: 0; }
+    .article-wrapper h2 { font-size: 1.55rem; font-weight: 900; letter-spacing: -0.03em;  margin: 48px 0 16px; line-height: 1.15; }
+    .article-wrapper h3 { font-size: 1.18rem; font-weight: 800; letter-spacing: -0.02em; margin: 32px 0 12px; line-height: 1.3; }
+    .article-wrapper p { font-size: 1rem; line-height: 1.75; color: var(--text); opacity: 0.92; margin-bottom: 16px; }
+    .article-wrapper ul, .article-wrapper ol { padding-left: 24px; margin-bottom: 16px; }
+    .article-wrapper li { font-size: 1rem; line-height: 1.75; color: var(--text); opacity: 0.92; margin-bottom: 8px; }
+    .article-wrapper strong { color: var(--text); opacity: 1; }
+
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 0.85rem; }
+    .comparison-table th, .comparison-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border-soft); }
+    .comparison-table th { font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); background: var(--bg2); }
+    .comparison-table td { color: var(--text); opacity: 0.92; }
+    .comparison-table tr:hover td { background: var(--bg2); }
+    .comparison-table .highlight-row td { color: var(--accent-light); font-weight: 700; opacity: 1; }
+    @media (max-width: 600px) { .comparison-table { font-size: 0.75rem; } .comparison-table th, .comparison-table td { padding: 8px 8px; } }
+
+    .stat-card { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 28px; margin: 24px 0; text-align: center; }
+    .stat-card .stat-number { font-size: 2.5rem; font-weight: 900; color: var(--accent); letter-spacing: -0.04em; line-height: 1.1; }
+    .stat-card .stat-label { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
+    .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+    @media (max-width: 600px) { .stat-row { grid-template-columns: 1fr; } }
+
+    .info-card { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 24px 28px; margin: 24px 0; }
+    .info-card h4 { font-size: 0.98rem; font-weight: 800; margin-bottom: 12px; color: var(--text); }
+    .info-card p { font-size: 0.92rem; margin-bottom: 8px; }
+    .info-card p:last-child { margin-bottom: 0; }
+    .info-card ul { margin-bottom: 0; }
+
+    .script-box { background: var(--bg2); border: 1px solid var(--border-soft); border-left: 3px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 18px 0; }
+    .script-box p { margin: 0 0 8px; font-size: 0.95rem; }
+    .script-box p:last-child { margin-bottom: 0; }
+    .script-box .who { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; display: block; margin-bottom: 4px; }
+
+    .cta-banner { background: linear-gradient(135deg, var(--accent2), var(--accent)); border-radius: 16px; padding: 32px; text-align: center; margin: 48px 0; }
+    .cta-banner h3 { font-size: 1.35rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; color: #fff; margin: 0 0 8px; }
+    .cta-banner p { font-size: 0.95rem; color: rgba(255,255,255,0.88); margin-bottom: 20px; opacity: 1; }
+    .cta-banner .btn { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--accent2); font-weight: 800; font-size: 0.95rem; padding: 14px 28px; border-radius: 100px; transition: transform 0.15s; }
+    .cta-banner .btn:hover { transform: translateY(-2px); text-decoration: none; }
+
+    .faq-item { border-bottom: 1px solid var(--border-soft); padding: 20px 0; }
+    .faq-item h3 { font-size: 1.05rem; margin: 0 0 8px; color: var(--text); }
+    .faq-item p { font-size: 0.95rem; margin: 0; }
+
+    footer { text-align: center; padding: 40px 24px; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border-soft); }
+    footer a { color: var(--muted); transition: color 0.2s; }
+    footer a:hover { color: var(--text); }
+    .kw { margin-top: 8px; font-size: 0.72rem; color: var(--muted2); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/chartcheck/" class="nav-brand">
+      <img src="../../icon.png" alt="ChartCheck app icon">
+      <span>ChartCheck</span>
+    </a>
+    <a href="https://apps.apple.com/us/app/id6811709869" class="nav-cta" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Get ChartCheck
+    </a>
+  </nav>
+
+  <article class="article-wrapper">
+    <div class="article-meta">
+      <span class="badge">Tools</span>
+      <span class="date">Published October 1, 2026</span>
+    </div>
+
+    <h1>How to Draw Trend Lines That Mean Something</h1>
+
+    <p class="article-intro">Trend lines are the most freely drawn tool in technical analysis, which makes them both flexible and dangerous. Almost any chart will accept a line through three points if you are willing to adjust the angle. The skill is drawing lines you would have drawn before you knew what happened next.</p>
+
+    <section class="answer-box" aria-labelledby="quick">
+      <h2 id="quick">The short answer</h2>
+      <p>An uptrend line connects two or more rising swing lows; a downtrend line connects two or more falling swing highs. Two points define a line, a third touch is what validates it. Decide in advance whether you connect wicks or bodies, and apply it consistently. Do not force the line through candles to make it fit. Trend lines depend on the price scale, so check log scale on long-term charts. A break matters more when it closes beyond the line and when the swing structure breaks with it.</p>
+    </section>
+
+    <h2>What a trend line represents</h2>
+
+    <p>A trend is a sequence: higher highs and higher lows in an uptrend, lower highs and lower lows in a downtrend. A trend line is a visual summary of the rate at which that sequence has been progressing.</p>
+
+    <p>An uptrend line drawn under the swing lows says, roughly, "buyers have been stepping in at progressively higher prices, at about this pace." While price stays above the line, that pace is intact. When price falls through it, the pace has changed - which is not necessarily the same as the trend ending.</p>
+
+    <p>That distinction matters. A trend line break is first a statement about <em>rate</em>, and only sometimes a statement about direction.</p>
+
+    <h2>How to draw one, step by step</h2>
+
+    <ol>
+      <li><strong>Identify the trend from the swings first.</strong> Before drawing anything, confirm that you can see rising lows (for an uptrend line) or falling highs (for a downtrend line). If the swings do not form a sequence, there is no trend to draw.</li>
+      <li><strong>Connect the two most significant swing points.</strong> For an uptrend, the two most obvious swing lows. For a downtrend, the two most obvious swing highs. Not any two candles - clear turning points.</li>
+      <li><strong>Extend it forward.</strong> The line only becomes useful when you project it to the right of the chart.</li>
+      <li><strong>Wait for the third touch.</strong> Two points always make a line. A third reaction at the line is the first evidence it reflects real behaviour rather than geometry.</li>
+    </ol>
+
+    <h2>Wicks or bodies</h2>
+
+    <p>There are two schools, and both are reasonable.</p>
+
+    <ul>
+      <li><strong>Wicks</strong> capture the full extent of where price went. Lines through wick extremes are the most literal.</li>
+      <li><strong>Bodies</strong> capture where price closed and are sometimes argued to reflect acceptance better, ignoring brief spikes.</li>
+    </ul>
+
+    <p>The real rule is consistency. The common failure is switching between wicks and bodies within the same line, or from chart to chart, whenever it produces a neater fit. A line that only works because you changed the rules halfway along is not describing the market.</p>
+
+    <h2>Do not force the fit</h2>
+
+    <p>A trend line that slices through several candle bodies to reach a third touch is not a trend line, it is a line. If honest drawing produces only two touches, you have a two-touch line, and you should treat it as unconfirmed rather than nudging it until it qualifies.</p>
+
+    <p>Equally, a line that has been redrawn four times as price broke through each version is telling you something: there is no stable rate to the trend. That is useful information in itself, and redrawing it away loses it.</p>
+
+    <h2>The angle matters</h2>
+
+    <p>Very steep trend lines break quickly, because almost no trend sustains a near-vertical pace. A steep line breaking often means the move is slowing to a more normal rate rather than reversing. Very shallow lines are hard to break and can be so loose they barely constrain price at all.</p>
+
+    <p>Some traders keep two lines on the same trend: a steeper short-term one and a shallower long-term one. A break of the steep line with the shallow one intact is a deceleration. A break of both is a more significant change.</p>
+
+    <h2>Linear versus log scale</h2>
+
+    <p>This is the most overlooked trend line issue, and it can completely change what you see.</p>
+
+    <p>On a linear chart, equal vertical distances represent equal price changes. On a log chart, equal vertical distances represent equal <em>percentage</em> changes. For short timeframes and small moves, the two look nearly identical. For long-term charts, or instruments that have moved a large percentage, they diverge dramatically - and a trend line that fits beautifully on one scale may not exist on the other.</p>
+
+    <div class="info-card">
+      <h4>A practical rule</h4>
+      <p>For charts covering a large percentage move or several years, check both scales. If a trend line only holds on one, be cautious about treating it as significant. Long-term trend lines on assets that have multiplied in price are usually more meaningful on log scale, because log scale reflects proportional moves.</p>
+    </div>
+
+    <h2>Reading a break</h2>
+
+    <p>Price crossing a trend line is common. What it means depends on what comes with it.</p>
+
+    <table class="comparison-table">
+      <thead>
+        <tr><th>What you see</th><th>Reasonable interpretation</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Wick through, close back on the trend side</td><td>A test of the line, not a break.</td></tr>
+        <tr><td>Close beyond the line, swing structure intact</td><td>The pace has slowed. The trend may continue at a shallower angle.</td></tr>
+        <tr class="highlight-row"><td>Close beyond the line and the last swing low (or high) breaks too</td><td>Both the rate and the structure have changed. This is the more significant event.</td></tr>
+        <tr><td>Break, then a retest of the line from the other side that holds</td><td>The line has flipped role, much like a broken horizontal level.</td></tr>
+      </tbody>
+    </table>
+
+    <p>Horizontal <a href="/chartcheck/blog/support-and-resistance/">support and resistance</a> generally deserves more weight than diagonal lines, simply because there is less drawing freedom: a horizontal level is defined by prices, while a diagonal line is defined by your choice of points and angle.</p>
+
+    <h2>Channels</h2>
+
+    <p>A channel is a trend line plus a parallel line on the other side of price, drawn through the opposing swings. It describes a trend that is progressing at a steady rate within a steady range. Channels are useful for seeing when a move is unusually stretched against its own recent behaviour, and for spotting when the range itself starts to change shape - narrowing into a <a href="/chartcheck/blog/chart-patterns-cheat-sheet/">wedge</a>, for example.</p>
+
+    <h2>Trend lines across timeframes</h2>
+
+    <p>The same instrument can have a perfectly valid uptrend line on the daily chart and a perfectly valid downtrend line on the hourly chart at the same time. That is not a contradiction. The hourly line describes a pullback; the daily line describes the trend the pullback is happening inside.</p>
+
+    <p>The practical habit is to draw the higher-timeframe line first, then carry it down to your working timeframe rather than redrawing from scratch. A shorter-term line breaking in the direction of the longer-term trend - a downtrend line on the hourly breaking upward while the daily uptrend is intact - is a common way traders frame the end of a pullback. A shorter-term line breaking against the longer-term trend is often just noise. The <a href="/chartcheck/blog/multi-timeframe-analysis/">multi-timeframe guide</a> covers this layering in more detail.</p>
+
+    <h2>Common trend line mistakes</h2>
+
+    <ul>
+      <li><strong>Drawing the line before the trend exists.</strong> Two random lows do not make an uptrend. The swing sequence comes first.</li>
+      <li><strong>Forcing a third touch.</strong> Adjusting the angle until it grazes another candle, while cutting through bodies on the way, produces a line that only exists because you wanted it.</li>
+      <li><strong>Redrawing after every break.</strong> If you keep rotating the line to keep price above it, you are no longer measuring the trend, you are protecting a view.</li>
+      <li><strong>Ignoring scale on long charts.</strong> A line that only fits on linear or only on log is fragile.</li>
+      <li><strong>Treating any touch as a bounce signal.</strong> A trend line touch is a place to watch for a reaction, not a guarantee of one.</li>
+      <li><strong>Overweighting diagonal lines.</strong> When a trend line and a horizontal level disagree, the horizontal level has less subjectivity built into it.</li>
+    </ul>
+
+    <h2>A short checklist before trusting a line</h2>
+
+    <ol>
+      <li>Can you see a clear sequence of rising lows or falling highs without the line?</li>
+      <li>Does the line touch at least three swing points honestly, using one consistent convention?</li>
+      <li>Would someone else looking at the same chart draw roughly the same line?</li>
+      <li>Does it hold on both linear and log scale, if the chart covers a large move?</li>
+      <li>Does it agree with, or at least not contradict, the obvious horizontal levels?</li>
+    </ol>
+
+    <p>A line that passes all five is worth watching. A line that fails two or more is mostly decoration.</p>
+
+    <h2>Trend lines in an AI read</h2>
+
+    <p>Rising lows and falling highs are among the most mechanical features of a chart, and a vision model reading a screenshot can usually describe the sequence reliably. Drawing an exact trend line is harder: the result depends on the same choices you make - which swings, wicks or bodies, which scale - and the model has to infer them from pixels without knowing whether the chart is on log or linear.</p>
+
+    <p>The more robust use is the reverse. Draw your own line, include it in the screenshot, and use the read as a check on whether the structure around it agrees with what the line implies.</p>
+
+    <div class="cta-banner">
+      <h3>Read your chart in seconds</h3>
+      <p>ChartCheck turns a screenshot of any trading chart into a structured technical read: trend and structure, support and resistance, patterns, your indicators, and an honest confidence level.</p>
+      <a href="https://apps.apple.com/us/app/id6811709869" class="btn" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Get ChartCheck</a>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item">
+      <h3>How many points do you need to draw a trend line?</h3>
+      <p>Two points define the line; a third touch validates it. A two-touch line is a hypothesis. A line that price has reacted to three or more times, without being forced through candle bodies, is describing something real about how the trend has progressed.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Should trend lines connect wicks or bodies?</h3>
+      <p>Either is acceptable. Wicks show the full extremes; bodies show where price closed. The important thing is to pick one approach and use it consistently, rather than switching to make a particular line fit.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does a trend line break mean the trend is over?</h3>
+      <p>Not necessarily. A break first means the trend's pace has changed. The trend itself is in question when the swing structure breaks too - in an uptrend, when price also falls below its most recent swing low. A break followed by a successful retest of the line from the other side is the stronger signal.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Should I use log or linear scale for trend lines?</h3>
+      <p>For short timeframes the difference is negligible. For long-term charts or large percentage moves, check both. Log scale treats equal percentage moves as equal distances, which usually makes long-term trend lines more meaningful. A line that only works on one scale deserves less confidence.</p>
+    </div>
+
+    <h2>Related Articles</h2>
+    <ul>
+      <li><a href="/chartcheck/blog/support-and-resistance/">How to Draw Support and Resistance That Actually Holds Up</a></li>
+      <li><a href="/chartcheck/blog/fibonacci-retracement/">How to Draw Fibonacci Retracement, and What the Levels Can and Cannot Tell You</a></li>
+      <li><a href="/chartcheck/blog/how-to-read-a-stock-chart/">How to Read a Stock Chart, in the Order You Should Read It</a></li>
+    </ul>
+
+    <section class="answer-box" aria-labelledby="scope">
+      <h2 id="scope">Scope</h2>
+      <p>This article is educational and is not financial, investment, or trading advice. Nothing here is a recommendation to buy, sell, or hold any security, cryptocurrency, currency, commodity, or derivative. Technical analysis describes what a chart has already done; it does not predict what it will do, and every pattern described here fails a meaningful share of the time. Trading involves risk of loss. Do your own research and consult a licensed financial professional before making any trading decision. ChartCheck is made by the author of this site.</p>
+    </section>
+  </article>
+
+  <footer>
+    <p>
+      &copy; 2026 ChartCheck &nbsp;&middot;&nbsp;
+      <a href="https://apps.apple.com/us/app/id6811709869" rel="noopener">App Store</a> &nbsp;&middot;&nbsp;
+      <a href="/chartcheck/blog/">Blog</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com/privacy/chartcheck/">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com">acalise.com</a>
+    </p>
+    <p class="kw">ai chart analysis · chart analysis app · technical analysis app · candlestick patterns · chart patterns · support and resistance</p>
+  </footer>
+
+</body>
+</html>

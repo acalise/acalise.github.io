@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>MACD Explained: How to Read MACD Crossovers | ChartCheck</title>
+  <meta name="description" content="How to read MACD: what the two lines and the histogram actually calculate, why crossovers lag, what the zero line tells you, and where MACD misleads.">
+  <meta name="keywords" content="macd explained, how to read macd, macd crossover, macd histogram, macd indicator, macd divergence, macd settings 12 26 9">
+  <link rel="canonical" href="https://acalise.com/chartcheck/blog/macd-indicator-explained/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://acalise.com/chartcheck/blog/macd-indicator-explained/">
+  <meta property="og:title" content="MACD Explained">
+  <meta property="og:description" content="What the MACD lines and histogram calculate, why crossovers lag, and what the zero line means.">
+  <meta property="og:image" content="https://acalise.com/chartcheck/icon.png">
+  <meta property="og:site_name" content="ChartCheck">
+  <meta property="article:published_time" content="2026-10-01">
+  <meta property="article:modified_time" content="2026-10-01">
+  <meta property="article:author" content="Anthony Calise">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MACD Explained">
+  <meta name="twitter:description" content="What the MACD lines and histogram calculate, why crossovers lag, and what the zero line means.">
+  <meta name="twitter:image" content="https://acalise.com/chartcheck/icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/chartcheck/icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD: Article -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "MACD Explained: How to Read the Lines, the Histogram and the Crossovers",
+  "description": "How to read MACD: what the two lines and the histogram actually calculate, why crossovers lag, what the zero line tells you, and where MACD misleads.",
+  "author": {
+    "@type": "Person",
+    "name": "Anthony Calise",
+    "url": "https://acalise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChartCheck",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://acalise.com/chartcheck/icon.png"
+    }
+  },
+  "datePublished": "2026-10-01",
+  "dateModified": "2026-10-01",
+  "image": "https://acalise.com/chartcheck/icon.png",
+  "mainEntityOfPage": "https://acalise.com/chartcheck/blog/macd-indicator-explained/"
+}
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What do the MACD settings 12, 26, 9 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "12 and 26 are the periods of the fast and slow exponential moving averages that are subtracted to make the MACD line. 9 is the period of the exponential moving average applied to the MACD line to make the signal line. They are the original defaults and still the most widely used."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a MACD crossover a buy or sell signal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a description of momentum turning, not an instruction. A bullish crossover means short-term momentum has risen above its own recent average; a bearish one means the opposite. In sideways markets many crossovers lead nowhere, and in all markets they arrive after the move has begun, because the indicator is built from averages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it mean when MACD is above zero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 12-period exponential moving average is above the 26-period one, meaning recent price has been stronger than the longer-term average. Sustained time above zero describes an uptrend. It says nothing about whether the trend will continue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the MACD histogram shrink before a crossover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The histogram is the distance between the MACD line and the signal line. For the lines to cross, that distance has to fall to zero, so the bars get shorter first. That makes the histogram the earliest-moving part of MACD, though shrinking bars can also simply re-expand without any crossover."
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- JSON-LD: WebSite -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ChartCheck",
+  "url": "https://acalise.com/chartcheck/"
+}
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://acalise.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ChartCheck",
+      "item": "https://acalise.com/chartcheck/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Blog",
+      "item": "https://acalise.com/chartcheck/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "MACD Explained: How to Read the Lines, the Histogram and the Crossovers",
+      "item": "https://acalise.com/chartcheck/blog/macd-indicator-explained/"
+    }
+  ]
+}
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f; --bg2: #0f1117; --card: #14161f;
+      --border: rgba(59,123,246,0.20); --border-soft: rgba(238,240,250,0.09);
+      --accent: #3b7bf6; --accent2: #2563eb; --accent-light: #8ab4ff; --accent-glow: rgba(59,123,246,0.14);
+      --text: #eef0fa; --muted: #a0a6c0; --muted2: #6a708a;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; background: color-mix(in srgb, var(--bg) 85%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-soft); }
+    .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.02em;  color: var(--text); }
+    .nav-brand img { width: 30px; height: 30px; border-radius: 8px; }
+    .nav-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.85rem; padding: 9px 18px; border-radius: 100px; transition: background 0.2s, transform 0.15s; }
+    .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); text-decoration: none; }
+
+    .article-wrapper { max-width: 740px; margin: 0 auto; padding: 100px 24px 80px; }
+    .article-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+    .article-meta .badge { display: inline-flex; align-items: center; gap: 6px; background: var(--accent-glow); border: 1px solid var(--border); color: var(--accent-light); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; }
+    .article-meta .date { font-size: 0.8rem; color: var(--muted); }
+    .article-wrapper h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.08;  margin-bottom: 20px; }
+    .article-intro { font-size: 1.1rem; color: var(--muted); line-height: 1.7; margin-bottom: 40px; }
+    .answer-box { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 12px; padding: 20px 24px; margin-bottom: 36px; }
+    .answer-box h2 { font-size: 0.8rem !important; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-light); margin: 0 0 8px !important; }
+    .answer-box p { margin: 0; }
+    .article-wrapper h2 { font-size: 1.55rem; font-weight: 900; letter-spacing: -0.03em;  margin: 48px 0 16px; line-height: 1.15; }
+    .article-wrapper h3 { font-size: 1.18rem; font-weight: 800; letter-spacing: -0.02em; margin: 32px 0 12px; line-height: 1.3; }
+    .article-wrapper p { font-size: 1rem; line-height: 1.75; color: var(--text); opacity: 0.92; margin-bottom: 16px; }
+    .article-wrapper ul, .article-wrapper ol { padding-left: 24px; margin-bottom: 16px; }
+    .article-wrapper li { font-size: 1rem; line-height: 1.75; color: var(--text); opacity: 0.92; margin-bottom: 8px; }
+    .article-wrapper strong { color: var(--text); opacity: 1; }
+
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0 32px; font-size: 0.85rem; }
+    .comparison-table th, .comparison-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border-soft); }
+    .comparison-table th { font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); background: var(--bg2); }
+    .comparison-table td { color: var(--text); opacity: 0.92; }
+    .comparison-table tr:hover td { background: var(--bg2); }
+    .comparison-table .highlight-row td { color: var(--accent-light); font-weight: 700; opacity: 1; }
+    @media (max-width: 600px) { .comparison-table { font-size: 0.75rem; } .comparison-table th, .comparison-table td { padding: 8px 8px; } }
+
+    .stat-card { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 28px; margin: 24px 0; text-align: center; }
+    .stat-card .stat-number { font-size: 2.5rem; font-weight: 900; color: var(--accent); letter-spacing: -0.04em; line-height: 1.1; }
+    .stat-card .stat-label { font-size: 0.9rem; color: var(--muted); margin-top: 8px; }
+    .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+    @media (max-width: 600px) { .stat-row { grid-template-columns: 1fr; } }
+
+    .info-card { background: var(--card); border: 1px solid var(--border-soft); border-radius: 16px; padding: 24px 28px; margin: 24px 0; }
+    .info-card h4 { font-size: 0.98rem; font-weight: 800; margin-bottom: 12px; color: var(--text); }
+    .info-card p { font-size: 0.92rem; margin-bottom: 8px; }
+    .info-card p:last-child { margin-bottom: 0; }
+    .info-card ul { margin-bottom: 0; }
+
+    .script-box { background: var(--bg2); border: 1px solid var(--border-soft); border-left: 3px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 18px 0; }
+    .script-box p { margin: 0 0 8px; font-size: 0.95rem; }
+    .script-box p:last-child { margin-bottom: 0; }
+    .script-box .who { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; display: block; margin-bottom: 4px; }
+
+    .cta-banner { background: linear-gradient(135deg, var(--accent2), var(--accent)); border-radius: 16px; padding: 32px; text-align: center; margin: 48px 0; }
+    .cta-banner h3 { font-size: 1.35rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; color: #fff; margin: 0 0 8px; }
+    .cta-banner p { font-size: 0.95rem; color: rgba(255,255,255,0.88); margin-bottom: 20px; opacity: 1; }
+    .cta-banner .btn { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--accent2); font-weight: 800; font-size: 0.95rem; padding: 14px 28px; border-radius: 100px; transition: transform 0.15s; }
+    .cta-banner .btn:hover { transform: translateY(-2px); text-decoration: none; }
+
+    .faq-item { border-bottom: 1px solid var(--border-soft); padding: 20px 0; }
+    .faq-item h3 { font-size: 1.05rem; margin: 0 0 8px; color: var(--text); }
+    .faq-item p { font-size: 0.95rem; margin: 0; }
+
+    footer { text-align: center; padding: 40px 24px; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border-soft); }
+    footer a { color: var(--muted); transition: color 0.2s; }
+    footer a:hover { color: var(--text); }
+    .kw { margin-top: 8px; font-size: 0.72rem; color: var(--muted2); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/chartcheck/" class="nav-brand">
+      <img src="../../icon.png" alt="ChartCheck app icon">
+      <span>ChartCheck</span>
+    </a>
+    <a href="https://apps.apple.com/us/app/id6811709869" class="nav-cta" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Get ChartCheck
+    </a>
+  </nav>
+
+  <article class="article-wrapper">
+    <div class="article-meta">
+      <span class="badge">Indicators</span>
+      <span class="date">Published October 1, 2026</span>
+    </div>
+
+    <h1>MACD Explained: How to Read the Lines, the Histogram and the Crossovers</h1>
+
+    <p class="article-intro">MACD looks more complicated than RSI - two lines, a histogram, a zero line - but it is built entirely out of moving averages, and once you see that, every part of it becomes readable. The most important thing to understand about it is also the least advertised: everything it shows you is late, by design.</p>
+
+    <section class="answer-box" aria-labelledby="quick">
+      <h2 id="quick">The short answer</h2>
+      <p>MACD is the difference between a fast and a slow exponential moving average of price (12 and 26 periods by default). The signal line is a 9-period average of that difference, and the histogram is the gap between the two lines. Above zero, the fast average is above the slow one, so recent price has been stronger than the longer-term average. Crossovers mark changes in that relationship, but because they are averages of averages, they arrive after the move has already started. Read MACD as a description of trend and momentum, not a trigger.</p>
+    </section>
+
+    <h2>What MACD is built from</h2>
+
+    <p>MACD stands for Moving Average Convergence Divergence. The name describes the mechanics directly.</p>
+
+    <div class="info-card">
+      <h4>The three parts</h4>
+      <p><strong>The MACD line.</strong> The 12-period exponential moving average minus the 26-period exponential moving average. When short-term price is running above the longer-term average, this is positive. When it is running below, negative.</p>
+      <p><strong>The signal line.</strong> A 9-period exponential moving average of the MACD line itself - a smoothed version of the first line.</p>
+      <p><strong>The histogram.</strong> The MACD line minus the signal line, drawn as bars. It shows how far apart the two lines are, and whether that gap is growing or shrinking.</p>
+    </div>
+
+    <p>Because every component is derived from moving averages of price, MACD contains no information that is not already in the price chart. It reorganises that information in a way that makes changes in trend and momentum easier to see. That is genuinely useful, but it is a lens, not a new data source.</p>
+
+    <h2>The zero line</h2>
+
+    <p>The simplest MACD read is also one of the most robust: which side of zero is the MACD line on?</p>
+
+    <p>Above zero, the fast average is above the slow average, which is another way of saying price has recently been stronger than its longer-term trend. Below zero, the reverse. A MACD line that has spent weeks above zero describes an uptrend; one that keeps crossing back and forth describes a market without a clear direction.</p>
+
+    <p>A cross of the zero line is the same event as the two underlying moving averages crossing each other. That is a slow signal by nature - by the time a 12-period average overtakes a 26-period one, price has usually been moving for a while.</p>
+
+    <h2>Signal-line crossovers</h2>
+
+    <p>The crossover most people mean when they say "MACD crossover" is the MACD line crossing its signal line.</p>
+
+    <ul>
+      <li><strong>Bullish crossover</strong>: MACD line crosses above the signal line. Short-term momentum has turned up relative to its own recent average.</li>
+      <li><strong>Bearish crossover</strong>: MACD line crosses below the signal line. Short-term momentum has turned down.</li>
+    </ul>
+
+    <p>These happen frequently, and in sideways markets most of them lead nowhere: the lines weave around each other while price chops in a range. Crossovers are much more coherent in trending markets, which creates the obvious problem - you only know the market was trending after the fact.</p>
+
+    <h2>Why everything arrives late</h2>
+
+    <p>It is worth being explicit about the lag, because it is structural. The MACD line is a difference of two averages. The signal line is an average of that. A crossover is therefore an average-of-an-average event, and it will always confirm a turn after the turn began.</p>
+
+    <p>That is not a flaw in the indicator; it is the price of smoothing. Smoothing removes noise, and removing noise necessarily delays the signal. Faster settings reduce lag and add noise. Slower settings do the opposite. There is no setting that is both early and clean.</p>
+
+    <p>The practical consequence: MACD is better at telling you what kind of market you are in than at telling you when to act.</p>
+
+    <h2>Reading the histogram</h2>
+
+    <p>The histogram is the most responsive part of MACD, because it measures the gap between the two lines rather than the lines themselves. Before the lines cross, the gap has to shrink - so the histogram bars get shorter before the crossover happens.</p>
+
+    <p>That gives a simple read:</p>
+
+    <table class="comparison-table">
+      <thead>
+        <tr><th>Histogram</th><th>What it describes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Above zero and growing</td><td>Upside momentum is accelerating.</td></tr>
+        <tr class="highlight-row"><td>Above zero and shrinking</td><td>Still positive, but momentum is fading. A bearish signal-line cross may follow.</td></tr>
+        <tr><td>Below zero and growing (more negative)</td><td>Downside momentum is accelerating.</td></tr>
+        <tr class="highlight-row"><td>Below zero and shrinking</td><td>Still negative, but selling pressure is fading.</td></tr>
+      </tbody>
+    </table>
+
+    <p>Shrinking bars are an early hint, not a confirmed turn. Momentum can fade and re-accelerate without any crossover at all.</p>
+
+    <h2>MACD divergence</h2>
+
+    <p>The same divergence logic used for <a href="/chartcheck/blog/rsi-indicator-explained/">RSI</a> applies. If price makes a higher high while the MACD line or histogram makes a lower high, momentum behind the new high was weaker. The reverse applies at lows.</p>
+
+    <p>The same caveats apply too. Divergence describes fading momentum, not an imminent reversal, and it can persist through several more swings in the trend direction. It carries more weight at a level that already matters and on a higher timeframe.</p>
+
+    <h2>Settings</h2>
+
+    <p>12, 26 and 9 are the defaults and by far the most commonly used, which is itself a reason to keep them: they are the settings most other participants are looking at. Some traders use faster settings on short timeframes. As with any indicator, changing settings until past signals look good is curve-fitting, and it rarely survives contact with the next stretch of data.</p>
+
+    <h2>MACD versus RSI</h2>
+
+    <p>They are often shown together and often treated as redundant. They are related but not identical. RSI is bounded between 0 and 100 and answers "how forceful have recent up-moves been compared to down-moves". MACD is unbounded and answers "how far is short-term price trending away from the longer-term trend, and is that gap widening". RSI tends to be more useful for spotting stretched moves in ranges; MACD tends to be more useful for describing trend direction and its changes. Neither one predicts.</p>
+
+    <h2>A worked reading, in words</h2>
+
+    <p>Picture a daily chart where price has been falling for several weeks. MACD has been below zero the whole time, and the histogram has been printing long negative bars.</p>
+
+    <p>Then the histogram bars start getting shorter. Selling momentum is fading, though MACD is still below zero and the trend is still down. A few days later the MACD line crosses above the signal line: a bullish signal-line crossover, below zero. That tells you short-term momentum has turned up relative to its recent average. It does not tell you the downtrend is over, because the fast average is still below the slow one.</p>
+
+    <p>What would make the picture more convincing? Price breaking its most recent swing high, ending the sequence of lower highs. MACD eventually crossing above zero, meaning the 12-period average has overtaken the 26-period one. Ideally, both of those happening near a level that has mattered before. Each step adds evidence; none of them alone is a verdict. And at every step, the indicator is describing price behaviour that has already happened.</p>
+
+    <h2>Common MACD mistakes</h2>
+
+    <ul>
+      <li><strong>Treating every crossover as a signal.</strong> In ranges, the lines cross constantly and most crossovers lead nowhere.</li>
+      <li><strong>Ignoring which side of zero the crossover happened on.</strong> A bullish crossover deep below zero is a bounce in momentum during a downtrend. A bullish crossover above zero is momentum resuming inside an uptrend. They are not the same event.</li>
+      <li><strong>Reading the histogram as a forecast.</strong> Shrinking bars mean momentum is fading. They do not mean a reversal is coming.</li>
+      <li><strong>Comparing MACD values across instruments.</strong> MACD is measured in price units, so its values depend on the price level and volatility of the instrument. A MACD of 2 means something very different on a stock trading at 20 than on one trading at 2,000. Compare MACD to its own history on the same chart.</li>
+      <li><strong>Using it as independent confirmation of a moving average crossover.</strong> MACD crossing zero is a moving average crossover. Counting both as separate evidence is double-counting.</li>
+    </ul>
+
+    <h2>Where MACD is most useful</h2>
+
+    <p>MACD tends to earn its place as a trend-character gauge. Is the market trending, and is that trend strengthening or weakening? Those are the questions it answers clearly. It is least useful in tight sideways markets, where it generates a stream of crossovers with no follow-through, and as an entry trigger, where its built-in lag works against you. Pair it with price structure and <a href="/chartcheck/blog/support-and-resistance/">levels</a> rather than reading it alone.</p>
+
+    <h2>Reading MACD from a screenshot</h2>
+
+    <p>An AI read of a chart screenshot can describe where the MACD line sits relative to zero, whether the lines have recently crossed, and whether the histogram is expanding or contracting - all visible features of the image. It cannot reliably know the settings unless they are labelled on the chart, and it cannot see crossovers that happened off the edge of the frame. If MACD is central to how you read a chart, make sure the panel and its label are clearly visible before you analyse it.</p>
+
+    <div class="cta-banner">
+      <h3>Read your chart in seconds</h3>
+      <p>ChartCheck turns a screenshot of any trading chart into a structured technical read: trend and structure, support and resistance, patterns, your indicators, and an honest confidence level.</p>
+      <a href="https://apps.apple.com/us/app/id6811709869" class="btn" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Get ChartCheck</a>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item">
+      <h3>What do the MACD settings 12, 26, 9 mean?</h3>
+      <p>12 and 26 are the periods of the fast and slow exponential moving averages that are subtracted to make the MACD line. 9 is the period of the exponential moving average applied to the MACD line to make the signal line. They are the original defaults and still the most widely used.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is a MACD crossover a buy or sell signal?</h3>
+      <p>It is a description of momentum turning, not an instruction. A bullish crossover means short-term momentum has risen above its own recent average; a bearish one means the opposite. In sideways markets many crossovers lead nowhere, and in all markets they arrive after the move has begun, because the indicator is built from averages.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What does it mean when MACD is above zero?</h3>
+      <p>The 12-period exponential moving average is above the 26-period one, meaning recent price has been stronger than the longer-term average. Sustained time above zero describes an uptrend. It says nothing about whether the trend will continue.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Why does the MACD histogram shrink before a crossover?</h3>
+      <p>The histogram is the distance between the MACD line and the signal line. For the lines to cross, that distance has to fall to zero, so the bars get shorter first. That makes the histogram the earliest-moving part of MACD, though shrinking bars can also simply re-expand without any crossover.</p>
+    </div>
+
+    <h2>Related Articles</h2>
+    <ul>
+      <li><a href="/chartcheck/blog/rsi-indicator-explained/">The RSI Indicator Explained: How to Read It Without Fooling Yourself</a></li>
+      <li><a href="/chartcheck/blog/volume-analysis-trading/">How to Read Volume on a Stock Chart: Volume Analysis for Beginners</a></li>
+      <li><a href="/chartcheck/blog/how-to-read-a-stock-chart/">How to Read a Stock Chart, in the Order You Should Read It</a></li>
+    </ul>
+
+    <section class="answer-box" aria-labelledby="scope">
+      <h2 id="scope">Scope</h2>
+      <p>This article is educational and is not financial, investment, or trading advice. Nothing here is a recommendation to buy, sell, or hold any security, cryptocurrency, currency, commodity, or derivative. Technical analysis describes what a chart has already done; it does not predict what it will do, and every pattern described here fails a meaningful share of the time. Trading involves risk of loss. Do your own research and consult a licensed financial professional before making any trading decision. ChartCheck is made by the author of this site.</p>
+    </section>
+  </article>
+
+  <footer>
+    <p>
+      &copy; 2026 ChartCheck &nbsp;&middot;&nbsp;
+      <a href="https://apps.apple.com/us/app/id6811709869" rel="noopener">App Store</a> &nbsp;&middot;&nbsp;
+      <a href="/chartcheck/blog/">Blog</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com/privacy/chartcheck/">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="https://acalise.com">acalise.com</a>
+    </p>
+    <p class="kw">ai chart analysis · chart analysis app · technical analysis app · candlestick patterns · chart patterns · support and resistance</p>
+  </footer>
+
+</body>
+</html>
