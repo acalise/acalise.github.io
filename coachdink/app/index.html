@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- simplerizz.com/app method: real browsers bounce straight to the App
+       Store; TikTok/IG in-app browsers (which block redirects and scheme
+       taps on iOS) get a plain instruction screen pointing at the ... menu.
+       Step-2 wording adapts: TikTok menu says "Open in browser", IG says
+       "Open in external browser". Reopening in Safari lands back here and
+       auto-bounces. -->
+  <title>Get Coach Dink – AI Pickleball Coach</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="apple-itunes-app" content="app-id=6815895984">
+  <link rel="icon" type="image/png" href="/coachdink/icon.png">
+  <script>
+    var STORE = "https://apps.apple.com/us/app/id6815895984";
+    var ua = navigator.userAgent;
+    var isIG = /Instagram|FBAN|FBAV|FB_IAB/i.test(ua);
+    var inApp = isIG || /musical_ly|Bytedance|TikTok/i.test(ua);
+    if (!inApp) location.replace(STORE);
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      background: #f7f6f4; color: #111;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      display: flex; flex-direction: column;
+      padding: 24px 28px 56px;
+    }
+    .chevrons { position: fixed; top: 8px; right: 22px; width: 68px; height: 76px; }
+    .spacer { flex: 1 1 38%; }
+    h1 { font-size: 42px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 52px; }
+    ol { list-style: none; }
+    ol li {
+      font-size: 20px; font-weight: 700; letter-spacing: 2.5px;
+      text-transform: uppercase; margin-bottom: 26px; line-height: 1.5;
+    }
+    ol li svg.compass { vertical-align: -4px; }
+    .bottom { flex: 1 1 62%; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+    .bottom img { width: 104px; height: 104px; border-radius: 24px; margin-bottom: 14px; }
+    .bottom .name { font-size: 22px; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <svg class="chevrons" viewBox="0 0 96 108" fill="none" stroke="#111" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 44 L48 12 L86 44"/>
+    <path d="M10 96 L48 64 L86 96"/>
+  </svg>
+  <div class="spacer"></div>
+  <h1>To download the app,</h1>
+  <ol>
+    <li>1.&nbsp; Click on &nbsp;&bull;&bull;&bull;&nbsp; at the top right</li>
+    <li>2.&nbsp; Then &ldquo;<svg class="compass" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="15.5,8.5 13.5,13.5 8.5,15.5 10.5,10.5" fill="#111" stroke="none"/></svg> <span id="browserWord">Open in browser</span>&rdquo;</li>
+  </ol>
+  <div class="bottom">
+    <a href="https://apps.apple.com/us/app/id6815895984"><img src="/coachdink/icon.png" alt="Coach Dink icon"></a>
+    <div class="name">Coach Dink</div>
+  </div>
+  <script>
+    if (isIG) document.getElementById("browserWord").textContent = "Open in external browser";
+  </script>
+</body>
+</html>
