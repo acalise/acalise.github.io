@@ -12,7 +12,7 @@ Never write the trademarked rating brand anywhere in this set. Coach Dink's
 rating is its own estimate, never official.
 
 Articles live in tools/parts/coachdink_{a,b}.py with card copy inline.
-APP['appstore_url'] is None until the app is live (renders "Coming soon").
+
 """
 import importlib.util as _u
 import pathlib as _p
@@ -20,8 +20,8 @@ import pathlib as _p
 APP = {
     'slug': 'coachdink',
     'name': 'Coach Dink',
-    'appstore_url': None,
-    'cta_label': 'Coming soon to the App Store',
+    'appstore_url': 'https://apps.apple.com/us/app/id6815895984',
+    'cta_label': 'Get Coach Dink',
     'cta_title': 'Film a game. Get coached.',
     'cta_body': 'Coach Dink watches video of your pickleball games and tells you the habits costing you points, why they matter, and the drills that fix them. Singles and doubles, on iPhone.',
     'kw_footer': 'ai pickleball coach · pickleball video analysis · pickleball drills · pickleball rating levels · third shot drop · pickleball doubles strategy',
