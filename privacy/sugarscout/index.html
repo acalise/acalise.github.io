@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>if(location.hostname==="acalise.github.io"){document.write('<meta name="robots" content="noindex,nofollow">');location.replace("https://acalise.com"+location.pathname+location.search+location.hash);}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://acalise.com/privacy/sugarscout/">
+  <title>SugarScout - Privacy Policy</title>
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="192x192" href="/assets/favicon-192.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #FAFAFA; color: #333; padding: 48px 24px; max-width: 720px; margin: 0 auto; line-height: 1.7; }
+    h1 { font-size: 28px; color: #1a1a1a; margin-bottom: 8px; }
+    .updated { font-size: 14px; color: #888; margin-bottom: 32px; }
+    h2 { font-size: 20px; color: #1a1a1a; margin-top: 32px; margin-bottom: 12px; }
+    p, li { font-size: 16px; margin-bottom: 12px; }
+    ul { padding-left: 24px; margin-bottom: 16px; }
+    a { color: #B5476B; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 14px; color: #888; text-decoration: none; }
+    .back:hover { color: #B5476B; }
+  </style>
+</head>
+<body>
+  <a class="back" href="/privacy/">&larr; All Policies</a>
+  <h1>SugarScout Privacy Policy</h1>
+  <p class="updated">Last updated: October 5, 2026</p>
+
+  <h2>Overview</h2>
+  <p>SugarScout ("we", "the app") is a sugar tracking app for iOS that helps you stay under a daily sugar limit, with optional AI meal scanning. This policy explains what data the app collects, how it is used, and your rights.</p>
+
+  <h2>Data Storage</h2>
+  <p>All of your tracking data, including daily logs, food entries, your sugar limit and its history, streaks, and preferences, is stored locally on your device. We do not operate a database of your food log. Your tracking data never leaves your device except as described below (barcode lookups, AI meal scanning, purchase verification, analytics, and install attribution).</p>
+
+  <h2>No Account Required</h2>
+  <p>SugarScout does not require you to create an account, sign in, or provide personal information such as your name, email address, or phone number. To use AI meal scanning, the app receives a server-issued anonymous identifier the first time you scan, used only to secure and rate-limit requests to our service. This identifier is not linked to your real identity.</p>
+
+  <h2>AI Meal Scanning</h2>
+  <p>When you scan a meal, the photo you capture is sent to our backend service, which uses Google Gemini to identify the foods and estimate their sugar content. After processing:</p>
+  <ul>
+    <li>The image is not stored on our servers beyond the duration of the request.</li>
+    <li>The AI provider does not retain the image for training purposes (per our service agreements).</li>
+    <li>The estimated results are returned to your device and are only saved if you choose to log them.</li>
+    <li>We do not associate the image with directly identifying information such as your name, email address, or phone number.</li>
+  </ul>
+
+  <h2>Barcode Scanning</h2>
+  <p>SugarScout requests camera access to scan barcodes on packaged foods and to take meal photos for AI scanning. Barcodes are read on-device; the barcode number (text only, no personal data) is sent to Open Food Facts to look up nutrition information. The camera feed itself is not recorded or stored.</p>
+
+  <h2>Subscriptions and Purchases</h2>
+  <p>SugarScout offers an optional auto-renewable subscription ("SugarScout Pro"), which may include a free trial. All billing is handled by Apple's App Store; we do not collect or store any payment information. Subscription status is verified through RevenueCat, which receives an anonymous app user ID and your purchase or entitlement status. No name, email address, phone number, or payment details are shared by SugarScout. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> for how Apple handles purchases.</p>
+
+  <h2>Notifications</h2>
+  <p>SugarScout may ask permission to send local notifications, such as daily reminders and subscription offers. Notifications are scheduled on your device and do not involve any external servers.</p>
+
+  <h2>Analytics</h2>
+  <p>SugarScout uses PostHog, a product analytics service, to understand how features are used and to improve the app. PostHog collects:</p>
+  <ul>
+    <li>Product usage events, such as which screens and features are used (for example, onboarding steps, paywall views, and scan actions)</li>
+    <li>App lifecycle events (app opened, app backgrounded)</li>
+    <li>Coarse device context attached by the analytics SDK: device model, OS version, app version, locale, and timezone</li>
+  </ul>
+  <p>Analytics events are tied to an anonymous, randomly generated identifier stored on your device, not to your name, email address, or any account. PostHog analytics does not use the IDFA, is not used for advertising, and is never sold. Food photos are never sent to PostHog. Data is hosted in the United States. See <a href="https://posthog.com/privacy" target="_blank">PostHog's Privacy Policy</a>.</p>
+
+  <h2>Install Attribution</h2>
+  <p>SugarScout uses AppsFlyer to measure which marketing campaigns lead to app installs and subscriptions. AppsFlyer may receive:</p>
+  <ul>
+    <li>Device identifiers: the IDFV, and the IDFA only if you allow tracking when the app asks</li>
+    <li>IP address and coarse device information (model, OS version, language)</li>
+    <li>Install, app open, trial start, and purchase events</li>
+  </ul>
+  <p>If you decline tracking, or turn it off at any time in Settings &gt; Privacy &amp; Security &gt; Tracking, the IDFA is not shared. SugarScout shows no ads. See <a href="https://www.appsflyer.com/legal/services-privacy-policy/" target="_blank">AppsFlyer's Privacy Policy</a>.</p>
+
+  <h2>Third-Party Services</h2>
+  <ul>
+    <li><strong>Open Food Facts</strong>: nutrition lookups for scanned barcodes (barcode numbers only)</li>
+    <li><strong>Google Gemini</strong>: identifying foods in meal photos during AI scanning (photos are not stored)</li>
+    <li><strong>RevenueCat</strong>: subscription management (anonymous app user ID and entitlement status)</li>
+    <li><strong>PostHog</strong>: anonymous product analytics (usage events and coarse device context, hosted in the United States)</li>
+    <li><strong>AppsFlyer</strong>: install and campaign attribution (device identifiers as described above)</li>
+  </ul>
+
+  <h2>Data Sharing</h2>
+  <p>We do not sell your personal data. We share data with third parties only as described above.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>SugarScout is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+  <h2>Data Deletion</h2>
+  <p>Your tracking data lives on your device, so you can delete it at any time by deleting the app. Anonymous purchase records are kept by RevenueCat under its data retention policy. To ask for deletion of analytics or attribution data, email us.</p>
+
+  <h2>Health Information</h2>
+  <p>SugarScout provides general nutrition information and is not medical advice. Sugar values, including AI estimates, may be approximate.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy from time to time. The "Last updated" date at the top shows the current version.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:acalisedev@gmail.com">acalisedev@gmail.com</a>.</p>
+</body>
+</html>
