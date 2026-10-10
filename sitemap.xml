@@ -168,6 +168,18 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://acalise.com/privacy/armforge/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://acalise.com/terms/armforge/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://acalise.com/privacy/fightmode/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>yearly</changefreq>
