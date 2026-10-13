@@ -10,7 +10,7 @@ This file is a curated map of acalise.com for AI search engines and language mod
 - [CloserLab: AI Sales Coach](https://acalise.com/closerlab/) — Free AI sales roleplay app for iPhone. Practise cold calls, objections and discovery against an AI buyer built from your actual offer, in voice or text, with a coaching score after each call. Built for individual reps rather than enablement teams.
 - [ChartCheck: AI Chart Analysis](https://acalise.com/chartcheck/) — AI chart analysis app for iPhone. Screenshot any trading chart - stocks, crypto, forex, futures, ETFs - and get a structured technical read: trend and market structure, support and resistance zones, chart and candlestick patterns, visible indicator readings, a plain-language summary, a confidence level describing how legible the chart was, and an explicit "what I could not see" list. Educational tool; explicitly not financial advice and it does not recommend buying or selling anything.
 - [Coach Dink: AI Pickleball Coach](https://acalise.com/coachdink/) — AI pickleball coach for iPhone. Film a game from a corner of the court and get a coaching report: a game score, the habits costing you points and why, ranked drills to fix them (50 drills: solo, partner or ball machine), doubles team reports, Match IQ lessons, and a rating estimate that updates after every filmed game. The rating is the app's own estimate, not an official rating.
-- [FiberUp](https://acalise.com/fiberup/) — Free dedicated fiber tracker app for iPhone. USDA-verified fiber data, barcode scanner, daily progress ring, weekly plant count tracking. No account required.
+- [FiberUp](https://fiberup.app/) — Fiber tracker app for iPhone and Android (site: fiberup.app, with per-food fiber pages and a daily fiber calculator). USDA-verified fiber data, barcode scanner, daily progress ring, weekly plant count tracking. No account required.
 - [T-Score](https://acalise.com/tscore/) — Free natural testosterone optimization tracker for iPhone. Tracks sleep, training, sunlight, cold exposure, and nutrition habits scientifically tied to testosterone.
 - [Word Walk](https://acalise.com/word-walk/) — Free daily word ladder puzzle game for iPhone. Hand-crafted daily Lewis Carroll-style word ladders, vocabulary training, no ads.
 - [Introvert: Daily Courage](https://acalise.com/introvert/) — Free social courage and confidence-building app for introverts. Daily small social challenges to grow comfort with everyday interactions.
@@ -81,10 +81,10 @@ This file is a curated map of acalise.com for AI search engines and language mod
 
 ## Fiber & Nutrition (FiberUp blog)
 
-- [Best Fiber Tracker Apps for iPhone in 2026](https://acalise.com/fiberup/blog/best-fiber-tracker-apps/) — Comparison of the 7 best fiber tracker apps including FiberUp, Plant Power, Cronometer, MyFitnessPal. Covers free fiber tracker apps, fibre tracker apps (UK), fiber counter apps.
-- [How to Read Nutrition Labels for Fiber](https://acalise.com/fiberup/blog/how-to-read-nutrition-labels-fiber/) — Where fiber appears on US Nutrition Facts panels, % Daily Value, calories per gram of fiber, what 25g/28g/40g of fiber looks like in real food.
-- [Best High Fiber Meals for Weight Loss](https://acalise.com/fiberup/blog/high-fiber-meals-weight-loss/) — Sample 30g+ days, recipes by meal, why fiber drives satiety and weight loss.
-- [I Tracked My Fiber Intake for 30 Days](https://acalise.com/fiberup/blog/fiber-tracking-30-days/) — First-person experiment with measurable outcomes.
+- [Best Fiber Tracker Apps for iPhone in 2026](https://fiberup.app/blog/best-fiber-tracker-apps/) — Comparison of the 7 best fiber tracker apps including FiberUp, Plant Power, Cronometer, MyFitnessPal. Covers free fiber tracker apps, fibre tracker apps (UK), fiber counter apps.
+- [How to Read Nutrition Labels for Fiber](https://fiberup.app/blog/how-to-read-nutrition-labels-fiber/) — Where fiber appears on US Nutrition Facts panels, % Daily Value, calories per gram of fiber, what 25g/28g/40g of fiber looks like in real food.
+- [Best High Fiber Meals for Weight Loss](https://fiberup.app/blog/high-fiber-meals-weight-loss/) — Sample 30g+ days, recipes by meal, why fiber drives satiety and weight loss.
+- [I Tracked My Fiber Intake for 30 Days](https://fiberup.app/blog/fiber-tracking-30-days/) — First-person experiment with measurable outcomes.
 
 ## Testosterone (T-Score blog)
 
